@@ -85,6 +85,14 @@ def handle_message(event):
                 preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "宏宏的家":
+            output_message = LocationSandMesssage(
+                title = "宏宏的家",
+                address = "台中市北屯區陳平一街76巷2號5樓-2",
+                latitude = "24.186120316114284",
+                longitute = "120.66672397075935"
+            )
             
         else:
             output_message = text_reply.text_reply_message("你說的是不是："+ user_message)

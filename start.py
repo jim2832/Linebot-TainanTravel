@@ -99,6 +99,7 @@ def handle_message(event):
             output_message = text_reply.text_reply_message("請輸入有效指令！")
             line_bot_api.reply_message(event.reply_token, output_message)
 
+
 #組圖訊息
 def imagemap_message():
     output_message = ImagemapSendMessage(
@@ -129,6 +130,40 @@ def imagemap_message():
         ]
     )
     return output_message
+
+
+#按鈕介面訊息
+def button_message():
+    output_message = TemplateSendMessage(
+        alt_text = "好消息來了",
+        template = ButtonsTemplate(
+            thumbnail_image_url = "某個圖片",
+            title = "",
+            text = "",
+            actions = [
+                DatetimePickerTemplateAction(label = "請選擇生日", data = "input birthday", mode = "data", initial = "1999-01-01", max = "2021-07-07", min = "1930-01-01"),
+                MessageTemplateAction(label = "看抽獎品項", text = "有哪些抽獎品項呢？"),
+                URITemplateAction(label = "免費註冊享回饋", uri ="")
+            ]
+        )
+    )
+    return output_message
+
+
+#確認介面訊息
+def Confirm_Template():
+    output_message = TemplateMessage(
+        alt_text = "是否註冊成為會員？",
+        template = Confirm_Template(
+            text = "是否註冊成會員？",
+            actions = [
+                PostbackTemplateAction(label = "馬上註冊", text = "註冊會員", data = "會員註冊"),
+                MessageTemplateAction(label = "查詢其他功能", text = "查詢其他功能")
+            ]
+        )
+    )
+    return output_message
+    
 
 import os
 if __name__ == "__main__":

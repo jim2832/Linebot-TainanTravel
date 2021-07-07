@@ -52,7 +52,7 @@ def callback():
 
 
 # 處理訊息
-@handler.add(MessageEvent, message = TextMessage)
+@handler.add(MessageEvent)
 def handle_message(event):
     print(event)
     message_send_time = float(event.timestamp)/1000
@@ -82,7 +82,6 @@ def handle_message(event):
         elif user_message == "肥宅快樂水":
             output_message = ImageSendMessage(
                 original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
-                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             

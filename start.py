@@ -93,6 +93,7 @@ def handle_message(event):
                 latitude = "24.186120316114284",
                 longitute = "120.66672397075935"
             )
+            line_bot_api.reply_message(event.reply_token, output_message)
             
         else:
             output_message = text_reply.text_reply_message("你說的是不是："+ user_message)

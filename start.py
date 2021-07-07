@@ -73,9 +73,14 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, output_message) 
 
     elif msg_type == "text":
-        user_message = event.message.text 
-        output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
-        line_bot_api.reply_message(event.reply_token, output_message)
+        user_message = event.message.text
+        if user_message == "可樂": 
+            output_message = text_reply.text_reply_message("可樂好喝")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        else:
+            output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
+            line_bot_api.reply_message(event.reply_token, output_message)
 
 import os
 if __name__ == "__main__":

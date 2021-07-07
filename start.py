@@ -60,7 +60,7 @@ def handle_message(event):
     msg_type = event.message.type
 
     if event.message.text == "info":
-        output_message = TextSendMessage(text="你說的是不是：" + str(event))  
+        output_message = TextSendMessage(text=str(event))  
         line_bot_api.reply_message(event.reply_token, output_message)
 
     if event.message.text.lower() == "speed" :
@@ -74,7 +74,7 @@ def handle_message(event):
 
     elif msg_type == "text":
         user_message = event.message.text 
-        output_message = text_reply.text_reply_message(user_message)
+        output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
         line_bot_api.reply_message(event.reply_token, output_message)
 
     

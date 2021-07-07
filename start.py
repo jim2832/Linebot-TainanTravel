@@ -77,16 +77,6 @@ def handle_message(event):
         output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
         line_bot_api.reply_message(event.reply_token, output_message)
 
-def costom_message(event):
-    if event == "可樂":
-        message = ImageSendMessage(
-            original_content_url = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.xuite.net%2Fchungming01%2Ftwblog%2F106578814&psig=AOvVaw0JV7TR5GNy4349MN-bKgF0&ust=1625729867993000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNik-Oy50PECFQAAAAAdAAAAABAJ"
-            preview_image_url = "https://www.google.com/url?sa=i&url=https%3A%2F%2Fblog.xuite.net%2Fchungming01%2Ftwblog%2F106578814&psig=AOvVaw0JV7TR5GNy4349MN-bKgF0&ust=1625729867993000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCNik-Oy50PECFQAAAAAdAAAAABAJ"
-        )
-
-    
-
-
 import os
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 5000))

@@ -74,10 +74,18 @@ def handle_message(event):
 
     elif msg_type == "text":
         user_message = event.message.text
+
         if user_message == "可樂": 
             output_message = text_reply.text_reply_message("可樂好喝")
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        elif user_message == "肥宅快樂水":
+            output_message = ImageSendMessage(
+                original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
+                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+            
         else:
             output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
             line_bot_api.reply_message(event.reply_token, output_message)

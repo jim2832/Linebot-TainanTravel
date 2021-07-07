@@ -81,8 +81,8 @@ def handle_message(event):
 
         elif user_message == "肥宅快樂水":
             output_message = ImageSendMessage(
-                original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
                 preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
+                original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -95,9 +95,9 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
-        else:
-            output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
-            line_bot_api.reply_message(event.reply_token, output_message)
+        # else:
+        #     output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
+        #     line_bot_api.reply_message(event.reply_token, output_message)
 
 import os
 if __name__ == "__main__":

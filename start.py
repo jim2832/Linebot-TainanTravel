@@ -95,9 +95,9 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
-        else:
-            output_message = text_reply.text_reply_message("請輸入有效指令！")
-            line_bot_api.reply_message(event.reply_token, output_message)
+        # else:
+        #     output_message = text_reply.text_reply_message("請輸入有效指令！")
+        #     line_bot_api.reply_message(event.reply_token, output_message)
 
 
 #組圖訊息

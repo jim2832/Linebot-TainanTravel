@@ -52,7 +52,7 @@ def callback():
 
 
 # 處理訊息
-@handler.add(MessageEvent)
+@handler.add(MessageEvent, message = TextMessage)
 def handle_message(event):
     print(event)
     message_send_time = float(event.timestamp)/1000

@@ -81,8 +81,8 @@ def handle_message(event):
 
         elif user_message == "肥宅快樂水":
             output_message = ImageSendMessage(
-                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
                 original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
+                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -95,9 +95,40 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
-        # else:
-        #     output_message = text_reply.text_reply_message("你說的是不是："+ user_message)
-        #     line_bot_api.reply_message(event.reply_token, output_message)
+        else:
+            output_message = text_reply.text_reply_message("請輸入有效指令！")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#組圖訊息
+def imagemap_message():
+    output_message = ImagemapSendMessage(
+        base_url = "https://mega.nz/file/MAhkjD7R#37wuu9Za0SYvEEE240IBJHed9IwFVQVWf16h16crD6Q",
+        alt_text = "可i宏宏",
+        base_size = BaseSize(height = 2000, width = 2000),
+        actions =[
+            #1
+            URIImagemapAction(
+                link_uri = "https://mega.nz/file/kQpm2bBa#trwG57vTJSv62v_eMqJ4z7sEEXOVAIYMquoJPg_p_jM",
+                area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
+            ),
+            #2
+            URIImagemapAction(
+                link_uri = "https://mega.nz/file/QB4w1RpC#HM8hyzce2PkzztD1ZnSQF6sWrUcyYvyjz795S9erjSQ",
+                area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
+            ),
+            #3
+            URIImagemapAction(
+                link_uri = "https://mega.nz/file/8IwyRBbZ#T1DudpbwW7sVkk2dtgQLvi2mhqvIriwK_iql2LQR3oQ",
+                area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
+            ),
+            #4
+            URIImagemapAction(
+                link_uri = "https://mega.nz/file/MAhkjD7R#37wuu9Za0SYvEEE240IBJHed9IwFVQVWf16h16crD6Q",
+                area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
+            )
+        ]
+    )
+    return output_message
 
 import os
 if __name__ == "__main__":

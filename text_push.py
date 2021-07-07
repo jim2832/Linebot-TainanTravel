@@ -21,3 +21,4 @@ def text_push_message(msg):
 	output_message = TextSendMessage(text=msg)
 	line_bot_api.push_message(TARGET_PUSH_ID, output_message)
 
+text_push_message("這是個測試")

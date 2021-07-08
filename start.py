@@ -95,9 +95,9 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
-        # else:
-        #     output_message = text_reply.text_reply_message("請輸入有效指令！")
-        #     line_bot_api.reply_message(event.reply_token, output_message)
+        else:
+            output_message = text_reply.text_reply_message("請輸入有效指令！")
+            line_bot_api.reply_message(event.reply_token, output_message)
 
 
 #組圖訊息
@@ -163,6 +163,16 @@ def Confirm_Template():
         )
     )
     return output_message
+
+#多頁訊息
+def Carousel_Template():
+    output_message = TemplateSendMessage(
+        columns = [
+            CarouselColumn(thumbnail_image_url = "", title = "第一塊模板", text = "註解",
+            actions = [PostbackTemplateAction(label = "", data = ""), MessageTemplateAction(label = "", text = ""),URITemplateAction(label = "", uri ="")]
+            )
+        ]
+    )
     
 
 import os

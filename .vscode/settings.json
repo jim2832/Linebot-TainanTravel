@@ -1,0 +1,11 @@
+{
+    "python.linting.flake8CategorySeverity.E": "Hint",
+    "python.linting.flake8CategorySeverity.F": "Hint",
+    "python.linting.flake8CategorySeverity.W": "Hint",
+    "python.linting.mypyCategorySeverity.error": "Hint",
+    "python.linting.pycodestyleCategorySeverity.E": "Hint",
+    "python.linting.pycodestyleCategorySeverity.W": "Hint",
+    "python.linting.pylintCategorySeverity.error": "Hint",
+    "python.linting.pylintCategorySeverity.fatal": "Hint",
+    "python.linting.pylintCategorySeverity.warning": "Hint"
+}

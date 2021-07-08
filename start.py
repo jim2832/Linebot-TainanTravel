@@ -79,6 +79,10 @@ def handle_message(event):
             output_message = text_reply.text_reply_message("可樂好喝")
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        elif user_message == "宏宏的愛人":
+            output_message = text_reply.text_reply_message("嵐嵐<3")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
         elif user_message == "肥宅快樂水":
             output_message = ImageSendMessage(
                 original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",

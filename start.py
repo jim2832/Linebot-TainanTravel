@@ -70,7 +70,7 @@ def handle_message(event):
 
     if msg_type == "sticker":
         output_message = StickerSendMessage(package_id='2',sticker_id=str(random.randint(140,180)))
-        line_bot_api.reply_message(event.reply_token, output_message) 
+        line_bot_api.reply_message(event.reply_token, output_message)
 
     elif msg_type == "text":
         user_message = event.message.text
@@ -107,8 +107,8 @@ def handle_message(event):
 #組圖訊息
 def imagemap_message():
     output_message = ImagemapSendMessage(
-        base_url = "https://mega.nz/file/MAhkjD7R#37wuu9Za0SYvEEE240IBJHed9IwFVQVWf16h16crD6Q",
-        alt_text = "可i宏宏",
+        base_url = "https://www.gomaji.com/blog/wp-content/uploads/2020/04/IMG_0164-696x462.jpg",
+        alt_text = "我要吃台南美食",
         base_size = BaseSize(height = 2000, width = 2000),
         actions =[
             #1

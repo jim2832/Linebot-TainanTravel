@@ -107,27 +107,27 @@ def handle_message(event):
             output_message = ImagemapSendMessage(
                 base_url = "https://www.gomaji.com/blog/wp-content/uploads/2020/04/IMG_0164-696x462.jpg",
                 alt_text = "我要吃台南美食",
-                base_size = BaseSize(height = 2000, width = 2000),
+                base_size = BaseSize(height = 1000, width = 1000),
                 actions =[
                     #1
                     URIImagemapAction(
                         link_uri = "https://mega.nz/file/kQpm2bBa#trwG57vTJSv62v_eMqJ4z7sEEXOVAIYMquoJPg_p_jM",
-                        area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
+                        area = ImagemapArea(x = 0, y= 0, width = 500, height = 500)
                     ),
                     #2
                     URIImagemapAction(
                         link_uri = "https://mega.nz/file/QB4w1RpC#HM8hyzce2PkzztD1ZnSQF6sWrUcyYvyjz795S9erjSQ",
-                        area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
+                        area = ImagemapArea(x = 500, y= 0, width = 500, height = 500)
                     ),
                     #3
                     URIImagemapAction(
                         link_uri = "https://mega.nz/file/8IwyRBbZ#T1DudpbwW7sVkk2dtgQLvi2mhqvIriwK_iql2LQR3oQ",
-                        area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
+                        area = ImagemapArea(x = 0, y= 500, width = 500, height = 500)
                     ),
                     #4
                     URIImagemapAction(
                         link_uri = "https://mega.nz/file/MAhkjD7R#37wuu9Za0SYvEEE240IBJHed9IwFVQVWf16h16crD6Q",
-                        area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
+                        area = ImagemapArea(x = 500, y= 500, width = 500, height = 500)
                     )
                 ]
             )

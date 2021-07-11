@@ -179,9 +179,22 @@ def button_message():
             title = "",
             text = "",
             actions = [
-                DatetimePickerTemplateAction(label = "請選擇生日", data = "input birthday", mode = "data", initial = "1999-01-01", max = "2021-07-07", min = "1930-01-01"),
-                MessageTemplateAction(label = "看抽獎品項", text = "有哪些抽獎品項呢？"),
-                URITemplateAction(label = "免費註冊享回饋", uri ="")
+                DatetimePickerTemplateAction(
+                    label = "請選擇生日",
+                    data = "input birthday",
+                    mode = "data",
+                    initial = "1999-01-01",
+                    max = "2021-07-07",
+                    min = "1930-01-01"
+                ),
+                MessageTemplateAction(
+                    label = "看抽獎品項",
+                    text = "有哪些抽獎品項呢？"
+                ),
+                URITemplateAction(
+                    label = "免費註冊享回饋",
+                    uri =""
+                )
             ]
         )
     )
@@ -195,21 +208,139 @@ def Confirm_Template():
         template = Confirm_Template(
             text = "是否註冊成會員？",
             actions = [
-                PostbackTemplateAction(label = "馬上註冊", text = "註冊會員", data = "會員註冊"),
-                MessageTemplateAction(label = "查詢其他功能", text = "查詢其他功能")
+                PostbackTemplateAction(
+                    label = "馬上註冊",
+                    text = "註冊會員",
+                    data = "會員註冊"
+                ),
+                MessageTemplateAction(
+                    label = "查詢其他功能",
+                    text = "查詢其他功能"
+                )
             ]
         )
     )
     return output_message
 
-#多頁訊息
-def Carousel_Template():
+#多頁訊息(旋轉木馬)
+def Carousel_Template(): #最多十組
     output_message = TemplateSendMessage(
         columns = [
-            CarouselColumn(thumbnail_image_url = "", title = "第一塊模板", text = "註解",
-            actions = [PostbackTemplateAction(label = "", data = ""), MessageTemplateAction(label = "", text = ""),URITemplateAction(label = "", uri ="")]
+            CarouselColumn( #1
+                thumbnail_image_url = "",
+                title = "第一塊模板",
+                text = "註解",
+                actions = [
+                    PostbackTemplateAction(
+                        label = "",
+                        data = ""
+                    ),
+                    MessageTemplateAction(
+                        label = "",
+                        text = ""
+                    ),
+                    URITemplateAction(
+                        label = "",
+                        uri =""
+                    )
+                ]
+            ),
+            CarouselColumn( #2
+                thumbnail_image_url = "",
+                title = "第一塊模板",
+                text = "註解",
+                actions = [
+                    PostbackTemplateAction(
+                        label = "",
+                        data = ""
+                    ),
+                    MessageTemplateAction(
+                        label = "",
+                        text = ""
+                    ),
+                    URITemplateAction(
+                        label = "",
+                        uri =""
+                    )
+                ]
+            ),
+            CarouselColumn( #3
+                thumbnail_image_url = "",
+                title = "第一塊模板",
+                text = "註解",
+                actions = [
+                    PostbackTemplateAction(
+                        label = "",
+                        data = ""
+                    ),
+                    MessageTemplateAction(
+                        label = "",
+                        text = ""
+                    ),
+                    URITemplateAction(
+                        label = "",
+                        uri =""
+                    )
+                ]
+            ),
+            CarouselColumn( #4
+                thumbnail_image_url = "",
+                title = "第一塊模板",
+                text = "註解",
+                actions = [
+                    PostbackTemplateAction(
+                        label = "",
+                        data = ""
+                    ),
+                    MessageTemplateAction(
+                        label = "",
+                        text = ""
+                    ),
+                    URITemplateAction(
+                        label = "",
+                        uri =""
+                    )
+                ]
             )
         ]
+    )
+
+#多頁圖片(旋轉木馬圖片)
+def image_carousel_message():
+    output_message = TemplateSendMessage(
+        alt_text = "要顯示的字",
+        template = ImageCarouselTemplate(
+            colunms = [
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                )
+            ]
+        )
     )
     
 

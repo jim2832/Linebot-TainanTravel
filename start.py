@@ -136,6 +136,10 @@ def handle_message(event):
             output_message = text_reply.text_reply_message("請輸入有效指令！")
             line_bot_api.reply_message(event.reply_token, output_message)
 
+# instruction of pushing code to heroku
+# git add .
+# git commit -am'ok'
+# git push heroku master
 
 #組圖訊息
 def imagemap_message():

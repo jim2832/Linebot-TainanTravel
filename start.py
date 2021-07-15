@@ -105,7 +105,7 @@ def handle_message(event):
 
         elif user_message == "台南美食":
             output_message = ImagemapSendMessage(
-                base_url = "https://www.gomaji.com/blog/wp-content/uploads/2020/04/IMG_0164-696x462.jpg",
+                base_url = "https://imgur.com/tmuS5MM",
                 alt_text = "我要吃台南美食",
                 base_size = BaseSize(height = 1000, width = 1000),
                 actions =[

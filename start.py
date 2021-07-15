@@ -107,9 +107,9 @@ def handle_message(event):
             output_message = TemplateSendMessage(
                 alt_text = "好消息來了",
                 template = ButtonsTemplate(
-                    thumbnail_image_url = "某個圖片",
-                    title = "",
-                    text = "",
+                    thumbnail_image_url = "https://lurl.cc/pgUcaP",
+                    title = "台南美食",
+                    text = "台南美食",
                     actions = [
                         DatetimePickerTemplateAction(
                             label = "請選擇生日",

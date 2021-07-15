@@ -107,7 +107,7 @@ def handle_message(event):
             output_message = TemplateSendMessage(
                 alt_text = "好消息來了",
                 template = ButtonsTemplate(
-                    thumbnail_image_url = "https://lurl.cc/pgUcaP",
+                    thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
                     title = "台南美食",
                     text = "台南美食",
                     actions = [
@@ -145,7 +145,7 @@ def handle_message(event):
 def imagemap_message():
     output_message = ImagemapSendMessage(
         base_url = "https://www.gomaji.com/blog/wp-content/uploads/2020/04/IMG_0164-696x462.jpg",
-        alt_text = "我要吃台南美食",
+        alt_text = "",
         base_size = BaseSize(height = 2000, width = 2000),
         actions =[
             #1
@@ -250,7 +250,7 @@ def Carousel_Template(): #最多十組
             ),
             CarouselColumn( #2
                 thumbnail_image_url = "",
-                title = "第一塊模板",
+                title = "第二塊模板",
                 text = "註解",
                 actions = [
                     PostbackTemplateAction(
@@ -269,7 +269,7 @@ def Carousel_Template(): #最多十組
             ),
             CarouselColumn( #3
                 thumbnail_image_url = "",
-                title = "第一塊模板",
+                title = "第三塊模板",
                 text = "註解",
                 actions = [
                     PostbackTemplateAction(
@@ -288,7 +288,7 @@ def Carousel_Template(): #最多十組
             ),
             CarouselColumn( #4
                 thumbnail_image_url = "",
-                title = "第一塊模板",
+                title = "第四塊模板",
                 text = "註解",
                 actions = [
                     PostbackTemplateAction(

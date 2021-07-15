@@ -104,32 +104,31 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == "台南美食":
-            output_message = ImagemapSendMessage(
-                base_url = "https://imgur.com/tmuS5MM",
-                alt_text = "我要吃台南美食",
-                base_size = BaseSize(height = 1000, width = 1000),
-                actions =[
-                    #1
-                    URIImagemapAction(
-                        link_uri = "https://mega.nz/file/kQpm2bBa#trwG57vTJSv62v_eMqJ4z7sEEXOVAIYMquoJPg_p_jM",
-                        area = ImagemapArea(x = 0, y= 0, width = 500, height = 500)
-                    ),
-                    #2
-                    URIImagemapAction(
-                        link_uri = "https://mega.nz/file/QB4w1RpC#HM8hyzce2PkzztD1ZnSQF6sWrUcyYvyjz795S9erjSQ",
-                        area = ImagemapArea(x = 500, y= 0, width = 500, height = 500)
-                    ),
-                    #3
-                    URIImagemapAction(
-                        link_uri = "https://mega.nz/file/8IwyRBbZ#T1DudpbwW7sVkk2dtgQLvi2mhqvIriwK_iql2LQR3oQ",
-                        area = ImagemapArea(x = 0, y= 500, width = 500, height = 500)
-                    ),
-                    #4
-                    URIImagemapAction(
-                        link_uri = "https://mega.nz/file/MAhkjD7R#37wuu9Za0SYvEEE240IBJHed9IwFVQVWf16h16crD6Q",
-                        area = ImagemapArea(x = 500, y= 500, width = 500, height = 500)
-                    )
-                ]
+            output_message = TemplateSendMessage(
+                alt_text = "好消息來了",
+                template = ButtonsTemplate(
+                    thumbnail_image_url = "某個圖片",
+                    title = "",
+                    text = "",
+                    actions = [
+                        DatetimePickerTemplateAction(
+                            label = "請選擇生日",
+                            data = "input birthday",
+                            mode = "data",
+                            initial = "1999-01-01",
+                            max = "2021-07-07",
+                            min = "1930-01-01"
+                        ),
+                        MessageTemplateAction(
+                            label = "看抽獎品項",
+                            text = "有哪些抽獎品項呢？"
+                        ),
+                        URITemplateAction(
+                            label = "免費註冊享回饋",
+                            uri =""
+                        )
+                    ]
+                )
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
@@ -175,7 +174,7 @@ def button_message():
     output_message = TemplateSendMessage(
         alt_text = "好消息來了",
         template = ButtonsTemplate(
-            thumbnail_image_url = "某個圖片",
+            thumbnail_image_url = "https://lurl.cc/pgUcaP",
             title = "",
             text = "",
             actions = [

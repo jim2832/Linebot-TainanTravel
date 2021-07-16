@@ -105,11 +105,11 @@ def handle_message(event):
 
         elif user_message == "台南美食":
             output_message = TemplateSendMessage(
-                alt_text = "好消息來了",
+                alt_text = "",
                 template = ButtonsTemplate(
                     thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
                     title = "台南美食",
-                    text = "帶你發覺你曾未發現過的美食",
+                    text = "帶你發掘你曾未發現過的美食",
                     actions = [
                         MessageTemplateAction(
                             label = "好吃的",

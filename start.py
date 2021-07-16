@@ -88,13 +88,6 @@ def handle_message(event):
             output_message = text_reply.text_reply_message("嵐嵐<3")
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "肥宅快樂水":
-            output_message = ImageSendMessage(
-                original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
-                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
-            )
-            line_bot_api.reply_message(event.reply_token, output_message)
-
         elif user_message == "宏宏的家在哪裡":
             output_message = LocationSendMessage(
                 title = "宏宏的家",
@@ -104,9 +97,16 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        elif user_message == "肥宅快樂水":
+            output_message = ImageSendMessage(
+                original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
+                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
         elif user_message == "台南美食":
             output_message = TemplateSendMessage(
-                alt_text = "",
+                alt_text = "好吃",
                 template = ButtonsTemplate(
                     thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
                     title = "台南美食",

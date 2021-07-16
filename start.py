@@ -109,23 +109,19 @@ def handle_message(event):
                 template = ButtonsTemplate(
                     thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
                     title = "台南美食",
-                    text = "台南美食",
+                    text = "帶你發覺你曾未發現過的美食",
                     actions = [
-                        DatetimePickerTemplateAction(
-                            label = "請選擇生日",
-                            data = "input birthday",
-                            mode = "data",
-                            initial = "1999-01-01",
-                            max = "2021-07-07",
-                            min = "1930-01-01"
+                        MessageTemplateAction(
+                            label = "好吃的",
+                            text = "好吃的"
                         ),
                         MessageTemplateAction(
-                            label = "看抽獎品項",
-                            text = "有哪些抽獎品項呢？"
+                            label = "好喝的",
+                            text = "好喝的"
                         ),
-                        URITemplateAction(
-                            label = "免費註冊享回饋",
-                            uri =""
+                        MessageTemplateAction(
+                            label = "咖啡廳",
+                            text = "咖啡廳"
                         )
                     ]
                 )

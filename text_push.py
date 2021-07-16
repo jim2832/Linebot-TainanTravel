@@ -22,4 +22,3 @@ def text_push_message(msg):
 	line_bot_api.push_message(TARGET_PUSH_ID,output_message)
 
 text_push_message("更新成功！")
-text_push_message("更新成功測試2")

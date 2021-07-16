@@ -73,7 +73,8 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, output_message)
 
     if msg_type == "sticker":
-        output_message = StickerSendMessage(package_id='2',sticker_id=str(random.randint(140,180)))
+        output_message = StickerSendMessage(package_id='2',sticker_id='1')
+        #output_message = StickerSendMessage(package_id='2',sticker_id=str(random.randint(140,180)))
         line_bot_api.reply_message(event.reply_token, output_message)
 
     elif msg_type == "text":
@@ -85,6 +86,13 @@ def handle_message(event):
 
         elif user_message == "宏宏的愛人":
             output_message = text_reply.text_reply_message("嵐嵐<3")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "可i宏宏":
+            output_message = AudioSendMessage(
+                originalContentUrl = "https://mega.nz/file/kMwwjKiD#S3T5z8v1YpD-vK8SHE6oZBiGxuRkKVTMW4XLyK7IgZk",
+                duration = "60000"
+            )
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == "肥宅快樂水":

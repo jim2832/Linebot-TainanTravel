@@ -104,7 +104,70 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == "台南美食":
-            output_message = button_message()
+            output_message = TemplateSendMessage(
+                alt_text = "好消息來了",
+                template = ButtonsTemplate(
+                    thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
+                    title = "台南美食",
+                    text = "台南美食",
+                    actions = [
+                        DatetimePickerTemplateAction(
+                            label = "請選擇生日",
+                            data = "input birthday",
+                            mode = "data",
+                            initial = "1999-01-01",
+                            max = "2021-07-07",
+                            min = "1930-01-01"
+                        ),
+                        MessageTemplateAction(
+                            label = "看抽獎品項",
+                            text = "有哪些抽獎品項呢？"
+                        ),
+                        URITemplateAction(
+                            label = "免費註冊享回饋",
+                            uri =""
+                        )
+                    ]
+                )
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "飲料":
+            output_message = TemplateSendMessage(
+            alt_text = "要顯示的字",
+                template = ImageCarouselTemplate(
+                    colunms = [
+                        ImageCarouselColumn(
+                            image_url = "",
+                            action = URITemplateAction(
+                                label = "標題",
+                                uri = "網址"
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url = "",
+                            action = URITemplateAction(
+                                label = "標題",
+                                uri = "網址"
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url = "",
+                            action = URITemplateAction(
+                                label = "標題",
+                                uri = "網址"
+                            )
+                        ),
+                        ImageCarouselColumn(
+                            image_url = "",
+                            action = URITemplateAction(
+                                label = "標題",
+                                uri = "網址"
+                            )
+                        )
+                    ]
+                )
+            )
             line_bot_api.reply_message(event.reply_token, output_message)
             
         else:

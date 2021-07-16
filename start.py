@@ -106,7 +106,7 @@ def handle_message(event):
 
         elif user_message == "台南美食":
             output_message = TemplateSendMessage(
-                alt_text = "好吃",
+                alt_text = "請至可支援樣板之裝置查看！",
                 template = ButtonsTemplate(
                     thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
                     title = "台南美食",
@@ -127,6 +127,10 @@ def handle_message(event):
                     ]
                 )
             )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "好吃的":
+            output_message = text_reply.text_reply_message("想找好吃的嗎")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == "飲料":

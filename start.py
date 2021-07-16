@@ -88,13 +88,6 @@ def handle_message(event):
             output_message = text_reply.text_reply_message("嵐嵐<3")
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "可i宏宏":
-            output_message = AudioSendMessage(
-                originalContentUrl = "https://mega.nz/file/kMwwjKiD#S3T5z8v1YpD-vK8SHE6oZBiGxuRkKVTMW4XLyK7IgZk",
-                duration = "60000"
-            )
-            line_bot_api.reply_message(event.reply_token, output_message)
-
         elif user_message == "肥宅快樂水":
             output_message = ImageSendMessage(
                 original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
@@ -174,6 +167,29 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
+        else:
+            output_message = text_reply.text_reply_message("請輸入有效指令！")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+def main(event):
+    print(event)
+    message_send_time = float(event.timestamp)/1000
+    message_get_time = float(time.time())
+    msg_type = event.message.type
+
+    if msg_type == "text":
+        user_message = event.message.text
+
+        if user_message == "好吃的":
+            output_message = text_reply.text_reply_message("想找好吃的嗎")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "好喝的":
+            print()
+
+        elif user_message == "咖啡廳":
+            print()
+
         else:
             output_message = text_reply.text_reply_message("請輸入有效指令！")
             line_bot_api.reply_message(event.reply_token, output_message)

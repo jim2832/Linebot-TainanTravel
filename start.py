@@ -267,8 +267,7 @@ def handle_message(event):
                 longitude = "120.2024704919533"
             )
 
-            line_bot_api.reply_message(event.reply_token, output_message1)
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, output_message1,output_message2)
 
         elif user_message == "安平古堡位置":
             output_message1 = text_reply.text_reply_message("可由此打開google地圖導航至安平古堡")

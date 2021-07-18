@@ -50,10 +50,27 @@ def callback():
         abort(400)
     return 'OK'
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # instruction of pushing code to heroku
 # git add .
 # git commit -am'ok'
 # git push heroku master
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Messgae Types
+# 1. Text Message
+# 2. Sticker Message
+# 3. Image Message
+# 4. Video Message
+# 5. Audio Message
+# 6. Location Message
+# 7. Imgaemap Message
+# 8. Template Message
+# 9. Flex Message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # 處理訊息
 @handler.add(MessageEvent)
@@ -104,13 +121,16 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "台南美食":
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        #首頁
+        elif user_message == "台南旅遊":
             output_message = TemplateSendMessage(
-                alt_text = "此裝置不支援樣板。",
+                alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
                 template = ButtonsTemplate(
                     thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
-                    title = "台南美食",
-                    text = "帶你發掘你曾未發現過的美食",
+                    title = "台南旅遊",
+                    text = "帶你玩遍美食之都台南",
                     actions = [
                         MessageTemplateAction(
                             label = "景點",
@@ -129,11 +149,21 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        elif user_message == "景點":
+            output_message = text_reply.text_reply_message("想找好吃的嗎")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
         elif user_message == "好吃的":
             output_message = text_reply.text_reply_message("想找好吃的嗎")
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "飲料":
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        elif user_message == "喝的":
             output_message = TemplateSendMessage(
             alt_text = "要顯示的字",
                 template = ImageCarouselTemplate(
@@ -170,21 +200,27 @@ def handle_message(event):
                 )
             )
             line_bot_api.reply_message(event.reply_token, output_message)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             
         else:
             output_message = text_reply.text_reply_message("請輸入有效指令！")
             line_bot_api.reply_message(event.reply_token, output_message)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # instruction of pushing code to heroku
 # git add .
 # git commit -am'ok'
 # git push heroku master
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 #組圖訊息
 def imagemap_message():
     output_message = ImagemapSendMessage(
         base_url = "https://www.gomaji.com/blog/wp-content/uploads/2020/04/IMG_0164-696x462.jpg",
-        alt_text = "",
+        alt_text = "", #無法支援格式所顯示的文字
         base_size = BaseSize(height = 2000, width = 2000),
         actions =[
             #1
@@ -211,6 +247,22 @@ def imagemap_message():
     )
     return output_message
 
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Tempalte format：
+# 1. Confirm_Template
+# 2. Button_Template
+# 3. Carousel_Template
+# 4. Image_Carousel_Template
+
+
+# Template Action：
+# 1. Message -> MessageTemplateAction
+# 2. Uri -> URITemplateAction
+# 3. Postback -> PostbackTemplateAction
+# 4. Datetimepicker -> DatetimePickerTemplateAction
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #按鈕介面訊息
 def button_message():
@@ -241,7 +293,6 @@ def button_message():
         )
     )
     return output_message
-
 
 #確認介面訊息
 def Confirm_Template():

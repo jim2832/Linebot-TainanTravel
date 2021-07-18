@@ -221,7 +221,7 @@ def image_carousel_message():
     output_message = TemplateSendMessage(
         alt_text = "要顯示的字",
         template = ImageCarouselTemplate(
-            colunms = [
+            columns = [
                 ImageCarouselColumn(
                     image_url = "",
                     action = URITemplateAction(

@@ -164,7 +164,7 @@ def handle_message(event):
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",
-                                    uri = "https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=10889"
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/674"
                                 ),
                                 MessageTemplateAction(
                                     label = "點我看景點圖片",
@@ -183,7 +183,7 @@ def handle_message(event):
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",
-                                    uri = "https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=147"
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/671"
                                 ),
                                 MessageTemplateAction(
                                     label = "點我看景點圖片",
@@ -202,7 +202,7 @@ def handle_message(event):
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",
-                                    uri = "https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=2574"
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/572"
                                 ),
                                 MessageTemplateAction(
                                     label = "點我看景點圖片",
@@ -221,7 +221,7 @@ def handle_message(event):
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",
-                                    uri = "https://www.travelking.com.tw/tourguide/scenery105017.html"
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/1351"
                                 ),
                                 MessageTemplateAction(
                                     label = "點我看景點圖片",
@@ -236,7 +236,7 @@ def handle_message(event):
                         CarouselColumn( #5
                             thumbnail_image_url = "https://img.natgeomedia.com/userfiles/PhotoContest/925/sm1920/2019090977389193.jpg",
                             title = "漁光島",
-                            text = "接近傍晚的夕陽總是引人入勝\n 是個讓外地遊客流連忘返的美麗沙灘",
+                            text = "接近傍晚的夕陽總是引人入勝\n是個讓外地遊客流連忘返的美麗沙灘",
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",
@@ -293,7 +293,7 @@ def handle_message(event):
                         CarouselColumn( #8
                             thumbnail_image_url = "https://pic.pimg.tw/anrine910070/1601175205-2788673474-g.jpg",
                             title = "夕遊出張所",
-                            text = "擁有專屬生日採鹽的原日式鹽試驗工廠",
+                            text = "擁有專屬生日採鹽的原日式試鹽工廠",
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",

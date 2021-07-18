@@ -132,17 +132,17 @@ def handle_message(event):
                     title = "台南旅遊",
                     text = "帶你玩遍美食之都台南",
                     actions = [
-                        MessageTemplateAction(
+                        PostbackTemplateAction(
                             label = "景點",
-                            text = "景點"
+                            data = "景點"
                         ),
-                        MessageTemplateAction(
+                        PostbackTemplateAction(
                             label = "吃的",
-                            text = "吃的"
+                            data = "吃的"
                         ),
-                        MessageTemplateAction(
+                        PostbackTemplateAction(
                             label = "喝的",
-                            text = "喝的"
+                            data = "喝的"
                         )
                     ]
                 )
@@ -152,12 +152,92 @@ def handle_message(event):
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         elif user_message == "景點":
-            output_message = text_reply.text_reply_message("想找好吃的嗎")
+            output_message = TemplateSendMessage(
+                alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+                columns = [
+                    CarouselColumn( #1
+                        thumbnail_image_url = "",
+                        title = "第一塊模板",
+                        text = "註解",
+                        actions = [
+                            PostbackTemplateAction(
+                                label = "",
+                                data = ""
+                            ),
+                            MessageTemplateAction(
+                                label = "",
+                                text = ""
+                            ),
+                            URITemplateAction(
+                                label = "",
+                                uri =""
+                            )
+                        ]
+                    ),
+                    CarouselColumn( #2
+                        thumbnail_image_url = "",
+                        title = "第二塊模板",
+                        text = "註解",
+                        actions = [
+                            PostbackTemplateAction(
+                                label = "",
+                                data = ""
+                            ),
+                            MessageTemplateAction(
+                                label = "",
+                                text = ""
+                            ),
+                            URITemplateAction(
+                                label = "",
+                                uri =""
+                            )
+                        ]
+                    ),
+                    CarouselColumn( #3
+                        thumbnail_image_url = "",
+                        title = "第三塊模板",
+                        text = "註解",
+                        actions = [
+                            PostbackTemplateAction(
+                                label = "",
+                                data = ""
+                            ),
+                            MessageTemplateAction(
+                                label = "",
+                                text = ""
+                            ),
+                            URITemplateAction(
+                                label = "",
+                                uri =""
+                            )
+                        ]
+                    ),
+                    CarouselColumn( #4
+                        thumbnail_image_url = "",
+                        title = "第四塊模板",
+                        text = "註解",
+                        actions = [
+                            PostbackTemplateAction(
+                                label = "",
+                                data = ""
+                            ),
+                            MessageTemplateAction(
+                                label = "",
+                                text = ""
+                            ),
+                            URITemplateAction(
+                                label = "",
+                                uri =""
+                            )
+                        ]
+                    )
+                ] 
+            )
             line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        elif user_message == "好吃的":
+        elif user_message == "吃的":
             output_message = text_reply.text_reply_message("想找好吃的嗎")
             line_bot_api.reply_message(event.reply_token, output_message)
 

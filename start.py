@@ -259,61 +259,61 @@ def handle_message(event):
  #----------------------------------------------------------------------------
 
         elif user_message == "赤崁樓位置":
-            output_message1 = LocationSendMessage(
+            output_message1 = text_reply.text_reply_message("可由此打開google地圖導航至赤崁樓")
+            output_message2 = LocationSendMessage(
                 title = "赤崁樓",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99762337852117",
                 longitude = "120.2024704919533"
             )
-            output_message2 = text_reply.text_reply_message("可由此打開google地圖導航至赤崁樓")
 
             line_bot_api.reply_message(event.reply_token, output_message1)
             line_bot_api.reply_message(event.reply_token, output_message2)
 
         elif user_message == "安平古堡位置":
-            output_message1 = LocationSendMessage(
+            output_message1 = text_reply.text_reply_message("可由此打開google地圖導航至安平古堡")
+            output_message2 = LocationSendMessage(
                 title = "安平古堡",
                 address = "台南市安平區國勝路82號",
                 latitude = "23.001593229535548",
                 longitude = "120.1606351263452"
             )
-            output_message2 = text_reply.text_reply_message("可由此打開google地圖導航至安平古堡")
 
             line_bot_api.reply_message(event.reply_token, output_message1)
             line_bot_api.reply_message(event.reply_token, output_message2)
 
         elif user_message == "奇美博物館位置":
-            output_message1 = LocationSendMessage(
+            output_message1 = text_reply.text_reply_message("可由此打開google地圖導航至奇美博物館")
+            output_message2 = LocationSendMessage(
                 title = "奇美博物館",
                 address = "台南市仁德區文華路二段66號",
                 latitude = "22.93480286259137",
                 longitude = "120.2260482551798"
             )
-            output_message2 = text_reply.text_reply_message("可由此打開google地圖導航至奇美博物館")
 
             line_bot_api.reply_message(event.reply_token, output_message1)
             line_bot_api.reply_message(event.reply_token, output_message2)
         
         elif user_message == "神農街位置":
-            output_message1 = LocationSendMessage(
+            output_message1 = text_reply.text_reply_message("可由此打開google地圖導航至神農街")
+            output_message2 = LocationSendMessage(
                 title = "神農街",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99753585895218",
                 longitude = "120.19648398291852"
             )
-            output_message2 = text_reply.text_reply_message("可由此打開google地圖導航至神農街")
 
             line_bot_api.reply_message(event.reply_token, output_message1)
             line_bot_api.reply_message(event.reply_token, output_message2)
 
         elif user_message == "漁光島位置":
-            output_message1 = LocationSendMessage(
+            output_message1 = text_reply.text_reply_message("可由此打開google地圖導航至漁光島")
+            output_message2 = LocationSendMessage(
                 title = "漁光島",
                 address = "台南市安平區漁光路114號",
                 latitude = "22.98054329215947",
                 longitude = "120.15580504320876"
-            )
-            output_message2 = text_reply.text_reply_message("可由此打開google地圖導航至漁光島")
+            )            
 
             line_bot_api.reply_message(event.reply_token, output_message1)
             line_bot_api.reply_message(event.reply_token, output_message2)

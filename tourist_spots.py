@@ -45,7 +45,7 @@ def image_carousel_message1():
     output_message = TemplateSendMessage(
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = ImageCarouselTemplate(
-            colunms = [
+            columns = [
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/yRxl6rd.jpg",
                     action = URITemplateAction(

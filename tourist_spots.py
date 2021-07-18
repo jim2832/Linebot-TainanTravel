@@ -48,44 +48,44 @@ def image_carousel_message1():
             columns = [
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/yRxl6rd.jpg",
-                    action = URITemplateAction(
+                    action = MessageTemplateAction(
                         label = "",
-                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                        text = "1"
                     )
                 ),
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/398srGx.jpg",
-                    action = URITemplateAction(
+                    action = MessageTemplateAction(
                         label = "",
-                        uri = "https://i.imgur.com/398srGx.jpg"
+                        text = "2"
                     )
                 ),
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/PUze65H.jpg",
-                    action = URITemplateAction(
+                    action = MessageTemplateAction(
                         label = "",
-                        uri = "https://i.imgur.com/PUze65H.jpg"
+                        text = "3"
                     )
                 ),
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/RvwCe1M.jpg",
-                    action = URITemplateAction(
+                    action = MessageTemplateAction(
                         label = "",
-                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                        text = "4"
                     )
                 ),
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/bH9uIPR.jpg",
-                    action = URITemplateAction(
+                    action = MessageTemplateAction(
                         label = "",
-                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                        text = "5"
                     )
                 ),
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/37uUjGk.jpg",
-                    action = URITemplateAction(
+                    action = MessageTemplateAction(
                         label = "",
-                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                        text = "6"
                     )
                 )
             ]

@@ -250,8 +250,8 @@ def image_carousel_message1():
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/yRxl6rd.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                        # label = "赤崁樓",
+                        # uri = "https://i.imgur.com/yRxl6rd.jpg"
                     )
                 ),
                 ImageCarouselColumn(

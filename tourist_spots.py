@@ -420,10 +420,10 @@ def image_carousel_message4():
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/efacPYe.jpg",
+                    image_url = "https://i.imgur.com/U93wtTD.jpg",
                     action = URITemplateAction(
                         label = "神農街",
-                        uri = "https://i.imgur.com/efacPYe.jpg"
+                        uri = "https://i.imgur.com/U93wtTD.jpg"
                     )
                 ),
                 ImageCarouselColumn(

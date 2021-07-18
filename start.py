@@ -24,6 +24,9 @@ import text_reply as text_reply
 
 #---------------- self define variables ----------------
 from mykey import *
+from tourist_spots import *
+from eat import *
+from drink import *
 
 #---------------- line settings ----------------
 # Channel Access Token

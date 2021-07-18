@@ -7,5 +7,6 @@
     "python.linting.pycodestyleCategorySeverity.W": "Hint",
     "python.linting.pylintCategorySeverity.error": "Hint",
     "python.linting.pylintCategorySeverity.fatal": "Hint",
-    "python.linting.pylintCategorySeverity.warning": "Hint"
+    "python.linting.pylintCategorySeverity.warning": "Hint",
+    "task.problemMatchers.neverPrompt": null
 }

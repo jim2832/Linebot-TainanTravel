@@ -73,7 +73,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, output_message)
 
     if msg_type == "sticker":
-        output_message = StickerSendMessage(package_id='2',sticker_id='1')
+        output_message = StickerSendMessage(package_id='1',sticker_id='1')
         #output_message = StickerSendMessage(package_id='2',sticker_id=str(random.randint(140,180)))
         line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -106,23 +106,23 @@ def handle_message(event):
 
         elif user_message == "台南美食":
             output_message = TemplateSendMessage(
-                alt_text = "請至可支援樣板之裝置查看！",
+                alt_text = "此裝置不支援樣板。",
                 template = ButtonsTemplate(
                     thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
                     title = "台南美食",
                     text = "帶你發掘你曾未發現過的美食",
                     actions = [
                         MessageTemplateAction(
-                            label = "好吃的",
-                            text = "好吃的"
+                            label = "景點",
+                            text = "景點"
                         ),
                         MessageTemplateAction(
-                            label = "好喝的",
-                            text = "好喝的"
+                            label = "吃的",
+                            text = "吃的"
                         ),
                         MessageTemplateAction(
-                            label = "咖啡廳",
-                            text = "咖啡廳"
+                            label = "喝的",
+                            text = "喝的"
                         )
                     ]
                 )
@@ -171,29 +171,6 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
             
-        else:
-            output_message = text_reply.text_reply_message("請輸入有效指令！")
-            line_bot_api.reply_message(event.reply_token, output_message)
-
-def main(event):
-    print(event)
-    message_send_time = float(event.timestamp)/1000
-    message_get_time = float(time.time())
-    msg_type = event.message.type
-
-    if msg_type == "text":
-        user_message = event.message.text
-
-        if user_message == "好吃的":
-            output_message = text_reply.text_reply_message("想找好吃的嗎")
-            line_bot_api.reply_message(event.reply_token, output_message)
-
-        elif user_message == "好喝的":
-            print()
-
-        elif user_message == "咖啡廳":
-            print()
-
         else:
             output_message = text_reply.text_reply_message("請輸入有效指令！")
             line_bot_api.reply_message(event.reply_token, output_message)

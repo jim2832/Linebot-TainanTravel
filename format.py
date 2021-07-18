@@ -214,6 +214,7 @@ def Carousel_Template(): #最多十組
             )
         ]
     )
+    return output_message
 
 #多頁圖片(旋轉木馬圖片)
 def image_carousel_message():
@@ -252,3 +253,4 @@ def image_carousel_message():
             ]
         )
     )
+    return output_message

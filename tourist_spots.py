@@ -33,76 +33,18 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 #---------------------------------------------------
 
-def image_carousel_message():
+#圖片
+def image_carousel_message1():
     output_message = TemplateSendMessage(
-        alt_text = "要顯示的字",
+        alt_text = "此裝置不支援樣板格式。",
         template = ImageCarouselTemplate(
             colunms = [
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                )
+                ImageCarouselColumn(image_url = "https://view.boch.gov.tw/NationalHistorical/Images/Items/middle/DA09602000349.jpg"),
+                ImageCarouselColumn(image_url = "https://photo.travelking.com.tw/scenery/64F103E3-0BB2-4E08-988A-29E9A5434C3C_e.jpg"),
+                ImageCarouselColumn(image_url = "https://pic.easytravel.com.tw/Attachments/m/A77936.jpg"),
+                ImageCarouselColumn(image_url = "https://3.bp.blogspot.com/-dQ41OiHWsDk/WPxkPnLyrxI/AAAAAAAARkM/rT-QDpNjCoEavfKFs8lW5cZu0q9eMzjdwCEw/s1600/3V8A9583.JPG"),
+                ImageCarouselColumn(image_url = "https://sya.tw/wp-content/uploads/2014/02/33.jpg")
             ]
         )
     )
-
-def image_carousel_message():
-    output_message = TemplateSendMessage(
-        alt_text = "要顯示的字",
-        template = ImageCarouselTemplate(
-            colunms = [
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                ),
-                ImageCarouselColumn(
-                    image_url = "",
-                    action = URITemplateAction(
-                        label = "標題",
-                        uri = "網址"
-                    )
-                )
-            ]
-        )
-    )
+    return output_message

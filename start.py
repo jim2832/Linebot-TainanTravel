@@ -90,7 +90,7 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, output_message)
 
     if msg_type == "sticker":
-        output_message = StickerSendMessage(package_id='1',sticker_id='1')
+        output_message = StickerSendMessage(package_Id='1',sticker_Id='1')
         #output_message = StickerSendMessage(package_id='2',sticker_id=str(random.randint(140,180)))
         line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -355,6 +355,7 @@ def handle_message(event):
  #----------------------------------------------------------------------------
 
         #景點位置區域
+
         #1
         elif user_message == "可由此打開赤崁樓的google地圖位置":
             output_message = LocationSendMessage(
@@ -464,6 +465,61 @@ def handle_message(event):
             )            
 
             line_bot_api.reply_message(event.reply_token, output_message)
+
+#----------------------------------------------------------------------------
+
+        #景點照片區域
+
+        #1
+        elif user_message == "赤崁樓圖片":
+            output_message = image_carousel_message1()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #2
+        elif user_message == "安平古堡圖片":
+            output_message = image_carousel_message2()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #3
+        elif user_message == "奇美博物館圖片":
+            output_message = image_carousel_message3()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #4
+        elif user_message == "神農街圖片":
+            output_message = image_carousel_message4()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #5
+        elif user_message == "漁光島圖片":
+            output_message = image_carousel_message5()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == "德記洋行圖片":
+            output_message = image_carousel_message6()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #7
+        elif user_message == "花園夜市圖片":
+            output_message = image_carousel_message7()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #8
+        elif user_message == "夕遊出張所圖片":
+            output_message = image_carousel_message8()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #9
+        elif user_message == "台南孔廟圖片":
+            output_message = image_carousel_message9()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #10
+        elif user_message == "七股鹽山圖片":
+            output_message = image_carousel_message10()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         elif user_message == "吃的":

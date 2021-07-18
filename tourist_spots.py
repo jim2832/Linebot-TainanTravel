@@ -31,19 +31,27 @@ line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 # Channel Secret
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
-#---------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# instruction of pushing code to heroku
+# git add .
+# git commit -am'ok'
+# git push heroku master
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #圖片
 def image_carousel_message1():
     output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = ImageCarouselTemplate(
             colunms = [
-                ImageCarouselColumn(image_url = "https://i.imgur.com/yRxl6rd.jpg",),
-                ImageCarouselColumn(image_url = "https://i.imgur.com/398srGx.jpg",),
-                ImageCarouselColumn(image_url = "https://i.imgur.com/PUze65H.jpg",),
-                ImageCarouselColumn(image_url = "https://i.imgur.com/RvwCe1M.jpg",),
-                ImageCarouselColumn(image_url = "https://i.imgur.com/bH9uIPR.jpg",),
-                ImageCarouselColumn(image_url = "https://i.imgur.com/37uUjGk.jpg",)
+                ImageCarouselColumn(image_url = "https://i.imgur.com/yRxl6rd.jpg"),
+                ImageCarouselColumn(image_url = "https://i.imgur.com/398srGx.jpg"),
+                ImageCarouselColumn(image_url = "https://i.imgur.com/PUze65H.jpg"),
+                ImageCarouselColumn(image_url = "https://i.imgur.com/RvwCe1M.jpg"),
+                ImageCarouselColumn(image_url = "https://i.imgur.com/bH9uIPR.jpg"),
+                ImageCarouselColumn(image_url = "https://i.imgur.com/37uUjGk.jpg")
             ]
         )
     )

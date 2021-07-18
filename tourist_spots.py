@@ -250,8 +250,8 @@ def image_carousel_message1():
                 ImageCarouselColumn(
                     image_url = "https://i.imgur.com/yRxl6rd.jpg",
                     action = URITemplateAction(
-                        # label = "赤崁樓",
-                        # uri = "https://i.imgur.com/yRxl6rd.jpg"
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
                     )
                 ),
                 ImageCarouselColumn(
@@ -293,3 +293,507 @@ def image_carousel_message1():
         )
     )
     return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#2
+def image_carousel_message2():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#3
+def image_carousel_message3():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#4
+def image_carousel_message4():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#5
+def image_carousel_message5():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#6
+def image_carousel_message6():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#7
+def image_carousel_messag7():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#8
+def image_carousel_message8():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#9
+def image_carousel_message9():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#10
+def image_carousel_message10():
+    output_message = TemplateSendMessage(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ImageCarouselTemplate(
+            columns = [
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/398srGx.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/PUze65H.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    action = URITemplateAction(
+                        label = "赤崁樓",
+                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                    )
+                )
+            ]
+        )
+    )
+    return output_message
+    
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# instruction of pushing code to heroku
+# git add .
+# git commit -am'ok'
+# git push heroku master
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

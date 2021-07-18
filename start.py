@@ -156,7 +156,7 @@ def handle_message(event):
                 alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
                 columns = [
                     CarouselColumn( #1
-                        thumbnail_image_url = "",
+                        thumbnail_image_url = "https://pic.pimg.tw/whuy123/1523332170-611241936.jpg",
                         title = "赤崁樓",
                         text = "歷史悠久的荷治時期行政中心",
                         actions = [
@@ -175,78 +175,78 @@ def handle_message(event):
                         ]
                     ),
                     CarouselColumn( #2
-                        thumbnail_image_url = "",
-                        title = "第二塊模板",
-                        text = "註解",
+                        thumbnail_image_url = "https://image.cdn-eztravel.com.tw/BIvf9xU550uLpO3D1NYvXGNT4nyO_NgoOh-5hPd4IEQ/g:ce/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvVE5OXzEyMDAzMzQyMTAuanBn.jpg",
+                        title = "安平古堡",
+                        text = "由荷蘭人建造的台灣史上第一座城堡",
                         actions = [
-                            PostbackTemplateAction(
-                                label = "",
-                                data = ""
+                            URITemplateAction(
+                                label = "點我看介紹",
+                                uri = "https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=147"
                             ),
                             MessageTemplateAction(
-                                label = "",
-                                text = ""
+                                label = "點我看景點圖片",
+                                text = "安平古堡圖片"
                             ),
-                            URITemplateAction(
-                                label = "",
-                                uri =""
+                            MessageTemplateAction(
+                                label = "點我看地圖位置",
+                                text = "安平古堡位置"
                             )
                         ]
                     ),
                     CarouselColumn( #3
-                        thumbnail_image_url = "",
-                        title = "第三塊模板",
-                        text = "註解",
+                        thumbnail_image_url = "https://www.chimeimuseum.org/uploads/sliders/60da70ae81eaa.jpg",
+                        title = "奇美博物館",
+                        text = "擁有西洋藝術、樂器、兵器等的知名博物館",
                         actions = [
-                            PostbackTemplateAction(
-                                label = "",
-                                data = ""
+                            URITemplateAction(
+                                label = "點我看介紹",
+                                uri = "https://www.taiwan.net.tw/m1.aspx?sNo=0001016&id=2574"
                             ),
                             MessageTemplateAction(
-                                label = "",
-                                text = ""
+                                label = "點我看景點圖片",
+                                text = "奇美博物館圖片"
                             ),
-                            URITemplateAction(
-                                label = "",
-                                uri =""
+                            MessageTemplateAction(
+                                label = "點我看地圖位置",
+                                text = "奇美博物館位置"
                             )
                         ]
                     ),
                     CarouselColumn( #4
-                        thumbnail_image_url = "",
-                        title = "第四塊模板",
-                        text = "註解",
+                        thumbnail_image_url = "https://cc.tvbs.com.tw/img/program/upload/2020/02/05/20200205163001-ba4cb2f0.jpg",
+                        title = "神農街",
+                        text = "以街底主祀神農氏之藥王廟為名的創新老街",
                         actions = [
-                            PostbackTemplateAction(
-                                label = "",
-                                data = ""
+                            URITemplateAction(
+                                label = "點我看介紹",
+                                uri = "https://www.travelking.com.tw/tourguide/scenery105017.html"
                             ),
                             MessageTemplateAction(
-                                label = "",
-                                text = ""
+                                label = "點我看景點圖片",
+                                text = "神農街圖片"
                             ),
-                            URITemplateAction(
-                                label = "",
-                                uri =""
+                            MessageTemplateAction(
+                                label = "點我看地圖位置",
+                                text = "神農街位置"
                             )
                         ]
                     ),
                     CarouselColumn( #5
-                        thumbnail_image_url = "",
-                        title = "第五塊模板",
-                        text = "註解",
+                        thumbnail_image_url = "https://img.natgeomedia.com/userfiles/PhotoContest/925/sm1920/2019090977389193.jpg",
+                        title = "漁光島",
+                        text = "接近傍晚的夕陽總是引人入勝",
                         actions = [
-                            PostbackTemplateAction(
-                                label = "",
-                                data = ""
+                            URITemplateAction(
+                                label = "點我看介紹",
+                                uri = "https://www.twtainan.net/zh-tw/attractions/detail/5520"
                             ),
                             MessageTemplateAction(
-                                label = "",
-                                text = ""
+                                label = "點我看景點圖片",
+                                text = "漁光島圖片"
                             ),
-                            URITemplateAction(
-                                label = "",
-                                uri =""
+                            MessageTemplateAction(
+                                label = "點我看地圖位置",
+                                text = "漁光島位置"
                             )
                         ]
                     )
@@ -265,39 +265,39 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "赤崁樓位置":
+        elif user_message == "安平古堡位置":
             output_message = LocationSendMessage(
-                title = "赤崁樓",
-                address = "台南市中西區民族路二段212號",
-                latitude = "22.99762337852117",
-                longitude = "120.2024704919533"
+                title = "安平古堡",
+                address = "台南市安平區國勝路82號",
+                latitude = "23.001593229535548",
+                longitude = "120.1606351263452"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "赤崁樓位置":
+        elif user_message == "奇美博物館位置":
             output_message = LocationSendMessage(
-                title = "赤崁樓",
-                address = "台南市中西區民族路二段212號",
-                latitude = "22.99762337852117",
-                longitude = "120.2024704919533"
+                title = "奇美博物館",
+                address = "台南市仁德區文華路二段66號",
+                latitude = "22.93480286259137",
+                longitude = "120.2260482551798"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
         
-        elif user_message == "赤崁樓位置":
+        elif user_message == "神農街位置":
             output_message = LocationSendMessage(
-                title = "赤崁樓",
+                title = "神農街",
                 address = "台南市中西區民族路二段212號",
-                latitude = "22.99762337852117",
-                longitude = "120.2024704919533"
+                latitude = "22.99753585895218",
+                longitude = "120.19648398291852"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == "赤崁樓位置":
+        elif user_message == "漁光島位置":
             output_message = LocationSendMessage(
-                title = "赤崁樓",
-                address = "台南市中西區民族路二段212號",
-                latitude = "22.99762337852117",
-                longitude = "120.2024704919533"
+                title = "漁光島",
+                address = "台南市安平區漁光路114號",
+                latitude = "22.98054329215947",
+                longitude = "120.15580504320876"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

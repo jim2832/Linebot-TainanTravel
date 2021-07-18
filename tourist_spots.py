@@ -32,3 +32,77 @@ line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 #---------------------------------------------------
+
+def image_carousel_message():
+    output_message = TemplateSendMessage(
+        alt_text = "要顯示的字",
+        template = ImageCarouselTemplate(
+            colunms = [
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                )
+            ]
+        )
+    )
+
+def image_carousel_message():
+    output_message = TemplateSendMessage(
+        alt_text = "要顯示的字",
+        template = ImageCarouselTemplate(
+            colunms = [
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                ),
+                ImageCarouselColumn(
+                    image_url = "",
+                    action = URITemplateAction(
+                        label = "標題",
+                        uri = "網址"
+                    )
+                )
+            ]
+        )
+    )

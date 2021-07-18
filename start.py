@@ -236,7 +236,7 @@ def handle_message(event):
                         CarouselColumn( #5
                             thumbnail_image_url = "https://img.natgeomedia.com/userfiles/PhotoContest/925/sm1920/2019090977389193.jpg",
                             title = "漁光島",
-                            text = "接近傍晚的夕陽總是引人入勝",
+                            text = "接近傍晚的夕陽總是引人入勝\n 是個讓外地遊客流連忘返的美麗沙灘",
                             actions = [
                                 URITemplateAction(
                                     label = "點我看介紹",
@@ -251,6 +251,101 @@ def handle_message(event):
                                     text = "可由此打開漁光島的google地圖位置"
                                 )
                             ]
+                        ),
+                        CarouselColumn( #6
+                            thumbnail_image_url = "https://tainan.funcard.com.tw/imageCache/tainan/JnLv_600x400.jpg",
+                            title = "德記洋行",
+                            text = "清領時期繁盛一時的重要商業據點",
+                            actions = [
+                                URITemplateAction(
+                                    label = "點我看介紹",
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/687"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看景點圖片",
+                                    text = "德記洋行圖片"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看地圖位置",
+                                    text = "可由此打開德記洋行的google地圖位置"
+                                )
+                            ]
+                        ),
+                        CarouselColumn( #7
+                            thumbnail_image_url = "https://4.bp.blogspot.com/-0kz6Q2pW1wk/Xiq0YZ-cKlI/AAAAAAAAJ6U/5rTRQS-99gk2LmMV9VJia79EjcalGfIPQCKgBGAsYHg/s1600/IMG_8444.jpg",
+                            title = "花園夜市",
+                            text = "台灣最知名和最熱鬧的夜市之一",
+                            actions = [
+                                URITemplateAction(
+                                    label = "點我看介紹",
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/5572"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看景點圖片",
+                                    text = "花園夜市圖片"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看地圖位置",
+                                    text = "可由此打開花園夜市的google地圖位置"
+                                )
+                            ]
+                        ),
+                        CarouselColumn( #8
+                            thumbnail_image_url = "https://pic.pimg.tw/anrine910070/1601175205-2788673474-g.jpg",
+                            title = "夕遊出張所",
+                            text = "擁有專屬生日採鹽的原日式鹽試驗工廠",
+                            actions = [
+                                URITemplateAction(
+                                    label = "點我看介紹",
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/1323"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看景點圖片",
+                                    text = "夕遊出張所圖片"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看地圖位置",
+                                    text = "可由此打開夕遊出張所的google地圖位置"
+                                )
+                            ]
+                        ),
+                        CarouselColumn( #9
+                            thumbnail_image_url = "https://photo.travelking.com.tw/scenery/98E3B96F-21E9-41AD-8193-31840E021733_e.jpg",
+                            title = "台南孔廟",
+                            text = "具有三百多年歷史的文化古都核心",
+                            actions = [
+                                URITemplateAction(
+                                    label = "點我看介紹",
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/800"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看景點圖片",
+                                    text = "台南孔廟圖片"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看地圖位置",
+                                    text = "可由此打開台南孔廟的google地圖位置"
+                                )
+                            ]
+                        ),
+                        CarouselColumn( #10
+                            thumbnail_image_url = "https://www.twtainan.net/image/13910/1024x768",
+                            title = "七股鹽山",
+                            text = "以鹽為最大特色的高聳壯觀鹽山",
+                            actions = [
+                                URITemplateAction(
+                                    label = "點我看介紹",
+                                    uri = "https://www.twtainan.net/zh-tw/attractions/detail/471"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看景點圖片",
+                                    text = "七股鹽山圖片"
+                                ),
+                                MessageTemplateAction(
+                                    label = "點我看地圖位置",
+                                    text = "可由此打開七股鹽山的google地圖位置"
+                                )
+                            ]
                         )
                     ]
                 )
@@ -260,6 +355,7 @@ def handle_message(event):
  #----------------------------------------------------------------------------
 
         #景點位置區域
+        #1
         elif user_message == "可由此打開赤崁樓的google地圖位置":
             output_message = LocationSendMessage(
                 title = "赤崁樓",
@@ -270,6 +366,7 @@ def handle_message(event):
 
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        #2
         elif user_message == "可由此打開安平古堡的google地圖位置":
             output_message = LocationSendMessage(
                 title = "安平古堡",
@@ -280,6 +377,7 @@ def handle_message(event):
 
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        #3
         elif user_message == "可由此打開奇美博物館的google地圖位置":
             output_message = LocationSendMessage(
                 title = "奇美博物館",
@@ -290,6 +388,7 @@ def handle_message(event):
 
             line_bot_api.reply_message(event.reply_token, output_message)
         
+        #4
         elif user_message == "可由此打開神農街的google地圖位置":
             output_message = LocationSendMessage(
                 title = "神農街",
@@ -300,12 +399,68 @@ def handle_message(event):
 
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        #5
         elif user_message == "可由此打開漁光島的google地圖位置":
             output_message = LocationSendMessage(
                 title = "漁光島",
                 address = "台南市安平區漁光路114號",
                 latitude = "22.98054329215947",
                 longitude = "120.15580504320876"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == "可由此打開德記洋行的google地圖位置":
+            output_message = LocationSendMessage(
+                title = "德記洋行",
+                address = "台南市安平區古堡街108號",
+                latitude = "23.013119029447406",
+                longitude = "120.16109490409369"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #7
+        elif user_message == "可由此打開花園夜市的google地圖位置":
+            output_message = LocationSendMessage(
+                title = "花園夜市",
+                address = "台南市北區海安路三段533號",
+                latitude = "23.01159041194204",
+                longitude = "120.20039541306427"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #8
+        elif user_message == "可由此打開夕遊出張所的google地圖位置":
+            output_message = LocationSendMessage(
+                title = "夕遊出張所",
+                address = "台南市安平區古堡街196號",
+                latitude = "23.002783289337064",
+                longitude = "120.15633702634503"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #9
+        elif user_message == "可由此打開台南孔廟的google地圖位置":
+            output_message = LocationSendMessage(
+                title = "台南孔廟",
+                address = "台南市中西區南門路2號",
+                latitude = "22.990712678956807",
+                longitude = "120.20431901470467"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #10
+        elif user_message == "可由此打開七股鹽山的google地圖位置":
+            output_message = LocationSendMessage(
+                title = "七股鹽山",
+                address = "台南市七股區鹽埕里66號",
+                latitude = "23.154298515853103",
+                longitude = "120.09994515333189"
             )            
 
             line_bot_api.reply_message(event.reply_token, output_message)

@@ -35,7 +35,7 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 #圖片
 def image_carousel_message1():
-    output_message = TemplateSendMessage(
+    message = TemplateSendMessage(
         alt_text = "此裝置不支援樣板格式。",
         template = ImageCarouselTemplate(
             colunms = [
@@ -47,4 +47,4 @@ def image_carousel_message1():
             ]
         )
     )
-    return output_message
+    return message

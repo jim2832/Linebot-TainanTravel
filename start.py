@@ -222,8 +222,8 @@ def handle_message(event):
             output_message = LocationSendMessage(
                 title = f"{place6}",
                 address = "台南市安平區古堡街108號",
-                latitude = "23.008130537572523",
-                longitude = "120.15810081215346"
+                latitude = "23.003306864536732",
+                longitude = "120.15982008130227"
             )            
 
             line_bot_api.reply_message(event.reply_token, output_message)

@@ -358,7 +358,7 @@ def handle_message(event):
 
         #美食part1
         elif user_message == "台南美食part1":
-            output_message = tourist_carousel_template()
+            output_message = food_carousel_template1()
             line_bot_api.reply_message(event.reply_token, output_message)
 
 #-----------------------------------------------------------------------------

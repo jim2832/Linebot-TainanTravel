@@ -222,8 +222,8 @@ def handle_message(event):
             output_message = LocationSendMessage(
                 title = f"{place6}",
                 address = "台南市安平區古堡街108號",
-                latitude = "23.013119029447406",
-                longitude = "120.16109490409369"
+                latitude = "23.008130537572523",
+                longitude = "120.15810081215346"
             )            
 
             line_bot_api.reply_message(event.reply_token, output_message)
@@ -271,7 +271,6 @@ def handle_message(event):
             )            
 
             line_bot_api.reply_message(event.reply_token, output_message)
-
 
 
         #景點照片區域
@@ -328,8 +327,45 @@ def handle_message(event):
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+        #美食主界面
         elif user_message == "吃的":
-            output_message = text_reply.text_reply_message("想找好吃的嗎")
+            output_message = TemplateSendMessage(
+                alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+                template = ButtonsTemplate(
+                    thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
+                    title = "台南美食",
+                    text = "所有的台南佳餚都在這",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "台南美食part1",
+                            text = "台南美食part1"
+                        ),
+                        MessageTemplateAction(
+                            label = "台南美食part2",
+                            text = "台南美食part2"
+                        ),
+                        MessageTemplateAction(
+                            label = "台南點心",
+                            text = "台南點心"
+                        )
+                    ]
+                )
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #美食part1
+        elif user_message == "台南美食part1":
+            output_message = food_carousel_template1()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #美食part2
+        elif user_message == "台南美食part2":
+            output_message = food_carousel_template2()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #點心
+        elif user_message == "台南點心":
+            output_message = dessert_carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -50,6 +50,17 @@ place8 = "夕遊出張所"
 place9 = "台南孔廟"
 place10 = "七股鹽山"
 
+tour_dict = {place1:"赤崁樓",
+             place2:"安平古堡",
+             place3:"奇美博物館",
+             place4:"神農街",
+             place5:"漁光島",
+             place6:"德記洋行",
+             place7:"花園夜市",
+             place8:"夕遊出張所",
+             place9:"台南孔廟",
+             place10:"七股鹽山"}
+
 def tourist_carousel_template():
     output_message = TemplateSendMessage(
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字

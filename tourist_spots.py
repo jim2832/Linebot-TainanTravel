@@ -76,7 +76,7 @@ def carousel_template():
                 ),
                 CarouselColumn( #2
                     thumbnail_image_url = "https://image.cdn-eztravel.com.tw/BIvf9xU550uLpO3D1NYvXGNT4nyO_NgoOh-5hPd4IEQ/g:ce/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvVE5OXzEyMDAzMzQyMTAuanBn.jpg",
-                    title = "f{place2}",
+                    title = f"{place2}",
                     text = "由荷蘭人建造的台灣史上第一座城堡",
                     actions = [
                         URITemplateAction(

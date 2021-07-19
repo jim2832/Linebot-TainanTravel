@@ -523,45 +523,45 @@ def image_carousel_message6():
         template = ImageCarouselTemplate(
             columns = [
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    image_url = "https://i.imgur.com/v5qxQtM.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                        label = "德記洋行",
+                        uri = "https://i.imgur.com/v5qxQtM.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    image_url = "https://i.imgur.com/EvZEQRE.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/398srGx.jpg"
+                        label = "德記洋行",
+                        uri = "https://i.imgur.com/EvZEQRE.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    image_url = "https://i.imgur.com/5Z6Pmwr.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/PUze65H.jpg"
+                        label = "德記洋行",
+                        uri = "https://i.imgur.com/5Z6Pmwr.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    image_url = "https://i.imgur.com/BiV2d7S.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                        label = "德記洋行",
+                        uri = "https://i.imgur.com/BiV2d7S.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    image_url = "https://i.imgur.com/uvKIqeH.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                        label = "德記洋行",
+                        uri = "https://i.imgur.com/uvKIqeH.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    image_url = "https://i.imgur.com/9TV47lz.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                        label = "德記洋行",
+                        uri = "https://i.imgur.com/9TV47lz.jpg"
                     )
                 )
             ]

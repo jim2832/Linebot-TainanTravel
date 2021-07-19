@@ -654,10 +654,10 @@ def image_carousel_message8():
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://lurl.cc/e19bss",
+                    image_url = "https://i.imgur.com/hIwnz3t.jpg",
                     action = URITemplateAction(
                         label = "夕遊出張所",
-                        uri = "https://lurl.cc/e19bss"
+                        uri = "https://i.imgur.com/hIwnz3t.jpg"
                     )
                 ),
                 ImageCarouselColumn(
@@ -688,45 +688,45 @@ def image_carousel_message9():
         template = ImageCarouselTemplate(
             columns = [
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    image_url = "https://i.imgur.com/roebATq.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                        label = "台南孔廟",
+                        uri = "https://i.imgur.com/roebATq.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    image_url = "https://i.imgur.com/xEzAr2M.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/398srGx.jpg"
+                        label = "台南孔廟",
+                        uri = "https://i.imgur.com/xEzAr2M.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    image_url = "https://i.imgur.com/XJqUai2.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/PUze65H.jpg"
+                        label = "台南孔廟",
+                        uri = "https://i.imgur.com/XJqUai2.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    image_url = "https://i.imgur.com/liTMBkc.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                        label = "台南孔廟",
+                        uri = "https://i.imgur.com/liTMBkc.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    image_url = "https://i.imgur.com/RQqDPq5.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                        label = "台南孔廟",
+                        uri = "https://i.imgur.com/RQqDPq5.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    image_url = "https://i.imgur.com/iNLISKe.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                        label = "台南孔廟",
+                        uri = "https://i.imgur.com/iNLISKe.jpg"
                     )
                 )
             ]
@@ -743,45 +743,45 @@ def image_carousel_message10():
         template = ImageCarouselTemplate(
             columns = [
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/yRxl6rd.jpg",
+                    image_url = "https://i.imgur.com/uypnRRM.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/yRxl6rd.jpg"
+                        label = "七股鹽山",
+                        uri = "https://i.imgur.com/uypnRRM.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/398srGx.jpg",
+                    image_url = "https://i.imgur.com/3wqANdE.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/398srGx.jpg"
+                        label = "七股鹽山",
+                        uri = "https://i.imgur.com/3wqANdE.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/PUze65H.jpg",
+                    image_url = "https://i.imgur.com/Llm63sG.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/PUze65H.jpg"
+                        label = "七股鹽山",
+                        uri = "https://i.imgur.com/Llm63sG.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/RvwCe1M.jpg",
+                    image_url = "https://i.imgur.com/XPovbHr.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/RvwCe1M.jpg"
+                        label = "七股鹽山",
+                        uri = "https://i.imgur.com/XPovbHr.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/bH9uIPR.jpg",
+                    image_url = "https://i.imgur.com/5TVe56L.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/bH9uIPR.jpg"
+                        label = "七股鹽山",
+                        uri = "https://i.imgur.com/5TVe56L.jpg"
                     )
                 ),
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/37uUjGk.jpg",
+                    image_url = "https://i.imgur.com/5MG5rbX.jpg",
                     action = URITemplateAction(
-                        label = "赤崁樓",
-                        uri = "https://i.imgur.com/37uUjGk.jpg"
+                        label = "七股鹽山",
+                        uri = "https://i.imgur.com/5MG5rbX.jpg"
                     )
                 )
             ]

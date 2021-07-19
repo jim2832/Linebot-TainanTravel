@@ -354,16 +354,24 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
+#-----------------------------------------------------------------------------
+
         #美食part1
         elif user_message == "台南美食part1":
             output_message = food_carousel_template1()
             line_bot_api.reply_message(event.reply_token, output_message)
 
+        
+
+#-----------------------------------------------------------------------------
+
         #美食part2
         elif user_message == "台南美食part2":
             output_message = food_carousel_template2()
             line_bot_api.reply_message(event.reply_token, output_message)
-        
+
+#-----------------------------------------------------------------------------
+
         #點心
         elif user_message == "台南點心":
             output_message = dessert_carousel_template()

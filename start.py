@@ -25,7 +25,7 @@ import text_reply as text_reply
 #---------------- self define variables ----------------
 from mykey import *
 from tourist_spots import *
-from eat import *
+from food import *
 from drink import *
 
 #---------------- line settings ----------------
@@ -156,7 +156,7 @@ def handle_message(event):
 
         #景點
         elif user_message == "景點":
-            output_message = carousel_template()
+            output_message = tourist_carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
 

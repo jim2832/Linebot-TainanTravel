@@ -361,8 +361,6 @@ def handle_message(event):
             output_message = food_carousel_template1()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        
-
 #-----------------------------------------------------------------------------
 
         #美食part2

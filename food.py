@@ -60,8 +60,6 @@ def food_carousel_template1():
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = CarouselTemplate(
             columns = [
-                #1
-                #邱家小捲米粉
                 CarouselColumn(
                     thumbnail_image_url = "https://candicecity.com/wp-content/uploads/2019/07/P4144607.jpg", #圖片連結
                     title = f"{food1}", #標題
@@ -81,8 +79,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #2
-                #矮仔成蝦仁飯
                 CarouselColumn(
                     thumbnail_image_url = "https://www.yummyday.com.tw/upload/v6/0l6/36474de699494ed297b85dcfeb29a737.jpg", #圖片連結
                     title = f"{food2}", #標題
@@ -102,8 +98,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #3
-                #阿松割包
                 CarouselColumn(
                     thumbnail_image_url = "http://1.bp.blogspot.com/-fogSQPqjjuU/UAYtovVLaxI/AAAAAAAADNA/cuNwHI4XIjc/s1600/IMG_5215.JPG", #圖片連結
                     title = f"{food3}", #標題
@@ -123,8 +117,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #4
-                #文章牛肉湯
                 CarouselColumn(
                     thumbnail_image_url = "https://img.rainieis.tw/uploads/20200330233358_12.jpg", #圖片連結
                     title = f"{food4}", #標題
@@ -144,8 +136,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #5
-                #醇涎坊鍋燒意麵
                 CarouselColumn(
                     thumbnail_image_url = "https://4.bp.blogspot.com/-fXC5rl_Dtx4/XilfkEbLc3I/AAAAAAAAJzQ/3GMFUUz9oFMmkn1U7ArJb5DlzaPzM8UYwCKgBGAsYHg/s1600/IMG_0997.jpg", #圖片連結
                     title = f"{food5}", #標題
@@ -165,8 +155,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #6
-                #勝利早點
                 CarouselColumn(
                     thumbnail_image_url = "https://img.ltn.com.tw/Upload/playing/page/2020/03/05/200305-19193-1-5OuGz.jpg", #圖片連結
                     title = f"{food6}", #標題
@@ -186,8 +174,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #7
-                #無名米糕
                 CarouselColumn(
                     thumbnail_image_url = "https://pic.pimg.tw/imsean/1469108135-953791719.jpg", #圖片連結
                     title = f"{food7}", #標題
@@ -207,8 +193,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #8
-                #王氏魚皮
                 CarouselColumn(
                     thumbnail_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p952/m46619/51c5125714ad81f6c457f4214d0906270c98d83b.jpg", #圖片連結
                     title = f"{food8}", #標題
@@ -228,8 +212,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #9
-                #阿江鱔魚意麵
                 CarouselColumn(
                     thumbnail_image_url = "https://img.rainieis.tw/uploads/20180816160442_76.jpg", #圖片連結
                     title = f"{food9}", #標題
@@ -249,8 +231,6 @@ def food_carousel_template1():
                         )
                     ]
                 ),
-                #10
-                #周氏蝦捲
                 CarouselColumn(
                     thumbnail_image_url = "http://2.bp.blogspot.com/_UA6xx1hhCsQ/SYaaanQbucI/AAAAAAAABas/boIKMS6X0AI/s280/zhous+shrimp+roll.jpg", #圖片連結
                     title = f"{food10}", #標題
@@ -283,8 +263,6 @@ def food_carousel_template2():
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = CarouselTemplate(
             columns = [
-                #11
-                #小杜意麵
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food11}", #標題
@@ -304,8 +282,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #12
-                #富盛號碗粿
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food12}", #標題
@@ -325,8 +301,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #13
-                #福記肉圓
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food13}", #標題
@@ -346,8 +320,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #14
-                #鼎富發豬油拌飯
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food14}", #標題
@@ -367,8 +339,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #15
-                #國華街肉燥飯
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food15}", #標題
@@ -388,8 +358,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #16
-                #丹丹漢堡(成功店)
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food16}", #標題
@@ -409,8 +377,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #17
-                #炸雞洋行
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food17}", #標題
@@ -430,8 +396,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #18
-                #阿明豬心冬粉
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food18}", #標題
@@ -451,8 +415,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #19
-                #赤崁棺材板
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food19}", #標題
@@ -472,8 +434,6 @@ def food_carousel_template2():
                         )
                     ]
                 ),
-                #20
-                #阿堂鹹粥
                 CarouselColumn(
                     thumbnail_image_url = "", #圖片連結
                     title = f"{food20}", #標題

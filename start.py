@@ -159,23 +159,13 @@ def handle_message(event):
             output_message = carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-            place1 = "赤崁樓"
-            place2 = "安平古堡"
-            place3 = "奇美博物館"
-            place4 = "神農街"
-            place5 = "漁光島"
-            place6 = "德記洋行"
-            place7 = "花園夜市"
-            place8 = "夕遊出張所"
-            place9 = "台南孔廟"
-            place10 = "七股鹽山"
 
         #景點位置區域
 
         #1
-        elif user_message == "可由此打開{place1}的google地圖位置":
+        elif user_message ==f"可由此打開{place1}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "{place1}",
+                title = f"{place1}",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99762337852117",
                 longitude = "120.2024704919533"
@@ -184,9 +174,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #2
-        elif user_message == "可由此打開安平古堡的google地圖位置":
+        elif user_message == f"可由此打開{place2}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "安平古堡",
+                title = f"{place2}",
                 address = "台南市安平區國勝路82號",
                 latitude = "23.001593229535548",
                 longitude = "120.1606351263452"
@@ -195,9 +185,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #3
-        elif user_message == "可由此打開奇美博物館的google地圖位置":
+        elif user_message == f"可由此打開{place3}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "奇美博物館",
+                title = f"{place3}",
                 address = "台南市仁德區文華路二段66號",
                 latitude = "22.93480286259137",
                 longitude = "120.2260482551798"
@@ -206,9 +196,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
         
         #4
-        elif user_message == "可由此打開神農街的google地圖位置":
+        elif user_message == f"可由此打開{place4}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "神農街",
+                title = f"{place4}",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99753585895218",
                 longitude = "120.19648398291852"
@@ -217,9 +207,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #5
-        elif user_message == "可由此打開漁光島的google地圖位置":
+        elif user_message == f"可由此打開{place5}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "漁光島",
+                title = f"{place5}",
                 address = "台南市安平區漁光路114號",
                 latitude = "22.98054329215947",
                 longitude = "120.15580504320876"
@@ -228,9 +218,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #6
-        elif user_message == "可由此打開德記洋行的google地圖位置":
+        elif user_message == f"可由此打開{place6}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "德記洋行",
+                title = f"{place6}",
                 address = "台南市安平區古堡街108號",
                 latitude = "23.013119029447406",
                 longitude = "120.16109490409369"
@@ -239,9 +229,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #7
-        elif user_message == "可由此打開花園夜市的google地圖位置":
+        elif user_message == f"可由此打開{place7}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "花園夜市",
+                title = f"{place7}",
                 address = "台南市北區海安路三段533號",
                 latitude = "23.01159041194204",
                 longitude = "120.20039541306427"
@@ -250,9 +240,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #8
-        elif user_message == "可由此打開夕遊出張所的google地圖位置":
+        elif user_message == f"可由此打開{place8}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "夕遊出張所",
+                title = f"{place8}",
                 address = "台南市安平區古堡街196號",
                 latitude = "23.002783289337064",
                 longitude = "120.15633702634503"
@@ -261,9 +251,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #9
-        elif user_message == "可由此打開台南孔廟的google地圖位置":
+        elif user_message == f"可由此打開{place9}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "台南孔廟",
+                title = f"{place9}",
                 address = "台南市中西區南門路2號",
                 latitude = "22.990712678956807",
                 longitude = "120.20431901470467"
@@ -272,9 +262,9 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #10
-        elif user_message == "可由此打開七股鹽山的google地圖位置":
+        elif user_message == f"可由此打開{place10}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "七股鹽山",
+                title = f"{place10}",
                 address = "台南市七股區鹽埕里66號",
                 latitude = "23.154298515853103",
                 longitude = "120.09994515333189"
@@ -287,52 +277,52 @@ def handle_message(event):
         #景點照片區域
 
         #1
-        elif user_message == "{place1}圖片":
+        elif user_message == f"{place1}圖片":
             output_message = image_carousel_message1()
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #2
-        elif user_message == "安平古堡圖片":
+        elif user_message == f"{place2}圖片":
             output_message = image_carousel_message2()
             line_bot_api.reply_message(event.reply_token, output_message)
         
         #3
-        elif user_message == "奇美博物館圖片":
+        elif user_message == f"{place3}圖片":
             output_message = image_carousel_message3()
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #4
-        elif user_message == "神農街圖片":
+        elif user_message == f"{place4}圖片":
             output_message = image_carousel_message4()
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #5
-        elif user_message == "漁光島圖片":
+        elif user_message == f"{place5}圖片":
             output_message = image_carousel_message5()
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #6
-        elif user_message == "德記洋行圖片":
+        elif user_message == f"{place6}圖片":
             output_message = image_carousel_message6()
             line_bot_api.reply_message(event.reply_token, output_message)
         
         #7
-        elif user_message == "花園夜市圖片":
+        elif user_message == f"{place7}圖片":
             output_message = image_carousel_message7()
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #8
-        elif user_message == "夕遊出張所圖片":
+        elif user_message == f"{place8}圖片":
             output_message = image_carousel_message8()
             line_bot_api.reply_message(event.reply_token, output_message)
         
         #9
-        elif user_message == "台南孔廟圖片":
+        elif user_message == f"{place9}圖片":
             output_message = image_carousel_message9()
             line_bot_api.reply_message(event.reply_token, output_message)
         
         #10
-        elif user_message == "七股鹽山圖片":
+        elif user_message == f"{place10}圖片":
             output_message = image_carousel_message10()
             line_bot_api.reply_message(event.reply_token, output_message)
 

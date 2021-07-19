@@ -572,7 +572,7 @@ def image_carousel_message6():
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 #7
-def image_carousel_messag7():
+def image_carousel_message7():
     output_message = TemplateSendMessage(
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = ImageCarouselTemplate(

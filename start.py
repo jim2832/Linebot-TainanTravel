@@ -135,21 +135,238 @@ def handle_message(event):
                     title = "台南旅遊",
                     text = "帶你玩遍美食之都台南",
                     actions = [
-                        MessageTemplateAction( #跳至tourist_spots.py
+                        MessageTemplateAction(
                             label = "景點",
                             text = "景點"
                         ),
-                        MessageTemplateAction( #跳至food.py
+                        MessageTemplateAction(
                             label = "吃的",
                             text = "吃的"
                         ),
-                        MessageTemplateAction( #跳至drink.py
+                        MessageTemplateAction(
                             label = "喝的",
                             text = "喝的"
                         )
                     ]
                 )
             )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        #景點
+        elif user_message == "景點":
+            output_message = tourist_carousel_template()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+
+        #景點位置區域
+
+        #1
+        elif user_message ==f"可由此打開{place1}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place1}",
+                address = "台南市中西區民族路二段212號",
+                latitude = "22.99762337852117",
+                longitude = "120.2024704919533"
+            )
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #2
+        elif user_message == f"可由此打開{place2}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place2}",
+                address = "台南市安平區國勝路82號",
+                latitude = "23.001593229535548",
+                longitude = "120.1606351263452"
+            )
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #3
+        elif user_message == f"可由此打開{place3}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place3}",
+                address = "台南市仁德區文華路二段66號",
+                latitude = "22.93480286259137",
+                longitude = "120.2260482551798"
+            )
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #4
+        elif user_message == f"可由此打開{place4}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place4}",
+                address = "台南市中西區民族路二段212號",
+                latitude = "22.99753585895218",
+                longitude = "120.19648398291852"
+            )
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #5
+        elif user_message == f"可由此打開{place5}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place5}",
+                address = "台南市安平區漁光路114號",
+                latitude = "22.98054329215947",
+                longitude = "120.15580504320876"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == f"可由此打開{place6}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place6}",
+                address = "台南市安平區古堡街108號",
+                latitude = "23.003306864536732",
+                longitude = "120.15982008130227"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #7
+        elif user_message == f"可由此打開{place7}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place7}",
+                address = "台南市北區海安路三段533號",
+                latitude = "23.01159041194204",
+                longitude = "120.20039541306427"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #8
+        elif user_message == f"可由此打開{place8}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place8}",
+                address = "台南市安平區古堡街196號",
+                latitude = "23.002783289337064",
+                longitude = "120.15633702634503"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #9
+        elif user_message == f"可由此打開{place9}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place9}",
+                address = "台南市中西區南門路2號",
+                latitude = "22.990712678956807",
+                longitude = "120.20431901470467"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #10
+        elif user_message == f"可由此打開{place10}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place10}",
+                address = "台南市七股區鹽埕里66號",
+                latitude = "23.154298515853103",
+                longitude = "120.09994515333189"
+            )            
+
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+
+#-----------------------------------------------------------------------------
+        #景點照片區域
+
+        #1
+        elif user_message == f"{place1}圖片":
+            output_message = image_carousel_message1()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #2
+        elif user_message == f"{place2}圖片":
+            output_message = image_carousel_message2()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #3
+        elif user_message == f"{place3}圖片":
+            output_message = image_carousel_message3()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #4
+        elif user_message == f"{place4}圖片":
+            output_message = image_carousel_message4()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #5
+        elif user_message == f"{place5}圖片":
+            output_message = image_carousel_message5()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == f"{place6}圖片":
+            output_message = image_carousel_message6()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #7
+        elif user_message == f"{place7}圖片":
+            output_message = image_carousel_message7()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #8
+        elif user_message == f"{place8}圖片":
+            output_message = image_carousel_message8()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #9
+        elif user_message == f"{place9}圖片":
+            output_message = image_carousel_message9()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #10
+        elif user_message == f"{place10}圖片":
+            output_message = image_carousel_message10()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        #美食主界面
+        elif user_message == "吃的":
+            output_message = TemplateSendMessage(
+                alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+                template = ButtonsTemplate(
+                    thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
+                    title = "台南美食",
+                    text = "所有的台南佳餚都在這",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "台南美食part1",
+                            text = "台南美食part1"
+                        ),
+                        MessageTemplateAction(
+                            label = "台南美食part2",
+                            text = "台南美食part2"
+                        ),
+                        MessageTemplateAction(
+                            label = "台南點心",
+                            text = "台南點心"
+                        )
+                    ]
+                )
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #美食part1
+        elif user_message == "台南美食part1":
+            output_message = food_carousel_template1()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #美食part2
+        elif user_message == "台南美食part2":
+            output_message = food_carousel_template2()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #點心
+        elif user_message == "台南點心":
+            output_message = dessert_carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

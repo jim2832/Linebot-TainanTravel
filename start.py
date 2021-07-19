@@ -159,13 +159,23 @@ def handle_message(event):
             output_message = carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
+            place1 = "赤崁樓"
+            place2 = "安平古堡"
+            place3 = "奇美博物館"
+            place4 = "神農街"
+            place5 = "漁光島"
+            place6 = "德記洋行"
+            place7 = "花園夜市"
+            place8 = "夕遊出張所"
+            place9 = "台南孔廟"
+            place10 = "七股鹽山"
 
         #景點位置區域
 
         #1
-        elif user_message == "可由此打開赤崁樓的google地圖位置":
+        elif user_message == "可由此打開{place1}的google地圖位置":
             output_message = LocationSendMessage(
-                title = "赤崁樓",
+                title = "{place1}",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99762337852117",
                 longitude = "120.2024704919533"
@@ -277,7 +287,7 @@ def handle_message(event):
         #景點照片區域
 
         #1
-        elif user_message == "赤崁樓圖片":
+        elif user_message == "{place1}圖片":
             output_message = image_carousel_message1()
             line_bot_api.reply_message(event.reply_token, output_message)
 

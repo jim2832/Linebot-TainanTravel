@@ -252,7 +252,7 @@ def food_carousel_template1():
                 #10
                 #周氏蝦捲
                 CarouselColumn(
-                    thumbnail_image_url = "http://2.bp.blogspot.com/_UA6xx1hhCsQ/SYaaanQbucI/AAAAAAAABas/boIKMS6X0AI/s280/zhous+shrimp+roll.jpg",
+                    thumbnail_image_url = "https://live.staticflickr.com/4100/4904166650_608292d939_b.jpg",
                     title = f"{food10}",
                     text = "台南必吃經典名產\n推薦料理：炸蝦捲、蝦丸湯",
                     actions = [

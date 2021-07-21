@@ -330,7 +330,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://media-cdn.tripadvisor.com/media/photo-s/0d/f6/b4/d7/caption.jpg", #圖片連結
                     title = f"{food13}", #標題
-                    text = "特製醬料加上Q彈肉圓總是讓福記供不應求\n✏️推薦料理：肉圓(以二粒為基本單位)", #推薦料理
+                    text = "特製醬料加上Q彈肉圓總是供不應求\n✏️推薦料理：肉圓(以二粒為單位)", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -351,7 +351,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://4.bp.blogspot.com/-pBTuW6nyGlI/Wz3y7BZgm3I/AAAAAAAAa4g/7JdT0LZdCs4xF_RaALwKNDh8CxivJHoXQCKgBGAs/s1600/06.jpg", #圖片連結
                     title = f"{food14}", #標題
-                    text = "讓人愛不釋手的生蛋黃和豬油拌飯組合\n✏️推薦料理：豬油拌飯(含生蛋黃)、烤雞肉串", #推薦料理
+                    text = "讓人愛不釋手的生蛋黃和豬油拌飯\n✏️推薦料理：豬油拌飯(含生蛋黃)、烤雞肉串", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -372,7 +372,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://3.bp.blogspot.com/-RgfFRmKSunA/W-RrUSrIGYI/AAAAAAAAgqI/1McdpIrvyGYjVg8WxjCkbsF2QdMIRorrgCKgBGAs/s1600/IMG_7830.jpg", #圖片連結
                     title = f"{food15}", #標題
-                    text = "香飄十里且家喻戶曉的國華街經典\n✏️推薦料理：肉燥飯、魚鬆飯、虱目魚粥", #推薦料理
+                    text = "香飄十里且家喻戶曉的國華街經典\n✏️推薦料理：肉燥飯、魚鬆飯", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -393,7 +393,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://hululu.tw/wp-content/uploads/20200510000540_51.jpg", #圖片連結
                     title = f"{food16}", #標題
-                    text = "紅遍全台灣的南部僅有可口早/午餐\n✏️推薦料理：4號餐、9號餐、香酥米糕", #推薦料理
+                    text = "紅遍全台灣的南部僅有可口早/午餐\n✏️推薦料理：4號餐、9號餐", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -414,7 +414,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://i.imgur.com/Fxx3cGX.jpg", #圖片連結
                     title = f"{food17}", #標題
-                    text = "外酥內軟的多汁炸雞總是讓人吃的津津有味\n✏️推薦料理：八兩雞、黃金魚條", #推薦料理
+                    text = "外酥內軟的炸雞總讓人吃的津津有味\n✏️推薦料理：八兩雞、黃金魚條", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -435,7 +435,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://i.imgur.com/2yxHQ8p.jpg", #圖片連結
                     title = f"{food18}", #標題
-                    text = "台南保安路的超人氣排隊美食\n✏️推薦料理：豬心冬粉、麻油豬心、綜合麵線", #推薦料理
+                    text = "台南保安路的超人氣排隊美食\n✏️推薦料理：豬心冬粉、麻油豬心", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -456,7 +456,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://img.rainieis.tw/uploads/20180212120804_61.jpg", #圖片連結
                     title = f"{food19}", #標題
-                    text = "巷弄間的70年台南名產兼美食\n✏️推薦料理：正老牌棺材板、軟燒花枝", #推薦料理
+                    text = "巷弄間的70年台南名產兼美食\n✏️推薦料理：正老牌棺材板", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",

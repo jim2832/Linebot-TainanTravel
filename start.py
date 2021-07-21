@@ -152,39 +152,35 @@ def handle_message(event):
         #     )
         #     line_bot_api.reply_message(event.reply_token, output_message)
 
-        # elif user_message == "台南旅遊" or "台南" or "旅遊":
-        #     output_message = ImagemapSendMessage(
-        #         base_url = "https://i.imgur.com/H8eg1e0.jpg",
-        #         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
-        #         base_size = BaseSize(height = 2000, width = 2000),
-        #         actions =[
-        #             #1
-        #             MessageImagemapAction(
-        #                 label = "景點",
-        #                 text = "景點",
-        #                 area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
-        #             ),
-        #             #2
-        #             MessageImagemapAction(
-        #                 label = "吃的",
-        #                 text = "吃的",
-        #                 area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
-        #             ),
-        #             #3
-        #             MessageImagemapAction(
-        #                 label = "喝的",
-        #                 text = "喝的",
-        #                 area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
-        #             ),
-        #             #4
-        #             MessageImagemapAction(
-        #                 label = "咖啡廳",
-        #                 text = "咖啡廳",
-        #                 area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
-        #             )
-        #         ]
-        #     )
-        #     line_bot_api.reply_message(event.reply_token, output_message)
+        elif user_message == "台南旅遊":
+            output_message = ImagemapSendMessage(
+                base_url = "https://i.imgur.com/H8eg1e0.jpg",
+                alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+                base_size = BaseSize(height = 2000, width = 2000),
+                actions =[
+                    #1
+                    MessageImagemapAction(
+                        text = "景點",
+                        area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
+                    ),
+                    #2
+                    MessageImagemapAction(
+                        text = "吃的",
+                        area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
+                    ),
+                    #3
+                    MessageImagemapAction(
+                        text = "喝的",
+                        area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
+                    ),
+                    #4
+                    MessageImagemapAction(
+                        text = "咖啡廳",
+                        area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
+                    )
+                ]
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

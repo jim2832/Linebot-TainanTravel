@@ -154,29 +154,29 @@ def handle_message(event):
 
         elif user_message == "台南旅遊" or "台南" or "旅遊":
             output_message = ImagemapSendMessage(
-                base_url = "https://i.imgur.com/mWTRRGz.jpg#",
+                base_url = "https://i.imgur.com/H8eg1e0.jpg",
                 alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
-                base_size = Basesize(height = 1500, width = 1500),
+                base_size = Basesize(height = 2000, width = 2000),
                 actions =[
                     #1
                     MessageImagemapAction(
                         text = "景點",
-                        area = ImagemapArea(x = 0, y= 0, width = 750, height = 750)
+                        area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
                     ),
                     #2
                     MessageImagemapAction(
                         text = "吃的",
-                        area = ImagemapArea(x = 750, y= 0, width = 750, height = 750)
+                        area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
                     ),
                     #3
                     MessageImagemapAction(
                         text = "喝的",
-                        area = ImagemapArea(x = 0, y= 750, width = 750, height = 750)
+                        area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
                     ),
                     #4
                     MessageImagemapAction(
                         text = "咖啡廳",
-                        area = ImagemapArea(x = 750, y= 750, width = 750, height = 750)
+                        area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
                     )
                 ]
             )

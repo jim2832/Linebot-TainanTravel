@@ -1,38 +1,3 @@
-from flask import Flask, request, abort
-
-from linebot import (
-    LineBotApi, WebhookHandler
-)
-from linebot.exceptions import (
-    InvalidSignatureError
-)
-from linebot.models import *
-
-from PIL import Image
-from io import StringIO
-
-import requests
-import random
-import json
-import math
-import time
-import datetime
-
-#---------------- self define module ----------------
-import text_push as text_push
-import text_reply as text_reply
-
-#---------------- self define variables ----------------
-from mykey import *
-
-#---------------- line settings ----------------
-# Channel Access Token
-line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
-# Channel Secret
-handler = WebhookHandler(LINE_CHANNEL_SECRET)
-
-#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
 #組圖訊息
 def imagemap_message():
     output_message = ImagemapSendMessage(
@@ -81,6 +46,28 @@ def imagemap_message():
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
+#確認介面訊息
+def Confirm_Template():
+    output_message = TemplateMessage(
+        alt_text = "是否註冊成為會員？",
+        template = Confirm_Template(
+            text = "是否註冊成會員？",
+            actions = [
+                PostbackTemplateAction(
+                    label = "馬上註冊",
+                    text = "註冊會員",
+                    data = "會員註冊"
+                ),
+                MessageTemplateAction(
+                    label = "查詢其他功能",
+                    text = "查詢其他功能"
+                )
+            ]
+        )
+    )
+    return output_message
+
+
 #按鈕介面訊息
 def button_message():
     output_message = TemplateSendMessage(
@@ -111,26 +98,6 @@ def button_message():
     )
     return output_message
 
-#確認介面訊息
-def Confirm_Template():
-    output_message = TemplateMessage(
-        alt_text = "是否註冊成為會員？",
-        template = Confirm_Template(
-            text = "是否註冊成會員？",
-            actions = [
-                PostbackTemplateAction(
-                    label = "馬上註冊",
-                    text = "註冊會員",
-                    data = "會員註冊"
-                ),
-                MessageTemplateAction(
-                    label = "查詢其他功能",
-                    text = "查詢其他功能"
-                )
-            ]
-        )
-    )
-    return output_message
 
 #多頁訊息(旋轉木馬)
 def Carousel_Template(): #最多十組
@@ -215,6 +182,7 @@ def Carousel_Template(): #最多十組
         ]
     )
     return output_message
+
 
 #多頁圖片(旋轉木馬圖片)
 def image_carousel_message():

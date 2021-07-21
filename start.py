@@ -127,30 +127,64 @@ def handle_message(event):
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #首頁
-        elif user_message == "台南旅遊":
-            output_message = TemplateSendMessage(
+        # elif user_message == "台南旅遊":
+        #     output_message = TemplateSendMessage(
+        #         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        #         template = ButtonsTemplate(
+        #             thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
+        #             title = "台南旅遊",
+        #             text = "帶你玩遍美食之都台南",
+        #             actions = [
+        #                 MessageTemplateAction(
+        #                     label = "景點",
+        #                     text = "景點"
+        #                 ),
+        #                 MessageTemplateAction(
+        #                     label = "吃的",
+        #                     text = "吃的"
+        #                 ),
+        #                 MessageTemplateAction(
+        #                     label = "喝的",
+        #                     text = "喝的"
+        #                 )
+        #             ]
+        #         )
+        #     )
+        #     line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "台南旅遊" or "台南" or "旅遊":
+            output_message = ImagemapSendMessage(
+                base_url = "https://i.imgur.com/mWTRRGz.jpg",
                 alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
-                template = ButtonsTemplate(
-                    thumbnail_image_url = "https://nurseilife.cc/wp-content/uploads/20170526115242_44.jpg",
-                    title = "台南旅遊",
-                    text = "帶你玩遍美食之都台南",
-                    actions = [
-                        MessageTemplateAction(
-                            label = "景點",
-                            text = "景點"
-                        ),
-                        MessageTemplateAction(
-                            label = "吃的",
-                            text = "吃的"
-                        ),
-                        MessageTemplateAction(
-                            label = "喝的",
-                            text = "喝的"
-                        )
-                    ]
-                )
+                base_size = Basesize(height = 1500, width = 1500),
+                actions =[
+                    #1
+                    MessageImagemapAction(
+                        label = "景點",
+                        text = "景點",
+                        area = ImagemapArea(x = 0, y= 0, width = 750, height = 750)
+                    ),
+                    #2
+                    MessageImagemapAction(
+                        label = "吃的",
+                        text = "吃的",
+                        area = ImagemapArea(x = 750, y= 0, width = 750, height = 750)
+                    ),
+                    #3
+                    MessageImagemapAction(
+                        label = "喝的",
+                        text = "喝的",
+                        area = ImagemapArea(x = 0, y= 750, width = 750, height = 750)
+                    ),
+                    #4
+                    MessageImagemapAction(
+                        label = "咖啡廳",
+                        text = "咖啡廳",
+                        area = ImagemapArea(x = 750, y= 750, width = 750, height = 750)
+                    )
+                ]
             )
-            line_bot_api.reply_message(event.reply_token, output_message)
+            return output_message
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

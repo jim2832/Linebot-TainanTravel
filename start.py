@@ -153,8 +153,7 @@ def handle_message(event):
         #     line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == "台南旅遊":
-            output_message1 = text_reply.text_reply_message("您好，請問想查詢什麼呢？")
-            output_message2 = ImagemapSendMessage(
+            output_message = ImagemapSendMessage(
                 base_url = "https://i.imgur.com/H8eg1e0.jpg",
                 alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
                 base_size = BaseSize(height = 2000, width = 2000),
@@ -181,8 +180,7 @@ def handle_message(event):
                     )
                 ]
             )
-            line_bot_api.reply_message(event.reply_token, output_message1)
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

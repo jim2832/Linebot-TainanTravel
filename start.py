@@ -156,7 +156,7 @@ def handle_message(event):
 
         #景點
         elif user_message == "景點":
-            output_message = food_carousel_template1()
+            output_message = tourist_carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
 

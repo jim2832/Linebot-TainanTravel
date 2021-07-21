@@ -76,7 +76,7 @@ def food_carousel_template1():
                             text = f"{food1}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food1}的google地圖位置"
                         )
                     ]
@@ -97,7 +97,7 @@ def food_carousel_template1():
                             text = f"{food2}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food2}的google地圖位置"
                         )
                     ]
@@ -118,7 +118,7 @@ def food_carousel_template1():
                             text = f"{food3}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food3}的google地圖位置"
                         )
                     ]
@@ -139,7 +139,7 @@ def food_carousel_template1():
                             text = f"{food4}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food4}的google地圖位置"
                         )
                     ]
@@ -160,7 +160,7 @@ def food_carousel_template1():
                             text = f"{food5}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food5}的google地圖位置"
                         )
                     ]
@@ -181,7 +181,7 @@ def food_carousel_template1():
                             text = f"{food6}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food6}的google地圖位置"
                         )
                     ]
@@ -202,7 +202,7 @@ def food_carousel_template1():
                             text = f"{food7}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food7}的google地圖位置"
                         )
                     ]
@@ -223,7 +223,7 @@ def food_carousel_template1():
                             text = f"{food8}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food8}的google地圖位置"
                         )
                     ]
@@ -244,7 +244,7 @@ def food_carousel_template1():
                             text = f"{food9}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food9}的google地圖位置"
                         )
                     ]
@@ -265,7 +265,7 @@ def food_carousel_template1():
                             text = f"{food10}營業時間"
                         ),
                         MessageTemplateAction(
-                            label = "點我看地圖位置",
+                            label = "點我看地圖",
                             text = f"可由此打開{food10}的google地圖位置"
                         )
                     ]

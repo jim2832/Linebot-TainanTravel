@@ -543,7 +543,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food7}營業時間":
-            output_message = text_reply.text_reply_message(f"{food7}營業時間\n\n星期一：\n09:30–15:00, 17:00–20:00\n星期二：\n09:30–15:00, 17:00–20:00\n星期三：\n09:30–15:00, 17:00–20:00\n星期四：\n09:30–15:00, 17:00–20:00\n星期五：\n09:30–15:00, 17:00–20:00\n星期六：\n09:30–15:00, 17:00–20:00\n星期日：\n休息")
+            output_message = text_reply.text_reply_message(f"{food7}營業時間\n\n星期一：\n09:30–15:00, 17:00–20:00\n星期二：\n09:30–15:00, 17:00–20:00\n星期三：\n09:30–15:00, 17:00–20:00\n星期四：\n09:30–15:00, 17:00–20:00\n星期五：\n09:30–15:00, 17:00–20:00\n星期六：\n09:30–15:00, 17:00–20:00\n星期日：休息")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food8}營業時間":
@@ -551,7 +551,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food9}營業時間":
-            output_message = text_reply.text_reply_message(f"{food9}營業時間\n\n星期一：休息 星期二：17:00–00:00\n星期三：17:00–00:00\n星期四：17:00–00:00\n星期五：17:00–00:00\n星期六：17:00–00:00\n星期日：17:00–00:00")
+            output_message = text_reply.text_reply_message(f"{food9}營業時間\n\n星期一：休息\n星期二：17:00–00:00\n星期三：17:00–00:00\n星期四：17:00–00:00\n星期五：17:00–00:00\n星期六：17:00–00:00\n星期日：17:00–00:00")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food10}營業時間":
@@ -563,11 +563,11 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food12}營業時間":
-            output_message = text_reply.text_reply_message(f"{food12}營業時間\n\n星期一：07:00–17:30\n星期二：07:00–17:30\n星期三：07:00–17:30\n星期四：休息 星期五：07:00–17:30\n星期六：07:00–17:30\n星期日：07:00–17:30")
+            output_message = text_reply.text_reply_message(f"{food12}營業時間\n\n星期一：07:00–17:30\n星期二：07:00–17:30\n星期三：07:00–17:30\n星期四：休息\n星期五：07:00–17:30\n星期六：07:00–17:30\n星期日：07:00–17:30")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food13}營業時間":
-            output_message = text_reply.text_reply_message(f"{food13}營業時間\n\n星期一：休息 星期二：06:30–18:30\n星期三：06:30–18:30\n星期四：06:30–18:30\n星期五：06:30–18:30\n星期六：06:30–18:30\n星期日：06:30–18:30")
+            output_message = text_reply.text_reply_message(f"{food13}營業時間\n\n星期一：休息\n星期二：06:30–18:30\n星期三：06:30–18:30\n星期四：06:30–18:30\n星期五：06:30–18:30\n星期六：06:30–18:30\n星期日：06:30–18:30")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food14}營業時間":
@@ -575,15 +575,15 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food15}營業時間":
-            output_message = text_reply.text_reply_message(f"{food15}營業時間\n\n星期一：07:00–14:30\n星期二：07:00–14:30\n星期三：07:00–14:30\n星期四：休息 星期五：07:00–14:30\n星期六：07:00–14:30\n星期日：07:00–14:30")
+            output_message = text_reply.text_reply_message(f"{food15}營業時間\n\n星期一：07:00–14:30\n星期二：07:00–14:30\n星期三：07:00–14:30\n星期四：休息\n星期五：07:00–14:30\n星期六：07:00–14:30\n星期日：07:00–14:30")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food16}營業時間":
-            output_message = text_reply.text_reply_message(f"{food16}營業時間\n\n星期一：07:00–22:00\n星期二：07:00–22:00\n星期三：休息 星期四：07:00–22:00\n星期五：07:00–22:00\n星期六：07:00–22:00\n星期日：07:00–22:00")
+            output_message = text_reply.text_reply_message(f"{food16}營業時間\n\n星期一：07:00–22:00\n星期二：07:00–22:00\n星期三：休息\n星期四：07:00–22:00\n星期五：07:00–22:00\n星期六：07:00–22:00\n星期日：07:00–22:00")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food17}營業時間":
-            output_message = text_reply.text_reply_message(f"{food17}營業時間\n\n星期一：休息 星期二：休息 星期三：12:00–18:00\n星期四：12:00–18:00\n星期五：12:00–18:00\n星期六：12:00–18:00\n星期日：12:00–18:00")
+            output_message = text_reply.text_reply_message(f"{food17}營業時間\n\n星期一：休息\n星期二：休息\n星期三：12:00–18:00\n星期四：12:00–18:00\n星期五：12:00–18:00\n星期六：12:00–18:00\n星期日：12:00–18:00")
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food18}營業時間":
@@ -595,7 +595,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food20}營業時間":
-            output_message = text_reply.text_reply_message(f"{food20}營業時間\n\n星期一：05:00–12:30\n星期二：休息 星期三：05:00–12:30\n星期四：05:00–12:30\n星期五：05:00–12:30\n星期六：05:00–12:30\n星期日：05:00–12:30")
+            output_message = text_reply.text_reply_message(f"{food20}營業時間\n\n星期一：05:00–12:30\n星期二：休息\n星期三：05:00–12:30\n星期四：05:00–12:30\n星期五：05:00–12:30\n星期六：05:00–12:30\n星期日：05:00–12:30")
             line_bot_api.reply_message(event.reply_token, output_message)
 
             #-------------------------------------------------------------

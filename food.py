@@ -61,17 +61,17 @@ def food_carousel_template1():
         template = CarouselTemplate(
             columns = [
                 CarouselColumn( #1
-                    thumbnail_image_url = "https://pic.pimg.tw/whuy123/1523332170-611241936.jpg",
+                    thumbnail_image_url = "https://candicecity.com/wp-content/uploads/2019/07/P4144607.jpg",
                     title = f"{food1}",
-                    text = "歷史悠久的荷治時期行政中心",
+                    text = "國華街上遠近馳名的小捲米粉\n推薦料理：小捲米粉、小捲湯",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food1}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/674"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food1}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food1}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -80,17 +80,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #2
-                    thumbnail_image_url = "https://image.cdn-eztravel.com.tw/BIvf9xU550uLpO3D1NYvXGNT4nyO_NgoOh-5hPd4IEQ/g:ce/aHR0cHM6Ly92YWNhdGlvbi5jZG4tZXp0cmF2ZWwuY29tLnR3L2ltZy9WRFIvVE5OXzEyMDAzMzQyMTAuanBn.jpg",
+                    thumbnail_image_url = "https://www.yummyday.com.tw/upload/v6/0l6/36474de699494ed297b85dcfeb29a737.jpg",
                     title = f"{food2}",
-                    text = "由荷蘭人建造的台灣史上第一座城堡",
+                    text = "讓人吃完齒頰生香的蝦仁飯\n推薦料理：蝦仁飯、香煎鴨蛋",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food2}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/671"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food2}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food2}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -99,17 +99,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #3
-                    thumbnail_image_url = "https://www.chimeimuseum.org/uploads/sliders/60da70ae81eaa.jpg",
+                    thumbnail_image_url = "http://1.bp.blogspot.com/-fogSQPqjjuU/UAYtovVLaxI/AAAAAAAADNA/cuNwHI4XIjc/s1600/IMG_5215.JPG",
                     title = f"{food3}",
-                    text = "擁有西洋藝術、樂器、兵器等的知名博物館",
+                    text = "麵皮、滷肉、酸菜和花生粉的絕妙組合\n推薦料理：普通包、瘦肉包",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food3}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/572"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food3}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food3}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -118,17 +118,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #4
-                    thumbnail_image_url = "https://cc.tvbs.com.tw/img/program/upload/2020/02/05/20200205163001-ba4cb2f0.jpg",
+                    thumbnail_image_url = "https://img.rainieis.tw/uploads/20200330233358_12.jpg",
                     title = f"{food4}",
-                    text = "以街底主祀神農氏之藥王廟為名的創新老街",
+                    text = "全台灣人都聽過的知名牛肉湯\n推薦菜色：招牌牛肉湯、牛肉燥飯",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food4}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/1351"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food4}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food4}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -137,17 +137,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #5
-                    thumbnail_image_url = "https://img.natgeomedia.com/userfiles/PhotoContest/925/sm1920/2019090977389193.jpg",
+                    thumbnail_image_url = "https://4.bp.blogspot.com/-fXC5rl_Dtx4/XilfkEbLc3I/AAAAAAAAJzQ/3GMFUUz9oFMmkn1U7ArJb5DlzaPzM8UYwCKgBGAsYHg/s1600/IMG_0997.jpg",
                     title = f"{food5}",
-                    text = "接近傍晚的夕陽總是引人入勝\n是個讓外地遊客流連忘返的美麗沙灘",
+                    text = "戶限為穿的古早味美食\n推薦料理：鍋燒意麵、鍋燒冬粉",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food5}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/5520"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food5}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food5}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -156,17 +156,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #6
-                    thumbnail_image_url = "https://tainan.funcard.com.tw/imageCache/tainan/JnLv_600x400.jpg",
+                    thumbnail_image_url = "https://img.ltn.com.tw/Upload/playing/page/2020/03/05/200305-19193-1-5OuGz.jpg",
                     title = f"{food6}",
-                    text = "清領時期繁盛一時的重要商業據點",
+                    text = "成大學生和附近居民最愛的早餐店\n推薦料理：沙拉蛋餅、豬排吐司夾蛋",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food6}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/687"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food6}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food6}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -175,17 +175,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #7
-                    thumbnail_image_url = "https://4.bp.blogspot.com/-0kz6Q2pW1wk/Xiq0YZ-cKlI/AAAAAAAAJ6U/5rTRQS-99gk2LmMV9VJia79EjcalGfIPQCKgBGAsYHg/s1600/IMG_8444.jpg",
+                    thumbnail_image_url = "https://pic.pimg.tw/imsean/1469108135-953791719.jpg",
                     title = f"{food7}",
-                    text = "台灣最知名和最熱鬧的夜市之一",
+                    text = "紅遍大街小巷的八珍玉食\n推薦料理：米糕、魚肚麵線",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food7}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/5572"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food7}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food7}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -194,17 +194,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #8
-                    thumbnail_image_url = "https://pic.pimg.tw/anrine910070/1601175205-2788673474-g.jpg",
+                    thumbnail_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p952/m46619/51c5125714ad81f6c457f4214d0906270c98d83b.jpg",
                     title = f"{food8}",
-                    text = "擁有專屬生日採鹽的原日式試鹽工廠",
+                    text = "令人大快朵頤的海味專賣店\n推薦料理：魚皮湯、魯魚肚",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food8}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/1323"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food8}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food8}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -213,17 +213,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #9
-                    thumbnail_image_url = "https://photo.travelking.com.tw/scenery/98E3B96F-21E9-41AD-8193-31840E021733_e.jpg",
+                    thumbnail_image_url = "https://img.rainieis.tw/uploads/20180816160442_76.jpg",
                     title = f"{food9}",
-                    text = "具有三百多年歷史的文化古都核心",
+                    text = "乾炒焦香又爽脆可口的佳餚\n推薦料理：冠軍乾炒鱔魚意麵、鱔魚米粉湯",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food9}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/800"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food9}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food9}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
@@ -232,17 +232,17 @@ def food_carousel_template1():
                     ]
                 ),
                 CarouselColumn( #10
-                    thumbnail_image_url = "https://www.twtainan.net/image/13910/1024x768",
+                    thumbnail_image_url = "http://2.bp.blogspot.com/_UA6xx1hhCsQ/SYaaanQbucI/AAAAAAAABas/boIKMS6X0AI/s280/zhous+shrimp+roll.jpg",
                     title = f"{food10}",
-                    text = "以鹽為最大特色的高聳壯觀鹽山",
+                    text = "台南必吃經典名產\n推薦料理：炸蝦捲、蝦丸湯",
                     actions = [
                         MessageTemplateAction(
                             label = f"{food10}",
                             text = "https://www.twtainan.net/zh-tw/attractions/detail/471"
                         ),
                         MessageTemplateAction(
-                            label = "點我看景點圖片",
-                            text = f"{food10}圖片"
+                            label = "點我看營業時間",
+                            text = f"{food10}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",

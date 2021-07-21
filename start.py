@@ -154,7 +154,7 @@ def handle_message(event):
 
         elif user_message == "台南旅遊" or "台南" or "旅遊":
             output_message = ImagemapSendMessage(
-                base_url = "https://i.imgur.com/H8eg1e0.jpg",
+                base_url = "https://i.imgur.com/H8eg1e0.jpg#",
                 alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
                 base_size = Basesize(height = 2000, width = 2000),
                 actions =[

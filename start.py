@@ -160,21 +160,25 @@ def handle_message(event):
                 actions =[
                     #1
                     MessageImagemapAction(
+                        label = "景點",
                         text = "景點",
                         area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
                     ),
                     #2
                     MessageImagemapAction(
+                        label = "吃的",
                         text = "吃的",
                         area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
                     ),
                     #3
                     MessageImagemapAction(
+                        label = "喝的",
                         text = "喝的",
                         area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
                     ),
                     #4
                     MessageImagemapAction(
+                        label = "咖啡廳",
                         text = "咖啡廳",
                         area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
                     )

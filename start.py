@@ -756,8 +756,8 @@ def handle_message(event):
             output_message = LocationSendMessage(
                 title = f"{food17}",
                 address = "台南市中西區國華街三段22號",
-                latitude = "22.993424898062585",
-                longitude = "120.19754191053616"
+                latitude = "22.99341779274471",
+                longitude = "120.19754275895937"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -766,8 +766,8 @@ def handle_message(event):
             output_message = LocationSendMessage(
                 title = f"{food18}",
                 address = "台南市中西區保安路72號",
-                latitude = "22.990696347559567",
-                longitude = "120.19620502823015"
+                latitude = "22.990495165451254",
+                longitude = "120.19612642519014"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -776,8 +776,8 @@ def handle_message(event):
             output_message = LocationSendMessage(
                 title = f"{food19}",
                 address = "台南市中西區中正路康樂市場180號",
-                latitude = "22.992518455938086",
-                longitude = "120.19615985521696"
+                latitude = "22.992374990454337",
+                longitude = "120.19615810739693"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -786,8 +786,8 @@ def handle_message(event):
             output_message = LocationSendMessage(
                 title = f"{food20}",
                 address = "台南市中西區西門路一段728號",
-                latitude = "22.990158601829926",
-                longitude = "120.19791038220367"
+                latitude = "22.98996871769685",
+                longitude = "120.19788844000415"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 

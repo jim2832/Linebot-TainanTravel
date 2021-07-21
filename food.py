@@ -351,7 +351,7 @@ def food_carousel_template2():
                 CarouselColumn(
                     thumbnail_image_url = "https://4.bp.blogspot.com/-pBTuW6nyGlI/Wz3y7BZgm3I/AAAAAAAAa4g/7JdT0LZdCs4xF_RaALwKNDh8CxivJHoXQCKgBGAs/s1600/06.jpg", #圖片連結
                     title = f"{food14}", #標題
-                    text = "讓人愛不釋手的生蛋黃和豬油拌飯\n✏️推薦料理：豬油拌飯(含生蛋黃)、烤雞肉串", #推薦料理
+                    text = "讓人愛不釋手的生蛋黃和豬油拌飯\n✏️推薦料理：豬油拌飯(含生蛋黃)", #推薦料理
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",

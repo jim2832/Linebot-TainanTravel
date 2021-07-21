@@ -354,21 +354,253 @@ def handle_message(event):
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
-#-----------------------------------------------------------------------------
+    #---------------------------------------------------------------------
 
         #美食part1
         elif user_message == "台南美食part1":
             output_message = food_carousel_template1()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-#-----------------------------------------------------------------------------
+    #----------------------------------------------------------------------
 
         #美食part2
         elif user_message == "台南美食part2":
             output_message = food_carousel_template2()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-#-----------------------------------------------------------------------------
+    #----------------------------------------------------------------------
+
+
+
+            #-------------------------------------------------------------
+
+            #菜單
+        elif user_message == f"{food1}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i.imgur.com/4pw7i8S.jpg",
+                preview_image_url = "https://i.imgur.com/4pw7i8S.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food2}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.rainieis.tw/uploads/20180211203240_42.jpg",
+                preview_image_url = "https://img.rainieis.tw/uploads/20180211203240_42.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food3}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/tainanlohas/1415102681-4123707573.jpg",
+                preview_image_url = "https://pic.pimg.tw/tainanlohas/1415102681-4123707573.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food4}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://fengtaiwanway.com/wp-content/uploads/pixnet/1464808199-26107633.jpg",
+                preview_image_url = "https://fengtaiwanway.com/wp-content/uploads/pixnet/1464808199-26107633.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food5}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/nikitarh/1606665478-1026621535-g_n.jpg",
+                preview_image_url = "https://pic.pimg.tw/nikitarh/1606665478-1026621535-g_n.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food6}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/matsurica/4bf3f7ec949f7.jpg",
+                preview_image_url = "https://pic.pimg.tw/matsurica/4bf3f7ec949f7.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food7}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.bopomo.tw/20190305233812_61.jpg",
+                preview_image_url = "https://img.bopomo.tw/20190305233812_61.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food8}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://images.zi.org.tw/bigfang/2020/09/15165908/1600160347-bf78e344a5b5b63be889d19218eb6be2.jpg",
+                preview_image_url = "https://images.zi.org.tw/bigfang/2020/09/15165908/1600160347-bf78e344a5b5b63be889d19218eb6be2.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food9}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i.imgur.com/I1y3CAm.jpg",
+                preview_image_url = "https://i.imgur.com/I1y3CAm.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food10}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/131766081_1751405925021066_2159747408668762709_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=a5PNNlgVa_0AX8AawrR&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=a06711c4688174efe464754ecb19d0e0&oe=60FC98FF",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/131766081_1751405925021066_2159747408668762709_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=a5PNNlgVa_0AX8AawrR&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=a06711c4688174efe464754ecb19d0e0&oe=60FC98FF"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food11}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://4.bp.blogspot.com/-yOzQNhbI4aQ/XoBuboSpDsI/AAAAAAAAOqs/mi6VjloP1akm49P5Feez3ixOgM02ygXjwCKgBGAsYHg/s1600/IMG_2672.jpg",
+                preview_image_url = "https://4.bp.blogspot.com/-yOzQNhbI4aQ/XoBuboSpDsI/AAAAAAAAOqs/mi6VjloP1akm49P5Feez3ixOgM02ygXjwCKgBGAsYHg/s1600/IMG_2672.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food12}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.rainieis.tw/uploads/20180212114310_48.jpg",
+                preview_image_url = "https://img.rainieis.tw/uploads/20180212114310_48.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food13}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.13shaniu.tw/uploads/20190721233842_54.jpeg",
+                preview_image_url = "https://img.13shaniu.tw/uploads/20190721233842_54.jpeg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food14}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://sillybaby.tw/wp-content/uploads/20180510115225_38.jpg",
+                preview_image_url = "https://sillybaby.tw/wp-content/uploads/20180510115225_38.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food15}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://3.bp.blogspot.com/-lRJyFRbEn2c/W-RrUQ0QUII/AAAAAAAAgqI/bONSCYpIaksmZD6NRrzfRk_NgA0JPn59gCKgBGAs/s1600/IMG_7797.jpg",
+                preview_image_url = "https://3.bp.blogspot.com/-lRJyFRbEn2c/W-RrUQ0QUII/AAAAAAAAgqI/bONSCYpIaksmZD6NRrzfRk_NgA0JPn59gCKgBGAs/s1600/IMG_7797.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food16}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/133250809_3597804996939301_1854083568135046080_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=-pQMW5XjPLUAX_MPySk&_nc_ht=scontent.ftpe10-1.fna&oh=62be5f40928f5d3a2fa5a21890236084&oe=60FC7D44",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/133250809_3597804996939301_1854083568135046080_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=-pQMW5XjPLUAX_MPySk&_nc_ht=scontent.ftpe10-1.fna&oh=62be5f40928f5d3a2fa5a21890236084&oe=60FC7D44"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food17}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/186528711_6049655938385449_4302705472193818662_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0gbsHfVco7UAX8DE_mJ&_nc_ht=scontent.ftpe10-1.fna&oh=b45fa57fa1f10cd5200d51a4a94559f3&oe=60FD6060",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/186528711_6049655938385449_4302705472193818662_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0gbsHfVco7UAX8DE_mJ&_nc_ht=scontent.ftpe10-1.fna&oh=b45fa57fa1f10cd5200d51a4a94559f3&oe=60FD6060"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food18}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://lh3.googleusercontent.com/zebMrQBQ5Rp4Fp_jM9eZJ_ZbC011ePVodvu40cp5xEjc7jxzbSrREwYJMEj0330Fq1ITg2Pz-OqtOIlL0CiEDUEOfRCwu3g=s600",
+                preview_image_url = "https://lh3.googleusercontent.com/zebMrQBQ5Rp4Fp_jM9eZJ_ZbC011ePVodvu40cp5xEjc7jxzbSrREwYJMEj0330Fq1ITg2Pz-OqtOIlL0CiEDUEOfRCwu3g=s600"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food19}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.rainieis.tw/uploads/20180212120801_68.jpg",
+                preview_image_url = "https://img.rainieis.tw/uploads/20180212120801_68.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food20}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.rainieis.tw/uploads/20200330234808_8.jpg",
+                preview_image_url = "https://img.rainieis.tw/uploads/20200330234808_8.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+            #-------------------------------------------------------------
+
+            #營業時間
+        elif user_message == f"{food1}營業時間":
+            output_message = text_reply.text_reply_message("星期一 休息\n星期二 休息\n星期三 11:00–17:00\n星期四 11:00–17:00\n星期五 11:00–17:00\n星期六 11:00–17:00\n星期日 11:00–17:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food2}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food3}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food4}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food5}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food6}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food7}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food8}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food9}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food10}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food11}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food12}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food13}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food14}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food15}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food16}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food17}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food18}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food19}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{food20}營業時間":
+            output_message = text_reply.text_reply_message("")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+            #-------------------------------------------------------------
+
+            #地圖位置
 
         #點心
         elif user_message == "台南點心":

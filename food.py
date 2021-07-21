@@ -233,7 +233,7 @@ def food_carousel_template1():
                 CarouselColumn(
                     thumbnail_image_url = "https://img.rainieis.tw/uploads/20180816160442_76.jpg",
                     title = f"{food9}",
-                    text = "乾炒焦香又爽脆可口的佳餚\n✏️推薦料理：冠軍乾炒鱔魚意麵",
+                    text = "乾炒焦香又爽脆可口的佳餚\n✏️推薦料理：鱔魚意麵、鱔魚米粉",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",

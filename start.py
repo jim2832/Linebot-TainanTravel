@@ -163,22 +163,22 @@ def handle_message(event):
                 actions =[
                     #1
                     MessageImagemapAction(
-                        text = "景點",
+                        text = "台南景點",
                         area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
                     ),
                     #2
                     MessageImagemapAction(
-                        text = "吃的",
+                        text = "台南美食",
                         area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
                     ),
                     #3
                     MessageImagemapAction(
-                        text = "喝的",
+                        text = "台南飲料",
                         area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
                     ),
                     #4
                     MessageImagemapAction(
-                        text = "咖啡廳",
+                        text = "台南咖啡廳",
                         area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
                     )
                 ]
@@ -190,7 +190,7 @@ def handle_message(event):
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #景點
-        elif user_message == "景點":
+        elif user_message == "台南景點":
             output_message = tourist_carousel_template()
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -354,7 +354,7 @@ def handle_message(event):
 #--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #美食主界面
-        elif user_message == "吃的":
+        elif user_message == "台南美食":
             output_message = TemplateSendMessage(
                 alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
                 template = ButtonsTemplate(
@@ -835,7 +835,7 @@ def handle_message(event):
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-        elif user_message == "喝的":
+        elif user_message == "台南飲料":
             output_message = TemplateSendMessage(
             alt_text = "要顯示的字",
                 template = ImageCarouselTemplate(

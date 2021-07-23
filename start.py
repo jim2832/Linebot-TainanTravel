@@ -200,7 +200,7 @@ def handle_message(event):
         #1
         elif user_message ==f"{place1}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place1}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place1}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place1}",
                 address = "台南市中西區民族路二段212號",
@@ -215,7 +215,7 @@ def handle_message(event):
         #2
         elif user_message == f"{place2}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place2}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place2}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place2}",
                 address = "台南市安平區國勝路82號",
@@ -230,7 +230,7 @@ def handle_message(event):
         #3
         elif user_message == f"{place3}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place3}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place3}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place3}",
                 address = "台南市仁德區文華路二段66號",
@@ -245,7 +245,7 @@ def handle_message(event):
         #4
         elif user_message == f"{place4}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place4}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place4}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place4}",
                 address = "台南市中西區民族路二段212號",
@@ -260,7 +260,7 @@ def handle_message(event):
         #5
         elif user_message == f"{place5}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place5}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place5}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place5}",
                 address = "台南市安平區漁光路114號",
@@ -274,7 +274,7 @@ def handle_message(event):
         #6
         elif user_message == f"{place6}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place6}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place6}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place6}",
                 address = "台南市安平區古堡街108號",
@@ -288,7 +288,7 @@ def handle_message(event):
         #7
         elif user_message == f"{place7}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place7}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place7}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place7}",
                 address = "台南市北區海安路三段533號",
@@ -302,7 +302,7 @@ def handle_message(event):
         #8
         elif user_message == f"{place8}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place8}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place8}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place8}",
                 address = "台南市安平區古堡街196號",
@@ -316,7 +316,7 @@ def handle_message(event):
         #9
         elif user_message == f"{place9}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place9}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place9}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place9}",
                 address = "台南市中西區南門路2號",
@@ -330,7 +330,7 @@ def handle_message(event):
         #10
         elif user_message == f"{place10}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{place10}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{place10}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{place10}",
                 address = "台南市七股區鹽埕里66號",
@@ -673,7 +673,7 @@ def handle_message(event):
         #1
         elif user_message ==f"{food1}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food1}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food1}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food1}",
                 address = "台南市中西區國華街三段5號",
@@ -687,7 +687,7 @@ def handle_message(event):
         #2
         elif user_message ==f"{food2}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food2}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food2}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food2}",
                 address = "台南市中西區海安路一段66號",
@@ -701,7 +701,7 @@ def handle_message(event):
         #3
         elif user_message ==f"{food3}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food3}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food3}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food3}",
                 address = "台南市中西區國華街三段181號",
@@ -715,7 +715,7 @@ def handle_message(event):
         #4
         elif user_message ==f"{food4}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food4}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food4}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food4}",
                 address = "708台南市安平區安平路590號",
@@ -729,7 +729,7 @@ def handle_message(event):
         #5
         elif user_message ==f"{food5}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food5}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food5}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food5}",
                 address = "台南市中西區保安路53號",
@@ -743,7 +743,7 @@ def handle_message(event):
         #6
         elif user_message ==f"{food6}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food6}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food6}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food6}",
                 address = "台南市東區勝利路119號",
@@ -757,7 +757,7 @@ def handle_message(event):
         #7
         elif user_message ==f"{food7}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food7}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food7}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food7}",
                 address = "台南市中西區中山路8巷5號",
@@ -771,7 +771,7 @@ def handle_message(event):
         #8
         elif user_message ==f"{food8}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food8}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food8}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food8}",
                 address = "台南市安平區安平路612號",
@@ -785,7 +785,7 @@ def handle_message(event):
         #9
         elif user_message ==f"{food9}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food9}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food9}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food9}",
                 address = "台南市中西區民族路三段89號",
@@ -799,7 +799,7 @@ def handle_message(event):
         #10
         elif user_message ==f"{food10}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food10}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food10}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food10}",
                 address = "台南市安平區安平路408-1號",
@@ -813,7 +813,7 @@ def handle_message(event):
         #11
         elif user_message ==f"{food11}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food11}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food11}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food11}",
                 address = "台南市中西區友愛街143號",
@@ -827,7 +827,7 @@ def handle_message(event):
         #12
         elif user_message ==f"{food12}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food12}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food12}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food12}",
                 address = "台南市中西區民族路三段11號",
@@ -841,7 +841,7 @@ def handle_message(event):
         #13
         elif user_message ==f"{food13}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food13}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food13}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food13}",
                 address = "台南市中西區府前路一段215號",
@@ -855,7 +855,7 @@ def handle_message(event):
         #14
         elif user_message ==f"{food14}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food14}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food14}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food14}",
                 address = "台南市中西區大德街38號",
@@ -869,7 +869,7 @@ def handle_message(event):
         #15
         elif user_message ==f"{food15}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food15}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food15}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food15}",
                 address = "台南市中西區民族路三段104號",
@@ -883,7 +883,7 @@ def handle_message(event):
         #16
         elif user_message ==f"{food16}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food16}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food16}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food16}",
                 address = "台南市北區成功路380號",
@@ -897,7 +897,7 @@ def handle_message(event):
         #17
         elif user_message ==f"{food17}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food17}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food17}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food17}",
                 address = "台南市中西區國華街三段22號",
@@ -911,7 +911,7 @@ def handle_message(event):
         #18
         elif user_message ==f"{food18}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food18}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food18}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food18}",
                 address = "台南市中西區保安路72號",
@@ -925,7 +925,7 @@ def handle_message(event):
         #19
         elif user_message ==f"{food19}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food19}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food19}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food19}",
                 address = "台南市中西區中正路康樂市場180號",
@@ -939,7 +939,7 @@ def handle_message(event):
         #20
         elif user_message ==f"{food20}的位置":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message(f"{food20}的google地圖") 
+            output_message1 = text_reply.text_reply_message(f"{food20}的google地圖位置") 
             output_message2 = LocationSendMessage(
                 title = f"{food20}",
                 address = "台南市中西區西門路一段728號",

@@ -521,7 +521,7 @@ def dessert_carousel_template():
                 CarouselColumn(
                     thumbnail_image_url = "https://travelimg.yamedia.tw/20180811/20180809235833512.jpg",
                     title = f"{dessert1}",
-                    text = "每一口都吃得到老闆用心的浮誇水果冰\n✏️推薦料理：草莓、芒果牛奶冰",
+                    text = "每口都吃得到老闆用心的浮誇水果冰\n✏️推薦料理：草莓、芒果牛奶冰",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -647,7 +647,7 @@ def dessert_carousel_template():
                 CarouselColumn(
                     thumbnail_image_url = "https://hululu.tw/wp-content/uploads/flickr/39478016202_e133871f03_c.jpg",
                     title = f"{dessert7}",
-                    text = "便宜又大碗的夏日必吃冰店\n✏️推薦料理：芒果牛乳冰、草莓醬乳冰",
+                    text = "便宜又大碗的夏日必吃冰店\n✏️推薦料理：芒果牛乳冰、草莓冰",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",

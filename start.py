@@ -153,7 +153,7 @@ def handle_message(event):
         #     line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == "台南旅遊":
-            reply_arr = []
+            reply_list = []
             output_message1 = text_reply.text_reply_message("您好，請問想查詢什麼呢？")
             
             output_message2 = ImagemapSendMessage(
@@ -183,9 +183,9 @@ def handle_message(event):
                     )
                 ]
             )
-            reply_arr.append(output_message1)
-            reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, reply_arr)
+            reply_list.append(output_message1)
+            reply_list.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_list)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

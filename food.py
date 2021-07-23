@@ -519,7 +519,7 @@ def dessert_carousel_template():
                 #1
                 #裕成水果店
                 CarouselColumn(
-                    thumbnail_image_url = "https://travelimg.yamedia.tw/20180811/20180809235833512.jpg",
+                    thumbnail_image_url = "https://i.imgur.com/NczM08h.jpg",
                     title = f"{dessert1}",
                     text = "每口都吃得到老闆用心的浮誇水果冰\n✏️推薦料理：草莓、芒果牛奶冰",
                     actions = [

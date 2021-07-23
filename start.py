@@ -1071,7 +1071,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert1}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert1}",
-                address = "700台南市中西區民生路一段122號",
+                address = "台南市中西區民生路一段122號",
                 latitude = "22.994032350718996",
                 longitude = "120.20100664416861"
             )
@@ -1085,7 +1085,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert2}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert2}",
-                address = "700台南市安平區安平路270號",
+                address = "台南市安平區安平路270號",
                 latitude = "22.99851590645143",
                 longitude = "120.17880424290001"
             )
@@ -1099,7 +1099,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert3}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert3}",
-                address = "700台南市中西區海安路二段290號",
+                address = "台南市中西區海安路二段290號",
                 latitude = "22.998631537375974",
                 longitude = "120.19816665512356"
             )
@@ -1113,7 +1113,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert4}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert4}",
-                address = "700台南市中西區友愛街213號之2號",
+                address = "台南市中西區友愛街213號之2號",
                 latitude = "22.99192946660628",
                 longitude = "120.1971526618522"
             )
@@ -1127,7 +1127,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert5}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert5}",
-                address = "700台南市中西區國華街三段16巷13號",
+                address = "台南市中西區國華街三段16巷13號",
                 latitude = "22.99331009676464",
                 longitude = "120.19772273415386"
             )
@@ -1141,7 +1141,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert6}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert6}",
-                address = "700台南市中西區正興街92號",
+                address = "台南市中西區正興街92號",
                 latitude = "22.994302620492856",
                 longitude = "120.19712312218958"
             )
@@ -1155,7 +1155,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert7}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert7}",
-                address = "700台南市中西區民生路一段160號",
+                address = "台南市中西區民生路一段160號",
                 latitude = "22.994229511108202",
                 longitude = "120.20024588499835"
             )
@@ -1169,7 +1169,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert8}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert8}",
-                address = "700台南市中西區新美街72號",
+                address = "台南市中西區新美街72號",
                 latitude = "22.99542959022524",
                 longitude = "120.20048274085703"
             )
@@ -1183,7 +1183,7 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message(f"{dessert9}的google地圖位置")
             output_message2 = LocationSendMessage(
                 title = f"{dessert9}",
-                address = "700台南市安平區安北路433號",
+                address = "台南市安平區安北路433號",
                 latitude = "22.999906372453964",
                 longitude = "120.15338501065318"
             )

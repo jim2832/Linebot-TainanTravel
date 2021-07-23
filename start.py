@@ -443,7 +443,7 @@ def handle_message(event):
 
             #-------------------------------------------------------------
 
-            #菜單
+            #美食菜單
         elif user_message == f"{food1}菜單":
             output_message = ImageSendMessage(
                 original_content_url = "https://i.imgur.com/4pw7i8S.jpg",
@@ -586,7 +586,7 @@ def handle_message(event):
 
             #-------------------------------------------------------------
 
-            #營業時間
+            #美食營業時間
         elif user_message == f"{food1}營業時間":
             output_message = text_reply.text_reply_message(f"{food1}營業時間\n\n星期一：休息\n星期二：休息\n星期三：11:00–17:00\n星期四：11:00–17:00\n星期五：11:00–17:00\n星期六：11:00–17:00\n星期日：11:00–17:00")
             line_bot_api.reply_message(event.reply_token, output_message)
@@ -669,7 +669,7 @@ def handle_message(event):
 
             #-------------------------------------------------------------
 
-            #地圖位置
+            #美食地圖位置
         #1
         elif user_message ==f"{food1}的位置":
             reply_arr = []
@@ -959,13 +959,237 @@ def handle_message(event):
 
             #-------------------------------------------------------------
 
-            #菜單
+            #甜點菜單
         elif user_message == f"{dessert1}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "",
-                preview_image_url = ""
+                original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p11650/m40005/e6b2643a352a4d0d2144e1d87ea52cddb72e2f99.jpg",
+                preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p11650/m40005/e6b2643a352a4d0d2144e1d87ea52cddb72e2f99.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
+        
+        elif user_message == f"{dessert2}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/tainanlohas/1504591024-203960289.jpg",
+                preview_image_url = "https://pic.pimg.tw/tainanlohas/1504591024-203960289.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert3}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/12347875_1223221574359667_4192191577517058670_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vBkwkgKxMF8AX_Eneot&_nc_ht=scontent.ftpe10-1.fna&oh=15e7fb5c63d1ec7c46e44da4c2dc43d7&oe=611F4C96",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/12347875_1223221574359667_4192191577517058670_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vBkwkgKxMF8AX_Eneot&_nc_ht=scontent.ftpe10-1.fna&oh=15e7fb5c63d1ec7c46e44da4c2dc43d7&oe=611F4C96"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert4}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i.imgur.com/QNWdJ4R.jpg",
+                preview_image_url = "https://i.imgur.com/QNWdJ4R.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert5}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i1.wp.com/fishalee.com/wp-content/uploads/2019-05-20_1219-compressor-compressor.jpg?resize=720%2C270&ssl=1",
+                preview_image_url = "https://i1.wp.com/fishalee.com/wp-content/uploads/2019-05-20_1219-compressor-compressor.jpg?resize=720%2C270&ssl=1"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert6}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i.imgur.com/OyyavM3.jpg",
+                preview_image_url = "https://i.imgur.com/OyyavM3.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert7}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.vivawei.tw/20181007065232_95.jpg",
+                preview_image_url = "https://img.vivawei.tw/20181007065232_95.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert8}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/jeremyckt2/1601721111-44603135-g.jpg",
+                preview_image_url = "https://pic.pimg.tw/jeremyckt2/1601721111-44603135-g.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert9}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i.imgur.com/3bi33Fq.jpg",
+                preview_image_url = "https://i.imgur.com/3bi33Fq.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+            #-------------------------------------------------------------
+
+            #甜點營業時間
+        elif user_message == f"{dessert1}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert1}營業時間\n\n星期一：休息\n星期二：12:00–01:00\n星期三：12:00–01:00\n星期四：12:00–01:00\n星期五：12:00–01:00\n星期六：12:00–01:00\n星期日：12:00–01:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert2}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert2}營業時間\n\n星期一：12:00–18:00\n星期二：12:00–18:00\n星期三：12:00–18:00\n星期四：12:00–18:00\n星期五：12:00–18:00\n星期六：12:00–21:00\n星期日：12:00–21:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert3}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert3}營業時間\n\n星期一：休息\n星期二：07:45–13:00\n星期三：07:45–13:00\n星期四：07:45–13:00\n星期五：07:45–13:00\n星期六：07:45–13:00\n星期日：07:45–13:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert4}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert4}營業時間\n\n星期一：11:30–20:00\n星期二：11:30–20:00\n星期三：11:30–20:00\n星期四：11:30–20:00\n星期五：11:30–20:00\n星期六：11:30–20:00\n星期日：11:30–20:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert5}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert5}營業時間\n\n星期一：12:00–21:00\n星期二：12:00–21:00\n星期三：12:00–21:00\n星期四：12:00–21:00\n星期五：12:00–21:00\n星期六：12:00–21:00\n星期日：12:00–21:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert6}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert6}營業時間\n\n星期一：11:00–21:00\n星期二：11:00–21:00\n星期三：11:00–21:00\n星期四：11:00–17:00\n星期五：11:00–21:00\n星期六：11:00–21:00\n星期日：11:00–21:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert7}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert7}營業時間\n\n星期一：12:00–21:00\n星期二：12:00–21:00\n星期三：12:00–21:00\n星期四：12:00–21:00\n星期五：12:00–21:00\n星期六：12:00–21:00\n星期日：12:00–21:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert8}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert8}營業時間\n\n星期一：11:00–19:00\n星期二：休息\n星期三：11:00–19:00\n星期四：11:00–19:00\n星期五：11:00–19:00\n星期六：10:30–19:00\n星期日：10:30–19:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{dessert9}營業時間":
+            output_message = text_reply.text_reply_message(f"{dessert9}營業時間\n\n星期一：09:00–23:00\n星期二：09:00–23:00\n星期三：09:00–23:00\n星期四：09:00–23:00\n星期五：09:00–23:00\n星期六：09:00–23:00\n星期日：09:00–23:00")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+           #-------------------------------------------------------------
+
+            #甜點地圖位置
+        #1
+        elif user_message ==f"{dessert1}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert1}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert1}",
+                address = "700台南市中西區民生路一段122號",
+                latitude = "22.994032350718996",
+                longitude = "120.20100664416861"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #2
+        elif user_message ==f"{dessert2}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert2}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert2}",
+                address = "700台南市安平區安平路270號",
+                latitude = "22.99851590645143",
+                longitude = "120.17880424290001"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #3
+        elif user_message ==f"{dessert3}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert3}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert3}",
+                address = "700台南市中西區海安路二段290號",
+                latitude = "22.998631537375974",
+                longitude = "120.19816665512356"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #4
+        elif user_message ==f"{dessert4}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert4}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert4}",
+                address = "700台南市中西區友愛街213號之2號",
+                latitude = "22.99192946660628",
+                longitude = "120.1971526618522"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #5
+        elif user_message ==f"{dessert5}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert5}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert5}",
+                address = "700台南市中西區國華街三段16巷13號",
+                latitude = "22.99331009676464",
+                longitude = "120.19772273415386"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #6
+        elif user_message ==f"{dessert6}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert6}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert6}",
+                address = "700台南市中西區正興街92號",
+                latitude = "22.994302620492856",
+                longitude = "120.19712312218958"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #7
+        elif user_message ==f"{dessert7}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert7}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert7}",
+                address = "700台南市中西區民生路一段160號",
+                latitude = "22.994229511108202",
+                longitude = "120.20024588499835"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #8
+        elif user_message ==f"{dessert8}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert8}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert8}",
+                address = "700台南市中西區新美街72號",
+                latitude = "22.99542959022524",
+                longitude = "120.20048274085703"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #9
+        elif user_message ==f"{dessert9}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{dessert9}的google地圖位置")
+            output_message2 = LocationSendMessage(
+                title = f"{dessert9}",
+                address = "700台南市安平區安北路433號",
+                latitude = "22.999906372453964",
+                longitude = "120.15338501065318"
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

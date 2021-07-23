@@ -568,7 +568,7 @@ def dessert_carousel_template():
                 CarouselColumn(
                     thumbnail_image_url = "https://flyblog.cc/wp-content/uploads/2020/12/DSCF6408.jpg",
                     title = f"{dessert4}",
-                    text = "\n✏️推薦料理：",
+                    text = "當地人最愛的甘甜點心\n✏️推薦料理：白糖糕、蕃薯椪",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -585,11 +585,11 @@ def dessert_carousel_template():
                     ]
                 ),
                 #5
-                #
+                #江水號
                 CarouselColumn(
-                    thumbnail_image_url = "",
+                    thumbnail_image_url = "https://4.bp.blogspot.com/-6YiIlfeSMF0/Xmn-RFrmw4I/AAAAAAAANEY/I4II1eSrx3sdgIUFSo-tCPrtcXzpnbG3QCKgBGAsYHg/s1600/IMG_0746.jpg",
                     title = f"{dessert5}",
-                    text = "\n✏️推薦料理：",
+                    text = "配料滿到爆炸的超好吃芋泥冰\n✏️推薦料理：芋頭冰、八寶冰",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -606,11 +606,11 @@ def dessert_carousel_template():
                     ]
                 ),
                 #6
-                #
+                #蜷尾家
                 CarouselColumn(
-                    thumbnail_image_url = "",
+                    thumbnail_image_url = "https://img.dingeat.com/uploads/20200614234025_85.jpg",
                     title = f"{dessert6}",
-                    text = "\n✏️推薦料理：",
+                    text = "在夏日解熱的最佳甜點\n✏️推薦料理：蜜香紅茶霜淇淋",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -627,11 +627,11 @@ def dessert_carousel_template():
                     ]
                 ),
                 #7
-                #
+                #冰鄉
                 CarouselColumn(
-                    thumbnail_image_url = "",
+                    thumbnail_image_url = "https://hululu.tw/wp-content/uploads/flickr/39478016202_e133871f03_c.jpg",
                     title = f"{dessert7}",
-                    text = "\n✏️推薦料理：",
+                    text = "便宜又大碗的夏日必吃冰店\n✏️推薦料理：芒果牛乳冰、草莓醬乳冰",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -648,11 +648,11 @@ def dessert_carousel_template():
                     ]
                 ),
                 #8
-                #
+                #宇作茶屋
                 CarouselColumn(
-                    thumbnail_image_url = "",
+                    thumbnail_image_url = "https://d1ralsognjng37.cloudfront.net/493ffb52-96a0-49eb-8dc9-388914780be6.jpeg",
                     title = f"{dessert8}",
-                    text = "\n✏️推薦料理：",
+                    text = "濃厚日式風情的精緻茶屋\n✏️推薦料理：抹茶奶酪、抹茶善哉",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
@@ -669,11 +669,11 @@ def dessert_carousel_template():
                     ]
                 ),
                 #9
-                #
+                #同記安平豆花
                 CarouselColumn(
-                    thumbnail_image_url = "",
+                    thumbnail_image_url = "https://www.saydigi.com/wp-content/uploads/2020/11/4bd191fe99ef8f862e28c8b49a89672c.jpg",
                     title = f"{dessert9}",
-                    text = "\n✏️推薦料理：",
+                    text = "台南必吃的甜而不膩豆花\n✏️推薦料理：傳統白豆花、鮮奶豆花",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",

@@ -67,8 +67,7 @@ dessert9 = "同記安平豆花"
 #美食part1
 def food_carousel_template1():
     output_message = TemplateSendMessage(
-        alt_text = "此裝置不支援樣板。", 
-        無法支援格式所顯示的文字
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = CarouselTemplate(
             columns = [
                 #1

@@ -210,7 +210,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #2
         elif user_message == f"{place2}的位置":
@@ -225,7 +225,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #3
         elif user_message == f"{place3}的位置":
@@ -240,7 +240,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
         
         #4
         elif user_message == f"{place4}的位置":
@@ -255,7 +255,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #5
         elif user_message == f"{place5}的位置":
@@ -269,7 +269,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)            
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #6
         elif user_message == f"{place6}的位置":
@@ -283,7 +283,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)            
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #7
         elif user_message == f"{place7}的位置":
@@ -297,7 +297,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)            
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #8
         elif user_message == f"{place8}的位置":
@@ -311,7 +311,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)            
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #9
         elif user_message == f"{place9}的位置":
@@ -325,7 +325,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)            
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #10
         elif user_message == f"{place10}的位置":
@@ -339,7 +339,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)            
-            line_bot_api.reply_message(event.reply_token, output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
 
 #-----------------------------------------------------------------------------
@@ -682,7 +682,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #2
         elif user_message ==f"{food2}的位置":
@@ -696,7 +696,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #3
         elif user_message ==f"{food3}的位置":
@@ -710,7 +710,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #4
         elif user_message ==f"{food4}的位置":
@@ -724,7 +724,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #5
         elif user_message ==f"{food5}的位置":
@@ -738,7 +738,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #6
         elif user_message ==f"{food6}的位置":
@@ -752,7 +752,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #7
         elif user_message ==f"{food7}的位置":
@@ -766,7 +766,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #8
         elif user_message ==f"{food8}的位置":
@@ -780,7 +780,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #9
         elif user_message ==f"{food9}的位置":
@@ -794,7 +794,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #10
         elif user_message ==f"{food10}的位置":
@@ -808,7 +808,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #11
         elif user_message ==f"{food11}的位置":
@@ -822,7 +822,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #12
         elif user_message ==f"{food12}的位置":
@@ -836,7 +836,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #13
         elif user_message ==f"{food13}的位置":
@@ -850,7 +850,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #14
         elif user_message ==f"{food14}的位置":
@@ -864,7 +864,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #15
         elif user_message ==f"{food15}的位置":
@@ -878,7 +878,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #16
         elif user_message ==f"{food16}的位置":
@@ -892,7 +892,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #17
         elif user_message ==f"{food17}的位置":
@@ -906,7 +906,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #18
         elif user_message ==f"{food18}的位置":
@@ -920,7 +920,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #19
         elif user_message ==f"{food19}的位置":
@@ -934,7 +934,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #20
         elif user_message ==f"{food20}的位置":
@@ -948,7 +948,7 @@ def handle_message(event):
             )
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
-            line_bot_api.reply_message(event.reply_token, output_message)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #----------------------------------------------------------------------
 

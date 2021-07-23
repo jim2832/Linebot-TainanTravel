@@ -198,7 +198,7 @@ def handle_message(event):
         #景點位置區域
 
         #1
-        elif user_message ==f"{place1}的位置":
+        elif user_message ==f"{place1}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place1}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -213,7 +213,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #2
-        elif user_message == f"{place2}的位置":
+        elif user_message == f"{place2}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place2}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -228,7 +228,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #3
-        elif user_message == f"{place3}的位置":
+        elif user_message == f"{place3}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place3}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -243,7 +243,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
         
         #4
-        elif user_message == f"{place4}的位置":
+        elif user_message == f"{place4}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place4}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -258,7 +258,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #5
-        elif user_message == f"{place5}的位置":
+        elif user_message == f"{place5}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place5}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -272,7 +272,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #6
-        elif user_message == f"{place6}的位置":
+        elif user_message == f"{place6}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place6}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -286,7 +286,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #7
-        elif user_message == f"{place7}的位置":
+        elif user_message == f"{place7}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place7}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -300,7 +300,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #8
-        elif user_message == f"{place8}的位置":
+        elif user_message == f"{place8}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place8}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -314,7 +314,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #9
-        elif user_message == f"{place9}的位置":
+        elif user_message == f"{place9}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place9}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -328,7 +328,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #10
-        elif user_message == f"{place10}的位置":
+        elif user_message == f"{place10}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{place10}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -671,7 +671,7 @@ def handle_message(event):
 
             #美食地圖位置
         #1
-        elif user_message ==f"{food1}的位置":
+        elif user_message ==f"{food1}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food1}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -685,7 +685,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #2
-        elif user_message ==f"{food2}的位置":
+        elif user_message ==f"{food2}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food2}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -699,7 +699,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #3
-        elif user_message ==f"{food3}的位置":
+        elif user_message ==f"{food3}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food3}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -713,7 +713,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #4
-        elif user_message ==f"{food4}的位置":
+        elif user_message ==f"{food4}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food4}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -727,7 +727,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #5
-        elif user_message ==f"{food5}的位置":
+        elif user_message ==f"{food5}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food5}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -741,7 +741,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #6
-        elif user_message ==f"{food6}的位置":
+        elif user_message ==f"{food6}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food6}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -755,7 +755,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #7
-        elif user_message ==f"{food7}的位置":
+        elif user_message ==f"{food7}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food7}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -769,7 +769,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #8
-        elif user_message ==f"{food8}的位置":
+        elif user_message ==f"{food8}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food8}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -783,7 +783,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #9
-        elif user_message ==f"{food9}的位置":
+        elif user_message ==f"{food9}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food9}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -797,7 +797,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #10
-        elif user_message ==f"{food10}的位置":
+        elif user_message ==f"{food10}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food10}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -811,7 +811,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #11
-        elif user_message ==f"{food11}的位置":
+        elif user_message ==f"{food11}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food11}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -825,7 +825,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #12
-        elif user_message ==f"{food12}的位置":
+        elif user_message ==f"{food12}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food12}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -839,7 +839,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #13
-        elif user_message ==f"{food13}的位置":
+        elif user_message ==f"{food13}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food13}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -853,7 +853,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #14
-        elif user_message ==f"{food14}的位置":
+        elif user_message ==f"{food14}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food14}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -867,7 +867,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #15
-        elif user_message ==f"{food15}的位置":
+        elif user_message ==f"{food15}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food15}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -881,7 +881,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #16
-        elif user_message ==f"{food16}的位置":
+        elif user_message ==f"{food16}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food16}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -895,7 +895,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #17
-        elif user_message ==f"{food17}的位置":
+        elif user_message ==f"{food17}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food17}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -909,7 +909,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #18
-        elif user_message ==f"{food18}的位置":
+        elif user_message ==f"{food18}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food18}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -923,7 +923,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #19
-        elif user_message ==f"{food19}的位置":
+        elif user_message ==f"{food19}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food19}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -937,7 +937,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #20
-        elif user_message ==f"{food20}的位置":
+        elif user_message ==f"{food20}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{food20}的google地圖位置") 
             output_message2 = LocationSendMessage(
@@ -1066,7 +1066,7 @@ def handle_message(event):
 
             #甜點地圖位置
         #1
-        elif user_message ==f"{dessert1}的位置":
+        elif user_message ==f"{dessert1}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert1}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1080,7 +1080,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #2
-        elif user_message ==f"{dessert2}的位置":
+        elif user_message ==f"{dessert2}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert2}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1094,7 +1094,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #3
-        elif user_message ==f"{dessert3}的位置":
+        elif user_message ==f"{dessert3}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert3}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1108,7 +1108,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #4
-        elif user_message ==f"{dessert4}的位置":
+        elif user_message ==f"{dessert4}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert4}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1122,7 +1122,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #5
-        elif user_message ==f"{dessert5}的位置":
+        elif user_message ==f"{dessert5}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert5}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1136,7 +1136,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #6
-        elif user_message ==f"{dessert6}的位置":
+        elif user_message ==f"{dessert6}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert6}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1150,7 +1150,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #7
-        elif user_message ==f"{dessert7}的位置":
+        elif user_message ==f"{dessert7}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert7}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1164,7 +1164,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #8
-        elif user_message ==f"{dessert8}的位置":
+        elif user_message ==f"{dessert8}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert8}的google地圖位置")
             output_message2 = LocationSendMessage(
@@ -1178,7 +1178,7 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #9
-        elif user_message ==f"{dessert9}的位置":
+        elif user_message ==f"{dessert9}在哪裡":
             reply_arr = []
             output_message1 = text_reply.text_reply_message(f"{dessert9}的google地圖位置")
             output_message2 = LocationSendMessage(

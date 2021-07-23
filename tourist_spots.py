@@ -81,7 +81,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place1}的位置"
+                            text = f"{place1}在哪裡"
                         )
                     ]
                 ),
@@ -100,7 +100,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place2}的位置"
+                            text = f"{place2}在哪裡"
                         )
                     ]
                 ),
@@ -119,7 +119,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place3}的位置"
+                            text = f"{place3}在哪裡"
                         )
                     ]
                 ),
@@ -138,7 +138,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place4}的位置"
+                            text = f"{place4}在哪裡"
                         )
                     ]
                 ),
@@ -157,7 +157,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place5}的位置"
+                            text = f"{place5}在哪裡"
                         )
                     ]
                 ),
@@ -176,7 +176,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place6}的位置"
+                            text = f"{place6}在哪裡"
                         )
                     ]
                 ),
@@ -195,7 +195,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place7}的位置"
+                            text = f"{place7}在哪裡"
                         )
                     ]
                 ),
@@ -214,7 +214,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place8}的位置"
+                            text = f"{place8}在哪裡"
                         )
                     ]
                 ),
@@ -233,7 +233,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place9}的位置"
+                            text = f"{place9}在哪裡"
                         )
                     ]
                 ),
@@ -252,7 +252,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{place10}圖位置"
+                            text = f"{place10}在哪裡"
                         )
                     ]
                 )

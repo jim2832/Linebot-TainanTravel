@@ -87,7 +87,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food1}的位置"
+                            text = f"{food1}在哪裡"
                         )
                     ]
                 ),
@@ -108,7 +108,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food2}的位置"
+                            text = f"{food2}在哪裡"
                         )
                     ]
                 ),
@@ -129,7 +129,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food3}的位置"
+                            text = f"{food3}在哪裡"
                         )
                     ]
                 ),
@@ -150,7 +150,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food4}的位置"
+                            text = f"{food4}在哪裡"
                         )
                     ]
                 ),
@@ -171,7 +171,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food5}的位置"
+                            text = f"{food5}在哪裡"
                         )
                     ]
                 ),
@@ -192,7 +192,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food6}的位置"
+                            text = f"{food6}在哪裡"
                         )
                     ]
                 ),
@@ -213,7 +213,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food7}的位置"
+                            text = f"{food7}在哪裡"
                         )
                     ]
                 ),
@@ -234,7 +234,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food8}的位置"
+                            text = f"{food8}在哪裡"
                         )
                     ]
                 ),
@@ -255,7 +255,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food9}的位置"
+                            text = f"{food9}在哪裡"
                         )
                     ]
                 ),
@@ -276,7 +276,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food10}的位置"
+                            text = f"{food10}在哪裡"
                         )
                     ]
                 )
@@ -310,7 +310,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food11}的位置"
+                            text = f"{food11}在哪裡"
                         )
                     ]
                 ),
@@ -331,7 +331,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food12}的位置"
+                            text = f"{food12}在哪裡"
                         )
                     ]
                 ),
@@ -352,7 +352,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food13}的位置"
+                            text = f"{food13}在哪裡"
                         )
                     ]
                 ),
@@ -373,7 +373,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food14}的位置"
+                            text = f"{food14}在哪裡"
                         )
                     ]
                 ),
@@ -394,7 +394,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food15}的位置"
+                            text = f"{food15}在哪裡"
                         )
                     ]
                 ),
@@ -415,7 +415,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food16}的位置"
+                            text = f"{food16}在哪裡"
                         )
                     ]
                 ),
@@ -436,7 +436,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food17}的位置"
+                            text = f"{food17}在哪裡"
                         )
                     ]
                 ),
@@ -457,7 +457,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food18}的位置"
+                            text = f"{food18}在哪裡"
                         )
                     ]
                 ),
@@ -478,7 +478,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food19}的位置"
+                            text = f"{food19}在哪裡"
                         )
                     ]
                 ),
@@ -499,7 +499,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{food20}的位置"
+                            text = f"{food20}在哪裡"
                         )
                     ]
                 )
@@ -533,7 +533,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert1}的位置"
+                            text = f"{dessert1}在哪裡"
                         )
                     ]
                 ),
@@ -554,7 +554,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert2}的位置"
+                            text = f"{dessert2}在哪裡"
                         )
                     ]
                 ),
@@ -575,7 +575,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert3}的位置"
+                            text = f"{dessert3}在哪裡"
                         )
                     ]
                 ),
@@ -596,7 +596,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert4}的位置"
+                            text = f"{dessert4}在哪裡"
                         )
                     ]
                 ),
@@ -617,7 +617,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert5}的位置"
+                            text = f"{dessert5}在哪裡"
                         )
                     ]
                 ),
@@ -638,7 +638,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert6}的位置"
+                            text = f"{dessert6}在哪裡"
                         )
                     ]
                 ),
@@ -659,7 +659,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert7}的位置"
+                            text = f"{dessert7}在哪裡"
                         )
                     ]
                 ),
@@ -680,7 +680,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert8}的位置"
+                            text = f"{dessert8}在哪裡"
                         )
                     ]
                 ),
@@ -701,7 +701,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"{dessert9}的位置"
+                            text = f"{dessert9}在哪裡"
                         )
                     ]
                 )

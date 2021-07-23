@@ -31,6 +31,22 @@ line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 # Channel Secret
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
+app = Flask(__name__)
+
+# 監聽所有來自 /callback 的 Post Request
+@app.route("/callback", methods=['POST'])
+def callback():
+    # get X-Line-Signature header value
+    signature = request.headers['X-Line-Signature']
+    # get request body as text
+    body = request.get_data(as_text=True)
+    app.logger.info("Request body: " + body)
+    # handle webhook body
+    try:
+        handler.handle(body, signature)
+    except InvalidSignatureError:
+        abort(400)
+    return 'OK'
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 # instruction of pushing code to heroku
@@ -50,16 +66,203 @@ place8 = "夕遊出張所"
 place9 = "台南孔廟"
 place10 = "七股鹽山"
 
-tour_dict = {place1:"赤崁樓",
-             place2:"安平古堡",
-             place3:"奇美博物館",
-             place4:"神農街",
-             place5:"漁光島",
-             place6:"德記洋行",
-             place7:"花園夜市",
-             place8:"夕遊出張所",
-             place9:"台南孔廟",
-             place10:"七股鹽山"}
+tour_dict = {"place1":"赤崁樓",
+             "place2":"安平古堡",
+             "place3":"奇美博物館",
+             "place4":"神農街",
+             "place5":"漁光島",
+             "place6":"德記洋行",
+             "place7":"花園夜市",
+             "place8":"夕遊出張所",
+             "place9":"台南孔廟",
+             "place10":"七股鹽山"}
+
+@handler.add(MessageEvent)
+def handle_message2(event):
+    print(event)
+    message_send_time = float(event.timestamp)/1000
+    message_get_time = float(time.time())
+    msg_type = event.message.type
+
+    if event.message.text == "info":
+        output_message = TextSendMessage(text=str(event))  
+        line_bot_api.reply_message(event.reply_token, output_message)
+
+    if event.message.text.lower() == "speed" :
+        output_message = ("【收到訊息時間】\n{} 秒\n【處理訊息時間】\n{} 秒".format(message_get_time-message_send_time,float(time.time())-message_get_time))
+        output_message = text_reply.text_reply_message(user_message)
+        line_bot_api.reply_message(event.reply_token, output_message)
+
+    if msg_type == "sticker":
+        output_message = StickerSendMessage(package_Id='1',sticker_Id='1')
+        #output_message = StickerSendMessage(package_id='2',sticker_id=str(random.randint(140,180)))
+        line_bot_api.reply_message(event.reply_token, output_message)
+
+    elif msg_type == "text":
+        user_message = event.message.text
+        #景點
+        if user_message == "台南景點":
+            output_message = tourist_carousel_template()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+
+        #景點位置區域
+
+        #1
+        elif user_message ==f"可由此打開{place1}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place1}",
+                address = "台南市中西區民族路二段212號",
+                latitude = "22.99762337852117",
+                longitude = "120.2024704919533"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #2
+        elif user_message == f"可由此打開{place2}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place2}",
+                address = "台南市安平區國勝路82號",
+                latitude = "23.001593229535548",
+                longitude = "120.1606351263452"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #3
+        elif user_message == f"可由此打開{place3}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place3}",
+                address = "台南市仁德區文華路二段66號",
+                latitude = "22.93480286259137",
+                longitude = "120.2260482551798"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #4
+        elif user_message == f"可由此打開{place4}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place4}",
+                address = "台南市中西區民族路二段212號",
+                latitude = "22.99753585895218",
+                longitude = "120.19648398291852"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #5
+        elif user_message == f"可由此打開{place5}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place5}",
+                address = "台南市安平區漁光路114號",
+                latitude = "22.98054329215947",
+                longitude = "120.15580504320876"
+            )            
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == f"可由此打開{place6}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place6}",
+                address = "台南市安平區古堡街108號",
+                latitude = "23.003306864536732",
+                longitude = "120.15982008130227"
+            )            
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #7
+        elif user_message == f"可由此打開{place7}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place7}",
+                address = "台南市北區海安路三段533號",
+                latitude = "23.01159041194204",
+                longitude = "120.20039541306427"
+            )            
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #8
+        elif user_message == f"可由此打開{place8}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place8}",
+                address = "台南市安平區古堡街196號",
+                latitude = "23.002783289337064",
+                longitude = "120.15633702634503"
+            )            
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #9
+        elif user_message == f"可由此打開{place9}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place9}",
+                address = "台南市中西區南門路2號",
+                latitude = "22.990712678956807",
+                longitude = "120.20431901470467"
+            )            
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #10
+        elif user_message == f"可由此打開{place10}的google地圖位置":
+            output_message = LocationSendMessage(
+                title = f"{place10}",
+                address = "台南市七股區鹽埕里66號",
+                latitude = "23.154298515853103",
+                longitude = "120.09994515333189"
+            )            
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+
+#-----------------------------------------------------------------------------
+        #景點照片區域
+
+        #1
+        elif user_message == f"{place1}圖片":
+            output_message = image_carousel_message1()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #2
+        elif user_message == f"{place2}圖片":
+            output_message = image_carousel_message2()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #3
+        elif user_message == f"{place3}圖片":
+            output_message = image_carousel_message3()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #4
+        elif user_message == f"{place4}圖片":
+            output_message = image_carousel_message4()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #5
+        elif user_message == f"{place5}圖片":
+            output_message = image_carousel_message5()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == f"{place6}圖片":
+            output_message = image_carousel_message6()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #7
+        elif user_message == f"{place7}圖片":
+            output_message = image_carousel_message7()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #8
+        elif user_message == f"{place8}圖片":
+            output_message = image_carousel_message8()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #9
+        elif user_message == f"{place9}圖片":
+            output_message = image_carousel_message9()
+            line_bot_api.reply_message(event.reply_token, output_message)
+        
+        #10
+        elif user_message == f"{place10}圖片":
+            output_message = image_carousel_message10()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 def tourist_carousel_template():
     output_message = TemplateSendMessage(

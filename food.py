@@ -33,26 +33,20 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-food1 = "邱家小卷米粉"
-food2 = "矮仔成蝦仁飯"
-food3 = "阿松割包"
-food4 = "文章牛肉湯"
-food5 = "醇涎坊鍋燒意麵"
-food6 = "勝利早點"
-food7 = "無名米糕"
-food8 = "王氏魚皮"
-food9 = "阿江鱔魚意麵"
-food10 = "周氏蝦捲"
-food11 = "小杜意麵"
-food12 = "富盛號碗粿"
-food13 = "福記肉圓"
-food14 = "鼎富發豬油拌飯"
-food15 = "國華街肉燥飯"
-food16 = "丹丹漢堡(成功店)"
-food17 = "炸雞洋行"
-food18 = "阿明豬心冬粉"
-food19 = "赤崁棺材板"
-food20 = "阿堂鹹粥"
+food1 = "邱家小卷米粉",      food2 = "矮仔成蝦仁飯",     food3 = "阿松割包",       food4 = "文章牛肉湯",      food5 = "醇涎坊鍋燒意麵",
+food6 = "勝利早點",         food7 = "無名米糕",         food8 = "王氏魚皮",       food9 = "阿江鱔魚意麵",    food10 = "周氏蝦捲",
+food11 = "小杜意麵",        food12 = "富盛號碗粿",      food13 = "福記肉圓",      food14 = "鼎富發豬油拌飯",  food15 = "國華街肉燥飯",
+food16 = "丹丹漢堡(成功店)", food17 = "炸雞洋行",        food18 = "阿明豬心冬粉",  food19 = "赤崁棺材板",      food20 = "阿堂鹹粥"
+
+dessert1 = "裕成水果店"
+dessert2 = "南泉冰果室"
+dessert3 = "正宗古早味冰粉圓"
+dessert4 = "林加白糖粿"
+dessert5 = "江水號"
+dessert6 = "蜷尾家"
+dessert7 = "冰鄉"
+dessert8 = "宇作茶屋"
+dessert9 = "同記安平豆花"
 
 #美食part1
 def food_carousel_template1():
@@ -500,28 +494,198 @@ def food_carousel_template2():
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#點心
+#甜點
 def dessert_carousel_template():
     output_message = TemplateSendMessage(
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = CarouselTemplate(
             columns = [
-                CarouselColumn( #1
-                    thumbnail_image_url = "",
-                    title = f"{food1}",
-                    text = "",
+                #1
+                #裕成水果店
+                CarouselColumn(
+                    thumbnail_image_url = "https://travelimg.yamedia.tw/20180811/20180809235833512.jpg",
+                    title = f"{dessert1}",
+                    text = "每一口都吃得到老闆用心的浮誇水果冰\n✏️推薦料理：草莓、芒果牛奶冰",
                     actions = [
                         MessageTemplateAction(
                             label = "點我看菜單",
-                            text = f"{food1}菜單"
+                            text = f"{dessert1}菜單"
                         ),
                         MessageTemplateAction(
                             label = "點我看營業時間",
-                            text = f"{food1}營業時間"
+                            text = f"{dessert1}營業時間"
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food1}的google地圖位置"
+                            text = f"可由此打開{dessert1}的google地圖位置"
+                        )
+                    ]
+                ),
+                #2
+                #南泉冰果室
+                CarouselColumn(
+                    thumbnail_image_url = "https://hululu.tw/wp-content/uploads/20191122085927_45.jpg",
+                    title = f"{dessert2}",
+                    text = "來台南必吃的浮誇澎湃系水果冰店\n✏️推薦料理：番茄蜜餞冰",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert2}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert2}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert2}的google地圖位置"
+                        )
+                    ]
+                ),
+                #3
+                #正宗古早味冰粉圓
+                CarouselColumn(
+                    thumbnail_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/548441_432767113405121_1782768189_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=HQ_PNX4wmTIAX9PMuYq&_nc_ht=scontent.ftpe10-1.fna&oh=af63df3f1207e1b7b98189faa54c67c1&oe=61211028",
+                    title = f"{dessert3}",
+                    text = "清涼解渴的夏日古早好滋味\n✏️推薦料理：大杯冰粉圓",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert3}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert3}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert3}的google地圖位置"
+                        )
+                    ]
+                ),
+                #4
+                #林家白糖粿
+                CarouselColumn(
+                    thumbnail_image_url = "https://flyblog.cc/wp-content/uploads/2020/12/DSCF6408.jpg",
+                    title = f"{dessert4}",
+                    text = "\n✏️推薦料理：",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert4}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert4}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert4}的google地圖位置"
+                        )
+                    ]
+                ),
+                #5
+                #
+                CarouselColumn(
+                    thumbnail_image_url = "",
+                    title = f"{dessert5}",
+                    text = "\n✏️推薦料理：",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert5}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert5}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert5}的google地圖位置"
+                        )
+                    ]
+                ),
+                #6
+                #
+                CarouselColumn(
+                    thumbnail_image_url = "",
+                    title = f"{dessert6}",
+                    text = "\n✏️推薦料理：",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert6}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert6}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert6}的google地圖位置"
+                        )
+                    ]
+                ),
+                #7
+                #
+                CarouselColumn(
+                    thumbnail_image_url = "",
+                    title = f"{dessert7}",
+                    text = "\n✏️推薦料理：",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert7}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert7}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert7}的google地圖位置"
+                        )
+                    ]
+                ),
+                #8
+                #
+                CarouselColumn(
+                    thumbnail_image_url = "",
+                    title = f"{dessert8}",
+                    text = "\n✏️推薦料理：",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert8}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert8}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert8}的google地圖位置"
+                        )
+                    ]
+                ),
+                #9
+                #
+                CarouselColumn(
+                    thumbnail_image_url = "",
+                    title = f"{dessert9}",
+                    text = "\n✏️推薦料理：",
+                    actions = [
+                        MessageTemplateAction(
+                            label = "點我看菜單",
+                            text = f"{dessert9}菜單"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看營業時間",
+                            text = f"{dessert9}營業時間"
+                        ),
+                        MessageTemplateAction(
+                            label = "點我看地圖位置",
+                            text = f"可由此打開{dessert9}的google地圖位置"
                         )
                     ]
                 )

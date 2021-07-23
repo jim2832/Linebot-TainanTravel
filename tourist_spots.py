@@ -81,7 +81,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place1}的google地圖位置"
+                            text = f"{place1}的位置"
                         )
                     ]
                 ),
@@ -100,7 +100,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place2}的google地圖位置"
+                            text = f"{place2}的位置"
                         )
                     ]
                 ),
@@ -119,7 +119,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place3}的google地圖位置"
+                            text = f"{place3}的位置"
                         )
                     ]
                 ),
@@ -138,7 +138,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place4}的google地圖位置"
+                            text = f"{place4}的位置"
                         )
                     ]
                 ),
@@ -157,7 +157,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place5}的google地圖位置"
+                            text = f"{place5}的位置"
                         )
                     ]
                 ),
@@ -176,7 +176,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place6}的google地圖位置"
+                            text = f"{place6}的位置"
                         )
                     ]
                 ),
@@ -195,7 +195,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place7}的google地圖位置"
+                            text = f"{place7}的位置"
                         )
                     ]
                 ),
@@ -214,7 +214,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place8}的google地圖位置"
+                            text = f"{place8}的位置"
                         )
                     ]
                 ),
@@ -233,7 +233,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place9}的google地圖位置"
+                            text = f"{place9}的位置"
                         )
                     ]
                 ),
@@ -252,7 +252,7 @@ def tourist_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{place10}的google地圖位置"
+                            text = f"{place10}圖位置"
                         )
                     ]
                 )

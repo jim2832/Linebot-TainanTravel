@@ -198,104 +198,148 @@ def handle_message(event):
         #景點位置區域
 
         #1
-        elif user_message ==f"可由此打開{place1}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{place1}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place1}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place1}",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99762337852117",
                 longitude = "120.2024704919533"
+ 
             )
-            line_bot_api.reply_message(event.reply_token, output_message)
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #2
-        elif user_message == f"可由此打開{place2}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place2}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place2}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place2}",
                 address = "台南市安平區國勝路82號",
                 latitude = "23.001593229535548",
                 longitude = "120.1606351263452"
+ 
             )
-            line_bot_api.reply_message(event.reply_token, output_message)
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #3
-        elif user_message == f"可由此打開{place3}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place3}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place3}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place3}",
                 address = "台南市仁德區文華路二段66號",
                 latitude = "22.93480286259137",
                 longitude = "120.2260482551798"
+ 
             )
-            line_bot_api.reply_message(event.reply_token, output_message)
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, output_message2)
         
         #4
-        elif user_message == f"可由此打開{place4}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place4}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place4}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place4}",
                 address = "台南市中西區民族路二段212號",
                 latitude = "22.99753585895218",
                 longitude = "120.19648398291852"
+ 
             )
-            line_bot_api.reply_message(event.reply_token, output_message)
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #5
-        elif user_message == f"可由此打開{place5}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place5}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place5}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place5}",
                 address = "台南市安平區漁光路114號",
                 latitude = "22.98054329215947",
                 longitude = "120.15580504320876"
-            )            
-            line_bot_api.reply_message(event.reply_token, output_message)
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)            
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #6
-        elif user_message == f"可由此打開{place6}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place6}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place6}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place6}",
                 address = "台南市安平區古堡街108號",
                 latitude = "23.003306864536732",
                 longitude = "120.15982008130227"
-            )            
-            line_bot_api.reply_message(event.reply_token, output_message)
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)            
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #7
-        elif user_message == f"可由此打開{place7}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place7}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place7}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place7}",
                 address = "台南市北區海安路三段533號",
                 latitude = "23.01159041194204",
                 longitude = "120.20039541306427"
-            )            
-            line_bot_api.reply_message(event.reply_token, output_message)
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)            
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #8
-        elif user_message == f"可由此打開{place8}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place8}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place8}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place8}",
                 address = "台南市安平區古堡街196號",
                 latitude = "23.002783289337064",
                 longitude = "120.15633702634503"
-            )            
-            line_bot_api.reply_message(event.reply_token, output_message)
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)            
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #9
-        elif user_message == f"可由此打開{place9}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place9}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place9}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place9}",
                 address = "台南市中西區南門路2號",
                 latitude = "22.990712678956807",
                 longitude = "120.20431901470467"
-            )            
-            line_bot_api.reply_message(event.reply_token, output_message)
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)            
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
         #10
-        elif user_message == f"可由此打開{place10}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message == f"{place10}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{place10}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{place10}",
                 address = "台南市七股區鹽埕里66號",
                 latitude = "23.154298515853103",
                 longitude = "120.09994515333189"
-            )            
-            line_bot_api.reply_message(event.reply_token, output_message)
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)            
+            line_bot_api.reply_message(event.reply_token, output_message2)
 
 
 #-----------------------------------------------------------------------------
@@ -627,203 +671,283 @@ def handle_message(event):
 
             #地圖位置
         #1
-        elif user_message ==f"可由此打開{food1}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food1}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food1}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food1}",
                 address = "台南市中西區國華街三段5號",
                 latitude = "22.99355830555154",
                 longitude = "120.197479227042"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #2
-        elif user_message ==f"可由此打開{food2}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food2}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food2}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food2}",
                 address = "台南市中西區海安路一段66號",
                 latitude = "22.98897454659431",
                 longitude = "120.19527211288802"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #3
-        elif user_message ==f"可由此打開{food3}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food3}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food3}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food3}",
                 address = "台南市中西區國華街三段181號",
                 latitude = "22.99756243319255",
                 longitude = "120.19890510920264"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #4
-        elif user_message ==f"可由此打開{food4}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food4}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food4}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food4}",
                 address = "708台南市安平區安平路590號",
                 latitude = "22.998750218851384",
                 longitude = "120.16973447085927"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #5
-        elif user_message ==f"可由此打開{food5}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food5}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food5}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food5}",
                 address = "台南市中西區保安路53號",
                 latitude = "22.99025382562354",
                 longitude = "120.19640750231954"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #6
-        elif user_message ==f"可由此打開{food6}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food6}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food6}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food6}",
                 address = "台南市東區勝利路119號",
                 latitude = "22.99467882677812",
                 longitude = "120.21792580970332"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #7
-        elif user_message ==f"可由此打開{food7}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food7}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food7}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food7}",
                 address = "台南市中西區中山路8巷5號",
                 latitude = "22.992811497425294",
                 longitude = "120.20594536499986"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #8
-        elif user_message ==f"可由此打開{food8}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food8}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food8}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food8}",
                 address = "台南市安平區安平路612號",
                 latitude = "22.998934777722237",
                 longitude = "120.16887777875954"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #9
-        elif user_message ==f"可由此打開{food9}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food9}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food9}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food9}",
                 address = "台南市中西區民族路三段89號",
                 latitude = "22.998364945021",
                 longitude = "120.19696113865045"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #10
-        elif user_message ==f"可由此打開{food10}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food10}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food10}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food10}",
                 address = "台南市安平區安平路408-1號",
                 latitude = "22.998097253954455",
                 longitude = "120.17459910476686"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #11
-        elif user_message ==f"可由此打開{food11}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food11}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food11}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food11}",
                 address = "台南市中西區友愛街143號",
                 latitude = "22.991519859859444",
                 longitude = "120.1991163002723"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #12
-        elif user_message ==f"可由此打開{food12}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food12}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food12}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food12}",
                 address = "台南市中西區民族路三段11號",
                 latitude = "22.997607846744017",
                 longitude = "120.19921193444611"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #13
-        elif user_message ==f"可由此打開{food13}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food13}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food13}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food13}",
                 address = "台南市中西區府前路一段215號",
                 latitude = "22.989144129134928",
                 longitude = "120.2037448190117"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #14
-        elif user_message ==f"可由此打開{food14}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food14}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food14}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food14}",
                 address = "台南市中西區大德街38號",
                 latitude = "22.989456875210564",
                 longitude = "120.19569979202385"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #15
-        elif user_message ==f"可由此打開{food15}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food15}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food15}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food15}",
                 address = "台南市中西區民族路三段104號",
                 latitude = "22.99888561400458",
                 longitude = "120.19721339754601"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #16
-        elif user_message ==f"可由此打開{food16}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food16}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food16}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food16}",
                 address = "台南市北區成功路380號",
                 latitude = "23.000357785827312",
                 longitude = "120.20017912913502"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #17
-        elif user_message ==f"可由此打開{food17}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food17}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food17}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food17}",
                 address = "台南市中西區國華街三段22號",
                 latitude = "22.99341779274471",
                 longitude = "120.19754275895937"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #18
-        elif user_message ==f"可由此打開{food18}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food18}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food18}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food18}",
                 address = "台南市中西區保安路72號",
                 latitude = "22.990495165451254",
                 longitude = "120.19612642519014"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #19
-        elif user_message ==f"可由此打開{food19}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food19}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food19}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food19}",
                 address = "台南市中西區中正路康樂市場180號",
                 latitude = "22.992374990454337",
                 longitude = "120.19615810739693"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #20
-        elif user_message ==f"可由此打開{food20}的google地圖位置":
-            output_message = LocationSendMessage(
+        elif user_message ==f"{food20}的位置":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message(f"{food20}的google地圖") 
+            output_message2 = LocationSendMessage(
                 title = f"{food20}",
                 address = "台南市中西區西門路一段728號",
                 latitude = "22.98996871769685",
                 longitude = "120.19788844000415"
             )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, output_message)
 
         #----------------------------------------------------------------------
@@ -831,6 +955,16 @@ def handle_message(event):
         #甜點
         elif user_message == "台南甜點":
             output_message = dessert_carousel_template()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+            #-------------------------------------------------------------
+
+            #菜單
+        elif user_message == f"{dessert1}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "",
+                preview_image_url = ""
+            )
             line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

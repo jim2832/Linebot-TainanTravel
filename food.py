@@ -87,7 +87,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food1}的google地圖位置"
+                            text = f"{food1}的位置"
                         )
                     ]
                 ),
@@ -108,7 +108,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food2}的google地圖位置"
+                            text = f"{food2}的位置"
                         )
                     ]
                 ),
@@ -129,7 +129,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food3}的google地圖位置"
+                            text = f"{food3}的位置"
                         )
                     ]
                 ),
@@ -150,7 +150,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food4}的google地圖位置"
+                            text = f"{food4}的位置"
                         )
                     ]
                 ),
@@ -171,7 +171,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food5}的google地圖位置"
+                            text = f"{food5}的位置"
                         )
                     ]
                 ),
@@ -192,7 +192,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food6}的google地圖位置"
+                            text = f"{food6}的位置"
                         )
                     ]
                 ),
@@ -213,7 +213,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food7}的google地圖位置"
+                            text = f"{food7}的位置"
                         )
                     ]
                 ),
@@ -234,7 +234,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food8}的google地圖位置"
+                            text = f"{food8}的位置"
                         )
                     ]
                 ),
@@ -255,7 +255,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food9}的google地圖位置"
+                            text = f"{food9}的位置"
                         )
                     ]
                 ),
@@ -276,7 +276,7 @@ def food_carousel_template1():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food10}的google地圖位置"
+                            text = f"{food10}的位置"
                         )
                     ]
                 )
@@ -310,7 +310,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food11}的google地圖位置"
+                            text = f"{food11}的位置"
                         )
                     ]
                 ),
@@ -331,7 +331,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food12}的google地圖位置"
+                            text = f"{food12}的位置"
                         )
                     ]
                 ),
@@ -352,7 +352,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food13}的google地圖位置"
+                            text = f"{food13}的位置"
                         )
                     ]
                 ),
@@ -373,7 +373,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food14}的google地圖位置"
+                            text = f"{food14}的位置"
                         )
                     ]
                 ),
@@ -394,7 +394,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food15}的google地圖位置"
+                            text = f"{food15}的位置"
                         )
                     ]
                 ),
@@ -415,7 +415,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food16}的google地圖位置"
+                            text = f"{food16}的位置"
                         )
                     ]
                 ),
@@ -436,7 +436,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food17}的google地圖位置"
+                            text = f"{food17}的位置"
                         )
                     ]
                 ),
@@ -457,7 +457,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food18}的google地圖位置"
+                            text = f"{food18}的位置"
                         )
                     ]
                 ),
@@ -478,7 +478,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food19}的google地圖位置"
+                            text = f"{food19}的位置"
                         )
                     ]
                 ),
@@ -499,7 +499,7 @@ def food_carousel_template2():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{food20}的google地圖位置"
+                            text = f"{food20}的位置"
                         )
                     ]
                 )
@@ -533,7 +533,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert1}的google地圖位置"
+                            text = f"{dessert1}的位置"
                         )
                     ]
                 ),
@@ -554,7 +554,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert2}的google地圖位置"
+                            text = f"{dessert2}的位置"
                         )
                     ]
                 ),
@@ -575,7 +575,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert3}的google地圖位置"
+                            text = f"{dessert3}的位置"
                         )
                     ]
                 ),
@@ -596,7 +596,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert4}的google地圖位置"
+                            text = f"{dessert4}的位置"
                         )
                     ]
                 ),
@@ -617,7 +617,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert5}的google地圖位置"
+                            text = f"{dessert5}的位置"
                         )
                     ]
                 ),
@@ -638,7 +638,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert6}的google地圖位置"
+                            text = f"{dessert6}的位置"
                         )
                     ]
                 ),
@@ -659,7 +659,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert7}的google地圖位置"
+                            text = f"{dessert7}的位置"
                         )
                     ]
                 ),
@@ -680,7 +680,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert8}的google地圖位置"
+                            text = f"{dessert8}的位置"
                         )
                     ]
                 ),
@@ -701,7 +701,7 @@ def dessert_carousel_template():
                         ),
                         MessageTemplateAction(
                             label = "點我看地圖位置",
-                            text = f"可由此打開{dessert9}的google地圖位置"
+                            text = f"{dessert9}的位置"
                         )
                     ]
                 )

@@ -1192,7 +1192,8 @@ def handle_message(event):
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
+        
+        #飲料
         elif user_message == "台南飲料":
             output_message = drink_confirm_template()
             line_bot_api.reply_message(event.reply_token, output_message)
@@ -1206,8 +1207,9 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message("點選按鈕即可查看菜單")
             output_message2 = drink_image_carousel_message()
 
-            reply_arr.extend([output_message1,output_message2])
-            line_bot_api.reply_message(event.reply_token, output_message)
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
         #連鎖飲料菜單
         elif user_message == f"{chain_drink1}菜單":

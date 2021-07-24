@@ -49,8 +49,8 @@ def imagemap_message():
 #確認介面訊息
 def Confirm_Template():
     output_message = TemplateMessage(
-        alt_text = "是否註冊成為會員？",
-        template = Confirm_Template(
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        template = ConfirmTemplate(
             text = "是否註冊成會員？",
             actions = [
                 PostbackTemplateAction(

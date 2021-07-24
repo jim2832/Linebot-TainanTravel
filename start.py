@@ -1194,42 +1194,88 @@ def handle_message(event):
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         elif user_message == "台南飲料":
-            output_message = TemplateSendMessage(
-            alt_text = "要顯示的字",
-                template = ImageCarouselTemplate(
-                    colunms = [
-                        ImageCarouselColumn(
-                            image_url = "",
-                            action = URITemplateAction(
-                                label = "標題",
-                                uri = "網址"
-                            )
-                        ),
-                        ImageCarouselColumn(
-                            image_url = "",
-                            action = URITemplateAction(
-                                label = "標題",
-                                uri = "網址"
-                            )
-                        ),
-                        ImageCarouselColumn(
-                            image_url = "",
-                            action = URITemplateAction(
-                                label = "標題",
-                                uri = "網址"
-                            )
-                        ),
-                        ImageCarouselColumn(
-                            image_url = "",
-                            action = URITemplateAction(
-                                label = "標題",
-                                uri = "網址"
-                            )
-                        )
-                    ]
-                )
+            output_message = drink_confirm_template()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#------------------------------------------------------------------------------------------------
+
+        #連鎖
+        elif user_message == "台南連鎖飲料":
+            reply_arr = []
+            
+            output_message1 = text_reply.text_reply_message("點選按鈕即可查看菜單")
+            output_message2 = drink_image_carousel_message()
+
+            reply_arr.extend([output_message1,output_message2])
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #連鎖飲料菜單
+        elif user_message == f"{chain_drink1}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://img.pboss.tw/pixnet/e279d34feae6dd59e63cedf2319b67f8.jpg",
+                preview_image_url = "https://img.pboss.tw/pixnet/e279d34feae6dd59e63cedf2319b67f8.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink2}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://www.chingshin.tw/upload/price/1907171531260000001.jpg",
+                preview_image_url = "https://www.chingshin.tw/upload/price/1907171531260000001.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink3}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://www.milkshoptea.com/upload/price/2104090830370000002.jpg",
+                preview_image_url = "https://www.milkshoptea.com/upload/price/2104090830370000002.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink4}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://dtvtjl5au16ai.cloudfront.net/wp-content/uploads/2021/04/CoCoMenu2021-4.jpg",
+                preview_image_url = "https://dtvtjl5au16ai.cloudfront.net/wp-content/uploads/2021/04/CoCoMenu2021-4.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink5}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://www.dayungs.com/wp-content/uploads/2021/07/%E5%AE%98%E7%B6%B2%E5%83%B9%E7%9B%AE%E8%A1%A8_0719-0815_%E5%8D%97.jpg",
+                preview_image_url = "https://www.dayungs.com/wp-content/uploads/2021/07/%E5%AE%98%E7%B6%B2%E5%83%B9%E7%9B%AE%E8%A1%A8_0719-0815_%E5%8D%97.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink6}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://i.imgur.com/9nSiF2g.jpg",
+                preview_image_url = "https://i.imgur.com/9nSiF2g.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink7}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://yinyih.tw/wp-content/uploads/20180911224137_47.jpg",
+                preview_image_url = "https://yinyih.tw/wp-content/uploads/20180911224137_47.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink8}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://tw.tp-tea.com/download/index.php?index_id=26",
+                preview_image_url = "https://tw.tp-tea.com/download/index.php?index_id=26"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{chain_drink9}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "http://www.presotea.com.tw/webimages/1621218310781.jpg",
+                preview_image_url = "http://www.presotea.com.tw/webimages/1621218310781.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#------------------------------------------------------------------------------------------------
+
+        #非連鎖
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             

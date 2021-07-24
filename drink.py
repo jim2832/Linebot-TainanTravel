@@ -58,7 +58,7 @@ drink10 = "紅港 HONG GANG"
 
 #確認樣板
 def drink_confirm_template():
-    output_message = TemplateMessage(
+    output_message = TemplateSendMessage(
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         template = ConfirmTemplate(
             text = "請問要查詢連鎖還是非連鎖飲料呢？",

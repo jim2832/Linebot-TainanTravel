@@ -1209,7 +1209,9 @@ def handle_message(event):
 
             reply_arr.append(output_message1)
             reply_arr.append(output_message2)
+            
             line_bot_api.reply_message(event.reply_token, reply_arr)
+
 
         #連鎖飲料菜單
         elif user_message == f"{chain_drink1}菜單":

@@ -1302,15 +1302,15 @@ def handle_message(event):
                 preview_image_url = "https://pic.pimg.tw/haruhii/1620129653-1114303957-g.jpg"
             )
             output_message3 = text_reply.text_reply_message(f"{drink1}營業時間\n\n星期一：休息\n星期二：休息星期三：11:00–18:00\n星期四：11:00–18:00\n星期五：11:00–18:00\n星期六：11:00–18:00\n星期日：11:00–18:00")
-            output_message4 = text_reply.text_reply_message(f"{drink1}地圖位置")
-            output_message5 = LocationSendMessage(
-                title = f"{drink1}",
-                address = "台南市中西區民族路二段281號",
-                latitude = "22.99641400517901",
-                longitude = "120.2034199312454"
-            )
+            # output_message4 = text_reply.text_reply_message(f"{drink1}地圖位置")
+            # output_message5 = LocationSendMessage(
+            #     title = f"{drink1}",
+            #     address = "台南市中西區民族路二段281號",
+            #     latitude = "22.99641400517901",
+            #     longitude = "120.2034199312454"
+            # )
 
-            reply_arr.extend([output_message1,output_message2,output_message3,output_message4,output_message5])
+            reply_arr.extend([output_message1,output_message2,output_message3])
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
         elif user_message == f"{drink2}介紹":

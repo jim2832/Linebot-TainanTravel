@@ -46,13 +46,11 @@ chain_drink9 = "鮮茶道"
 drink1 = "雙生綠豆沙牛奶"
 drink2 = "藥師的私房紅茶"
 drink3 = "波哥茶飲"
-drink4 = "青蛙黑蛋奶"
+drink4 = "東洲黑糖奶舖"
 drink5 = "布萊恩紅茶"
-drink6 = "老秋茶舖"
+drink6 = "老丘茶舖"
 drink7 = "鮮果診所"
 drink8 = "雙全紅茶"
-drink9 = "東洲黑糖奶舖"
-drink10 = "紅港 HONG GANG"
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
@@ -158,5 +156,71 @@ def drink_image_carousel_message():
                 )
             ]
         )
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#非連鎖飲料主頁1
+def non_drink_imagemap1():
+    output_message = ImagemapSendMessage(
+        base_url = "https://i.imgur.com/9KWOrQJ.jpg",
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        base_size = BaseSize(height = 1600, width = 1600),
+        actions =[
+            #1
+            MessageImagemapAction(
+                text = "雙生綠豆沙牛奶",
+                area = ImagemapArea(x = 0, y= 0, width = 800, height = 800)
+            ),
+            #2
+            MessageImagemapAction(
+                text = "藥師的私房紅茶",
+                area = ImagemapArea(x = 800, y= 0, width = 800, height = 800)
+            ),
+            #3
+            MessageImagemapAction(
+                text = "波哥茶飲",
+                area = ImagemapArea(x = 0, y= 800, width = 800, height = 800)
+            ),
+            #4
+            MessageImagemapAction(
+                text = "東洲黑糖奶舖",
+                area = ImagemapArea(x = 800, y= 800, width = 800, height = 800)
+            )
+        ]
+    )
+    return output_message
+
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+#非連鎖飲料主頁2
+def non_drink_imagemap2():
+    output_message = ImagemapSendMessage(
+        base_url = "https://i.imgur.com/BGPJaHA.jpg",
+        alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+        base_size = BaseSize(height = 1600, width = 1600),
+        actions =[
+            #1
+            MessageImagemapAction(
+                text = "布萊恩紅茶",
+                area = ImagemapArea(x = 0, y= 0, width = 800, height = 800)
+            ),
+            #2
+            MessageImagemapAction(
+                text = "老丘茶舖",
+                area = ImagemapArea(x = 800, y= 0, width = 800, height = 800)
+            ),
+            #3
+            MessageImagemapAction(
+                text = "鮮果診所",
+                area = ImagemapArea(x = 0, y= 800, width = 800, height = 800)
+            ),
+            #4
+            MessageImagemapAction(
+                text = "雙全紅茶",
+                area = ImagemapArea(x = 800, y= 800, width = 800, height = 800)
+            )
+        ]
     )
     return output_message

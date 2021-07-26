@@ -26,7 +26,8 @@ import text_reply as text_reply
 from mykey import *
 from tourist_spots import *
 from food import *
-from drink import *
+from chain_drink import *
+from non_chain_drink import *
 
 #---------------- line settings ----------------
 # Channel Access Token
@@ -1204,7 +1205,7 @@ def handle_message(event):
         elif user_message == "台南連鎖飲料":
             reply_arr = []
             
-            output_message1 = text_reply.text_reply_message("點選按鈕即可查看菜單")
+            output_message1 = text_reply.text_reply_message("點選圖片即可查看菜單！")
             output_message2 = drink_image_carousel_message()
 
             reply_arr.append(output_message1)
@@ -1282,12 +1283,47 @@ def handle_message(event):
         #非連鎖
         elif user_message == "台南非連鎖飲料":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message("點選圖片以取得介紹！")
+            output_message1 = text_reply.text_reply_message("點選圖片以取得介紹！\n(菜單、營業時間、位置)")
             output_message2 = non_drink_imagemap1()
             output_message3 = non_drink_imagemap2()
 
             reply_arr.extend([output_message1,output_message2,output_message3])
             line_bot_api.reply_message(event.reply_token, reply_arr)
+
+#------------------------------------------------------------------------------------------------
+
+        #介紹
+        elif user_message == f"{drink1}介紹":
+            output_message = drink1_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink2}介紹":
+            output_message = drink2_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink3}介紹":
+            output_message = drink3_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink4}介紹":
+            output_message = drink4_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink5}介紹":
+            output_message = drink5_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink6}介紹":
+            output_message = drink6_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink7}介紹":
+            output_message = drink7_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == f"{drink8}介紹":
+            output_message = drink8_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             

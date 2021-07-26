@@ -114,7 +114,7 @@ def drink1_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink1}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://pic.pimg.tw/haruhii/1620129653-1114303957-g.jpg",
         preview_image_url = "https://pic.pimg.tw/haruhii/1620129653-1114303957-g.jpg"
     )
@@ -138,7 +138,7 @@ def drink2_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink2}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://img.pboss.tw/uploads/20200218224754_97.jpg",
         preview_image_url = "https://img.pboss.tw/uploads/20200218224754_97.jpg"
     )
@@ -162,7 +162,7 @@ def drink3_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink3}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://img.rainieis.tw/uploads/20200331171352_42.jpg",
         preview_image_url = "https://img.rainieis.tw/uploads/20200331171352_42.jpg"
     )
@@ -186,7 +186,7 @@ def drink4_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink4}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p72729/m61256/10c17eee9f5b34a0c062724b76fb6531ab9ea26f.jpg",
         preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p72729/m61256/10c17eee9f5b34a0c062724b76fb6531ab9ea26f.jpg"
     )
@@ -210,7 +210,7 @@ def drink5_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink5}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/160095769_3747199388661202_1238568005909003349_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=6fSpesEXwRkAX9BovE7&_nc_ht=scontent.ftpe10-1.fna&oh=12d6f1e782dfb2cd7edec381c7eb4716&oe=6123B398",
         preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/160095769_3747199388661202_1238568005909003349_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=6fSpesEXwRkAX9BovE7&_nc_ht=scontent.ftpe10-1.fna&oh=12d6f1e782dfb2cd7edec381c7eb4716&oe=6123B398"
     )
@@ -234,7 +234,7 @@ def drink6_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink6}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://img.pboss.tw/uploads/20181022154530_28.jpg",
         preview_image_url = "https://img.pboss.tw/uploads/20181022154530_28.jpg"
     )
@@ -258,7 +258,7 @@ def drink7_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink7}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t31.18172-8/13723949_537923076399586_3264104757293871409_o.png?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=j2KPwAZUh7UAX9HMDDg&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=ce31009fc3c636d95dc0b92f608c172b&oe=61236939",
         preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t31.18172-8/13723949_537923076399586_3264104757293871409_o.png?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=j2KPwAZUh7UAX9HMDDg&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=ce31009fc3c636d95dc0b92f608c172b&oe=61236939"
     )
@@ -282,7 +282,7 @@ def drink8_func():
     reply_arr = []
 
     output_message1 = text_reply.text_reply_message(f"{drink8}菜單")
-    output_message2 = ImageSendMassage(
+    output_message2 = ImageSendMessage(
         original_content_url = "https://www.foodytw.com/upload/review/image/2020/03/ab10e1a09046989ed045d78de99a6d91.jpg",
         preview_image_url = "https://www.foodytw.com/upload/review/image/2020/03/ab10e1a09046989ed045d78de99a6d91.jpg"
     )

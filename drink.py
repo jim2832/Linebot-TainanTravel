@@ -170,22 +170,22 @@ def non_drink_imagemap1():
         actions =[
             #1
             MessageImagemapAction(
-                text = "雙生綠豆沙牛奶",
+                text = f"{drink1}",
                 area = ImagemapArea(x = 0, y= 0, width = 800, height = 800)
             ),
             #2
             MessageImagemapAction(
-                text = "藥師的私房紅茶",
+                text = f"{drink2}",
                 area = ImagemapArea(x = 800, y= 0, width = 800, height = 800)
             ),
             #3
             MessageImagemapAction(
-                text = "波哥茶飲",
+                text = f"{drink3}",
                 area = ImagemapArea(x = 0, y= 800, width = 800, height = 800)
             ),
             #4
             MessageImagemapAction(
-                text = "東洲黑糖奶舖",
+                text = f"{drink4}",
                 area = ImagemapArea(x = 800, y= 800, width = 800, height = 800)
             )
         ]
@@ -201,24 +201,24 @@ def non_drink_imagemap2():
         alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
         base_size = BaseSize(height = 1600, width = 1600),
         actions =[
-            #1
+            #5
             MessageImagemapAction(
-                text = "布萊恩紅茶",
+                text = f"{drink5}",
                 area = ImagemapArea(x = 0, y= 0, width = 800, height = 800)
             ),
-            #2
+            #6
             MessageImagemapAction(
-                text = "老丘茶舖",
+                text = f"{drink6}",
                 area = ImagemapArea(x = 800, y= 0, width = 800, height = 800)
             ),
-            #3
+            #7
             MessageImagemapAction(
-                text = "鮮果診所",
+                text = f"{drink7}",
                 area = ImagemapArea(x = 0, y= 800, width = 800, height = 800)
             ),
-            #4
+            #8
             MessageImagemapAction(
-                text = "雙全紅茶",
+                text = f"{drink8}",
                 area = ImagemapArea(x = 800, y= 800, width = 800, height = 800)
             )
         ]

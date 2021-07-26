@@ -1280,6 +1280,14 @@ def handle_message(event):
 #------------------------------------------------------------------------------------------------
 
         #非連鎖
+        elif user_message == "台南非連鎖飲料":
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message("點選圖片以取得介紹！")
+            output_message2 = non_drink_imagemap1()
+            output_message3 = non_drink_imagemap2()
+
+            reply_arr.extend([output_message1,output_message2,output_message3])
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             

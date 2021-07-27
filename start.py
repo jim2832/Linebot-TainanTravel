@@ -1,3 +1,4 @@
+from Cafe import cafe_image_Carousel
 from flask import Flask, request, abort
 
 from linebot import (
@@ -1283,7 +1284,7 @@ def handle_message(event):
         #非連鎖
         elif user_message == "台南非連鎖飲料":
             reply_arr = []
-            output_message1 = text_reply.text_reply_message("點選圖片以取得介紹！\n(菜單、營業時間、位置)")
+            output_message1 = text_reply.text_reply_message("點選圖片以取得資訊！\n(菜單、營業時間、位置)")
             output_message2 = non_drink_imagemap1()
             output_message3 = non_drink_imagemap2()
 
@@ -1292,37 +1293,44 @@ def handle_message(event):
 
 #------------------------------------------------------------------------------------------------
 
-        #介紹
-        elif user_message == f"{drink1}介紹":
+        #資訊
+        elif user_message == f"{drink1}資訊":
             output_message = drink1_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink2}介紹":
+        elif user_message == f"{drink2}資訊":
             output_message = drink2_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink3}介紹":
+        elif user_message == f"{drink3}資訊":
             output_message = drink3_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink4}介紹":
+        elif user_message == f"{drink4}資訊":
             output_message = drink4_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink5}介紹":
+        elif user_message == f"{drink5}資訊":
             output_message = drink5_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink6}介紹":
+        elif user_message == f"{drink6}資訊":
             output_message = drink6_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink7}介紹":
+        elif user_message == f"{drink7}資訊":
             output_message = drink7_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-        elif user_message == f"{drink8}介紹":
+        elif user_message == f"{drink8}資訊":
             output_message = drink8_func()
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+#------------------------------------------------------------------------------
+
+        #咖啡廳
+        elif user_message == "台南咖啡廳":
+            output_message = cafe_image_carousel()
             line_bot_api.reply_message(event.reply_token, output_message)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

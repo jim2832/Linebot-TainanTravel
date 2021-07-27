@@ -50,22 +50,22 @@ def non_drink_imagemap1():
         actions =[
             #1
             MessageImagemapAction(
-                text = f"{drink1}介紹",
+                text = f"{drink1}資訊",
                 area = ImagemapArea(x = 0, y= 0, width = 800, height = 800)
             ),
             #2
             MessageImagemapAction(
-                text = f"{drink2}介紹",
+                text = f"{drink2}資訊",
                 area = ImagemapArea(x = 800, y= 0, width = 800, height = 800)
             ),
             #3
             MessageImagemapAction(
-                text = f"{drink3}介紹",
+                text = f"{drink3}資訊",
                 area = ImagemapArea(x = 0, y= 800, width = 800, height = 800)
             ),
             #4
             MessageImagemapAction(
-                text = f"{drink4}介紹",
+                text = f"{drink4}資訊",
                 area = ImagemapArea(x = 800, y= 800, width = 800, height = 800)
             )
         ]
@@ -83,22 +83,22 @@ def non_drink_imagemap2():
         actions =[
             #5
             MessageImagemapAction(
-                text = f"{drink5}介紹",
+                text = f"{drink5}資訊",
                 area = ImagemapArea(x = 0, y= 0, width = 800, height = 800)
             ),
             #6
             MessageImagemapAction(
-                text = f"{drink6}介紹",
+                text = f"{drink6}資訊",
                 area = ImagemapArea(x = 800, y= 0, width = 800, height = 800)
             ),
             #7
             MessageImagemapAction(
-                text = f"{drink7}介紹",
+                text = f"{drink7}資訊",
                 area = ImagemapArea(x = 0, y= 800, width = 800, height = 800)
             ),
             #8
             MessageImagemapAction(
-                text = f"{drink8}介紹",
+                text = f"{drink8}資訊",
                 area = ImagemapArea(x = 800, y= 800, width = 800, height = 800)
             )
         ]
@@ -107,7 +107,7 @@ def non_drink_imagemap2():
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-#非連鎖飲料介紹
+#非連鎖飲料資訊
 
 #1
 def drink1_func():

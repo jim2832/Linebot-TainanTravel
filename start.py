@@ -1,4 +1,3 @@
-from Cafe import cafe_image_Carousel, cafe_image_carousel
 from flask import Flask, request, abort
 
 from linebot import (

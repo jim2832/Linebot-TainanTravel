@@ -8,7 +8,7 @@ LINE_PUSH_TARGET_ID = "U79e56c5d8383938f2ca93b88a1227112"
 
 # instruction of pushing code to heroku
 # git add .
-# git commit -am'ok'
+# git commit -m'ok'
 # git push heroku master
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

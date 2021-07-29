@@ -1329,7 +1329,7 @@ def handle_message(event):
 #------------------------------------------------------------------------------
 
         #咖啡廳
-        elif user_message == "台南非連鎖飲料":
+        elif user_message == "台南咖啡廳":
             reply_arr = []
             output_message1 = text_reply.text_reply_message("點選圖片以獲取資訊！")
             output_message2 = cafe_image_carousel()

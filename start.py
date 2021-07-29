@@ -28,7 +28,7 @@ from tourist_spots import *
 from food import *
 from chain_drink import *
 from non_chain_drink import *
-from cafe import *
+from coffee import *
 
 #---------------- line settings ----------------
 # Channel Access Token
@@ -1328,15 +1328,15 @@ def handle_message(event):
 
 #------------------------------------------------------------------------------
 
-        #咖啡廳
-        elif user_message == "台南咖啡廳":
-            reply_arr = []
+        # #咖啡廳
+        # elif user_message == "台南咖啡廳":
+        #     reply_arr = []
 
-            output_message1 = text_reply.text_reply_message("點選圖片即可獲得資訊！")
-            output_message2 = cafe_image_carousel()
+        #     output_message1 = text_reply.text_reply_message("點選圖片即可獲得資訊！")
+        #     output_message2 = cafe_image_carousel()
 
-            reply_arr.extend([output_message1,output_message2])
-            line_bot_api.reply_message(event.reply_token, reply_arr)
+        #     reply_arr.extend([output_message1,output_message2])
+        #     line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             

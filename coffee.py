@@ -33,8 +33,8 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cafe1 = "秘氏咖啡"
 cafe2 = "Error22 鼴鼠"
-cafe3 = "kokoni café"
-cafe4 = "StableNice BLDG."
+cafe3 = "kokoni cafe"
+cafe4 = "StableNice BLDG"
 cafe5 = "離島咖啡"
 cafe6 = "ALFEE Coffee"
 cafe7 = "果核抵家"

@@ -1334,7 +1334,8 @@ def handle_message(event):
             output_message1 = text_reply.text_reply_message("點選圖片以獲取資訊！")
             output_message2 = cafe_image_carousel()
 
-            reply_arr.extend([output_message1,output_message2])
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

@@ -30,12 +30,6 @@ from mykey import *
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
 # Channel Secret
 handler = WebhookHandler(LINE_CHANNEL_SECRET)
-
-#---------------- line settings ----------------
-# Channel Access Token
-line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
-# Channel Secret
-handler = WebhookHandler(LINE_CHANNEL_SECRET)
 #---------------------------------------------------
 drink1 = "雙生綠豆沙牛奶"
 drink2 = "藥師的私房紅茶"

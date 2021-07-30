@@ -33,8 +33,8 @@ handler = WebhookHandler(LINE_CHANNEL_SECRET)
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 cafe1 = "秘氏咖啡"
 cafe2 = "Error22 鼴鼠"
-cafe3 = "kokoni cafe"
-cafe4 = "BLDG"
+cafe3 = "kokoni café"
+cafe4 = "a Room 房間咖啡"
 cafe5 = "離島咖啡"
 cafe6 = "ALFEE Coffee"
 cafe7 = "果核抵家"
@@ -74,7 +74,7 @@ def cafe_image_carousel():
                 ),
                 #4
                 ImageCarouselColumn(
-                    image_url = "https://i.imgur.com/BoWdEF9.jpg",
+                    image_url = "https://i.imgur.com/ZlyFoay.jpg",
                     action = MessageTemplateAction(
                         label = f"{cafe4}",
                         text = f"{cafe4}資訊"

@@ -65,12 +65,12 @@
         "contents": [
           {
             "type": "separator",
-            "margin": "none"
+            "margin": "xs"
           },
           {
             "type": "box",
             "layout": "baseline",
-            "spacing": "sm",
+            "spacing": "none",
             "contents": [
               {
                 "type": "text",
@@ -88,16 +88,17 @@
                 "flex": 5,
                 "margin": "xs"
               }
-            ]
+            ],
+            "margin": "md"
           },
           {
             "type": "separator",
-            "margin": "sm"
+            "margin": "md"
           },
           {
             "type": "box",
             "layout": "baseline",
-            "spacing": "sm",
+            "spacing": "none",
             "contents": [
               {
                 "type": "text",
@@ -120,11 +121,12 @@
                 "flex": 5,
                 "margin": "xs"
               }
-            ]
+            ],
+            "margin": "md"
           },
           {
             "type": "separator",
-            "margin": "sm"
+            "margin": "md"
           },
           {
             "type": "box",
@@ -151,11 +153,12 @@
                 "flex": 5,
                 "margin": "xs"
               }
-            ]
+            ],
+            "margin": "md"
           },
           {
             "type": "separator",
-            "margin": "sm"
+            "margin": "md"
           },
           {
             "type": "box",
@@ -184,13 +187,13 @@
               }
             ],
             "spacing": "none",
-            "margin": "xs"
+            "margin": "md"
           }
         ]
       },
       {
         "type": "separator",
-        "margin": "sm"
+        "margin": "md"
       }
     ]
   },

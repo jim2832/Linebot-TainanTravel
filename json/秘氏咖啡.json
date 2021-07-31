@@ -2,14 +2,10 @@
   "type": "bubble",
   "hero": {
     "type": "image",
-    "url": "https://i.imgur.com/AqCGgWf.jpg",
     "size": "full",
     "aspectRatio": "20:13",
     "aspectMode": "cover",
-    "action": {
-      "type": "uri",
-      "uri": "http://linecorp.com/"
-    }
+    "url": "https://i.imgur.com/AqCGgWf.jpg"
   },
   "body": {
     "type": "box",

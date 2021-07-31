@@ -1338,6 +1338,11 @@ def handle_message(event):
             reply_arr.append(output_message2)
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
+        #咖啡廳介紹
+        elif user_message == f"{cafe1}資訊":
+            output_message = json.load(open("秘氏咖啡", "r", encoding="utf-8"))
+            line_bot_api.reply_message(event.reply_token, FlexSendMessage('cafe1',output_message))
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             
         else:

@@ -5,7 +5,7 @@
       "size": "full",
       "aspectRatio": "20:13",
       "aspectMode": "cover",
-      "url": "https://i.imgur.com/AqCGgWf.jpg"
+      "url": "https://imgur.com/a/ChMTLbu"
     },
     "body": {
       "type": "box",
@@ -13,7 +13,7 @@
       "contents": [
         {
           "type": "text",
-          "text": "秘氏咖啡",
+          "text": "ertz 二子咖啡",
           "weight": "bold",
           "size": "xl"
         },
@@ -45,7 +45,7 @@
             {
               "type": "icon",
               "size": "sm",
-              "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_gray_star_28.png"
+              "url": "https://scdn.line-apps.com/n/channel_devcenter/img/fx/review_grey_star_28.png"
             },
             {
               "type": "text",
@@ -81,7 +81,7 @@
                 },
                 {
                   "type": "text",
-                  "text": "台南市中西區國華街三段123-160號永樂市場2樓",
+                  "text": "台南市東區勝利路83號二樓",
                   "wrap": true,
                   "color": "#666666",
                   "size": "sm",
@@ -114,7 +114,7 @@
                 },
                 {
                   "type": "text",
-                  "text": "星期一\t14:00–22:00\n星期二\t14:00–22:00\n星期三\t休息\n星期四\t休息\n星期五\t14:00–22:00\n星期六\t14:00–22:00\n星期日\t14:00–22:00",
+                  "text": "星期一\t12:00–20:00\n星期二\t12:00–20:00\n星期三\t12:00–20:00\n星期四\t休息\n星期五\t休息\n星期六\t12:00–20:00\n星期日\t12:00–20:00",
                   "wrap": true,
                   "color": "#666666",
                   "size": "sm",
@@ -207,7 +207,7 @@
           "action": {
             "type": "message",
             "label": "點我看菜單",
-            "text": "秘氏咖啡菜單"
+            "text": "二子咖啡菜單"
           },
           "margin": "none",
           "height": "sm",

@@ -1326,7 +1326,7 @@ def handle_message(event):
             output_message = drink8_func()
             line_bot_api.reply_message(event.reply_token, output_message)
 
-#------------------------------------------------------------------------------
+#---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #咖啡廳
         elif user_message == "台南咖啡廳":
@@ -1393,6 +1393,132 @@ def handle_message(event):
         elif user_message == f"{cafe9}資訊":
             output_message = json.load(open("cafe9.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe9}資訊", output_message))
+
+        #------------------------------------------------------------------------------------------------
+
+        #咖啡廳菜單
+
+        #1
+        elif user_message == f"{cafe1}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://live.staticflickr.com/65535/46802893755_d7a30c3586_c.jpg",
+                preview_image_url = "https://live.staticflickr.com/65535/46802893755_d7a30c3586_c.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #2
+        elif user_message == f"{cafe2}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/imsean/1526115752-2122063451.jpg",
+                preview_image_url = "https://pic.pimg.tw/imsean/1526115752-2122063451.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #3
+        elif user_message == f"{cafe3}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/1920300_362694420557865_7566195407880076571_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=ba80b0&_nc_ohc=Vq1Dbyfn9IIAX9jO05V&_nc_ht=scontent.ftpe10-1.fna&oh=2d54d9ca29291c720895e3578bab0327&oe=612E3BB3",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/1920300_362694420557865_7566195407880076571_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=ba80b0&_nc_ohc=Vq1Dbyfn9IIAX9jO05V&_nc_ht=scontent.ftpe10-1.fna&oh=2d54d9ca29291c720895e3578bab0327&oe=612E3BB3"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #4
+        elif user_message == f"{cafe4}菜單":
+            reply_arr = []
+
+            output_message1 = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/imsean/1460039404-1823430773.jpg",
+                preview_image_url = "https://pic.pimg.tw/imsean/1460039404-1823430773.jpg"
+            )
+            output_message2 = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/imsean/1460039405-1922524957_wn.jpg",
+                preview_image_url = "https://pic.pimg.tw/imsean/1460039405-1922524957_wn.jpg"
+            )
+
+            reply_arr.extend([output_message1,output_message2])
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #5
+        elif user_message == f"{cafe5}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://pic.pimg.tw/imsean/1566699828-720978753_wn.jpg",
+                preview_image_url = "https://pic.pimg.tw/imsean/1566699828-720978753_wn.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #6
+        elif user_message == f"{cafe6}菜單":
+            reply_arr = []
+
+            output_message1 = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/165644394_10158928152811698_3784724458759293652_n.png?_nc_cat=104&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=JplM959rpOsAX_ZkW-o&_nc_ht=scontent.ftpe10-1.fna&oh=fe638e1d5c2ff6c6c6562eafa0475f6f&oe=612EDBEB",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/165644394_10158928152811698_3784724458759293652_n.png?_nc_cat=104&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=JplM959rpOsAX_ZkW-o&_nc_ht=scontent.ftpe10-1.fna&oh=fe638e1d5c2ff6c6c6562eafa0475f6f&oe=612EDBEB"
+            )
+            output_message2 = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/166053187_10158928153271698_5696721054342138197_n.png?_nc_cat=102&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=KREX1DSarQ0AX8XpQSq&_nc_ht=scontent.ftpe10-1.fna&oh=e9aa26563e5996e92e0a846d7a1ce472&oe=612EE411",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/166053187_10158928153271698_5696721054342138197_n.png?_nc_cat=102&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=KREX1DSarQ0AX8XpQSq&_nc_ht=scontent.ftpe10-1.fna&oh=e9aa26563e5996e92e0a846d7a1ce472&oe=612EE411"
+            )
+            output_message3 = ImageSendMessage(
+                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/166014373_10158928153576698_747738054375099202_n.png?_nc_cat=110&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=NBeVQiFXl_IAX9Hauns&_nc_ht=scontent.ftpe10-1.fna&oh=2f7b22ad44c25c1229bc922a3a484826&oe=612DDCEF",
+                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/166014373_10158928153576698_747738054375099202_n.png?_nc_cat=110&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=NBeVQiFXl_IAX9Hauns&_nc_ht=scontent.ftpe10-1.fna&oh=2f7b22ad44c25c1229bc922a3a484826&oe=612DDCEF"
+            )
+
+            reply_arr.extend([output_message1,output_message2,output_message3])
+
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #7
+        elif user_message == f"{cafe7}菜單":
+            reply_arr = []
+
+            output_message1 = ImageSendMessage(
+                original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p55173/m70494/6bb7a7788f0699c714aebdd4e84735a9ed23c6e3.jpg",
+                preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p55173/m70494/6bb7a7788f0699c714aebdd4e84735a9ed23c6e3.jpg"
+            )
+            output_message2 = ImageSendMessage(
+                original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p55173/m70494/c81c31969b21285d5b7d4638a68f7cf05c7b0971.jpg",
+                preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p55173/m70494/c81c31969b21285d5b7d4638a68f7cf05c7b0971.jpg"
+            )
+            output_message3 = ImageSendMessage(
+                original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p55173/m70494/cc4de1a6153ab948f3821ac88ca60e08b17091da.jpg",
+                preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p55173/m70494/cc4de1a6153ab948f3821ac88ca60e08b17091da.jpg"
+            )
+
+            reply_arr.extend([output_message1,output_message2,output_message3])
+
+            line_bot_api.reply_message(event.reply_token, reply_arr)
+
+        #8
+        elif user_message == f"{cafe8}菜單":
+            output_message = ImageSendMessage(
+                original_content_url = "https://lotuslin.com/wp-content/uploads/2017/09/1506185524-99547f31112dcace4bf5863adea7d173.jpg",
+                preview_image_url = "https://lotuslin.com/wp-content/uploads/2017/09/1506185524-99547f31112dcace4bf5863adea7d173.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        #9
+        elif user_message == f"{cafe9}菜單":
+            reply_arr = []
+
+            output_message1 = ImageSendMessage(
+                original_content_url = "https://i1.wp.com/www.pepelife.com/pic/flickr/39274089524_393bf24c91_o.jpg?w=1500&ssl=1",
+                preview_image_url = "https://i1.wp.com/www.pepelife.com/pic/flickr/39274089524_393bf24c91_o.jpg?w=1500&ssl=1"
+            )
+            output_message2 = ImageSendMessage(
+                original_content_url = "https://i2.wp.com/www.pepelife.com/pic/flickr/26112180208_3544c5bb9a_o.jpg?w=1500&ssl=1",
+                preview_image_url = "https://i2.wp.com/www.pepelife.com/pic/flickr/26112180208_3544c5bb9a_o.jpg?w=1500&ssl=1"
+            )
+            output_message3 = ImageSendMessage(
+                original_content_url = "https://i0.wp.com/www.pepelife.com/pic/flickr/28205181589_08b1ef4d3b_o.jpg?w=1500&ssl=1",
+                preview_image_url = "https://i0.wp.com/www.pepelife.com/pic/flickr/28205181589_08b1ef4d3b_o.jpg?w=1500&ssl=1"
+            )
+            output_message4 = ImageSendMessage(
+                original_content_url = "https://i1.wp.com/www.pepelife.com/pic/flickr/39953095042_c39efb662d_o.jpg?w=1500&ssl=1",
+                preview_image_url = "https://i1.wp.com/www.pepelife.com/pic/flickr/39953095042_c39efb662d_o.jpg?w=1500&ssl=1"
+            )
+
+            reply_arr.extend([output_message1,output_message2,output_message3,output_message4])
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             

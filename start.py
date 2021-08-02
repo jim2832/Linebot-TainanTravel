@@ -1523,8 +1523,39 @@ def handle_message(event):
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
             
         else:
-            output_message = text_reply.text_reply_message("請輸入有效指令！")
-            line_bot_api.reply_message(event.reply_token, output_message)
+            reply_arr = []
+            output_message1 = text_reply.text_reply_message("您好，請問想查詢什麼呢？")
+            
+            output_message2 = ImagemapSendMessage(
+                base_url = "https://i.imgur.com/0tztQt1.jpg",
+                alt_text = "此裝置不支援樣板。", #無法支援格式所顯示的文字
+                base_size = BaseSize(height = 2000, width = 2000),
+                actions =[
+                    #1
+                    MessageImagemapAction(
+                        text = "台南景點",
+                        area = ImagemapArea(x = 0, y= 0, width = 1000, height = 1000)
+                    ),
+                    #2
+                    MessageImagemapAction(
+                        text = "台南美食",
+                        area = ImagemapArea(x = 1000, y= 0, width = 1000, height = 1000)
+                    ),
+                    #3
+                    MessageImagemapAction(
+                        text = "台南飲料",
+                        area = ImagemapArea(x = 0, y= 1000, width = 1000, height = 1000)
+                    ),
+                    #4
+                    MessageImagemapAction(
+                        text = "台南咖啡廳",
+                        area = ImagemapArea(x = 1000, y= 1000, width = 1000, height = 1000)
+                    )
+                ]
+            )
+            reply_arr.append(output_message1)
+            reply_arr.append(output_message2)
+            line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 

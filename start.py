@@ -1340,7 +1340,7 @@ def handle_message(event):
 
         #咖啡廳介紹
         elif user_message == f"{cafe1}資訊":
-            FlexMessage = json.load(open('cafe1.json','r',encoding='utf-8'))
+            FlexMessage = json.load(open('card.json','r',encoding='utf-8'))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage('profile',FlexMessage))
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

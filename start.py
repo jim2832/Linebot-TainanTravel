@@ -1335,39 +1335,39 @@ def handle_message(event):
 
         #咖啡廳介紹
         elif user_message == f"{cafe1}資訊":
-            output_message = json.load(open("json","cafe1.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe1.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe1}資訊", output_message))
 
         elif user_message == f"{cafe2}資訊":
-            output_message = json.load(open("json","cafe2.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe2.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe2}資訊", output_message))
 
         elif user_message == f"{cafe3}資訊":
-            output_message = json.load(open("json","cafe3.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe3.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe3}資訊", output_message))
 
         elif user_message == f"{cafe4}資訊":
-            output_message = json.load(open("json","cafe4.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe4.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe4}資訊", output_message))
 
         elif user_message == f"{cafe5}資訊":
-            output_message = json.load(open("json","cafe5.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe5.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe5}資訊", output_message))
 
         elif user_message == f"{cafe6}資訊":
-            output_message = json.load(open("json","cafe6.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe6.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe6}資訊", output_message))
 
         elif user_message == f"{cafe7}資訊":
-            output_message = json.load(open("json","cafe7.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe7.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe7}資訊", output_message))
 
         elif user_message == f"{cafe8}資訊":
-            output_message = json.load(open("json","cafe8.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe8.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe8}資訊", output_message))
 
         elif user_message == f"{cafe9}資訊":
-            output_message = json.load(open("json","cafe9.json","r",encoding="utf-8"))
+            output_message = json.load(open("cafe9.json","r",encoding="utf-8"))
             line_bot_api.reply_message(event.reply_token, FlexSendMessage(f"{cafe9}資訊", output_message))
 
         #------------------------------------------------------------------------------------------------

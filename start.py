@@ -102,6 +102,30 @@ def handle_message(event):
     elif msg_type == "text":
         user_message = event.message.text
 
+        if user_message == "可樂": 
+            output_message = text_reply.text_reply_message("可樂好喝")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "宏宏的愛人":
+            output_message = text_reply.text_reply_message("嵐嵐<3")
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "宏宏的家在哪裡":
+            output_message = LocationSendMessage(
+                title = "宏宏的家",
+                address = "台中市北屯區陳平一街76巷2號5樓-2",
+                latitude = "24.186120316114284",
+                longitude = "120.66672397075935"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
+        elif user_message == "肥宅快樂水":
+            output_message = ImageSendMessage(
+                original_content_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg",
+                preview_image_url = "https://f.share.photo.xuite.net/chungming01/1fe45d1/10789161/501035944_m.jpg"
+            )
+            line_bot_api.reply_message(event.reply_token, output_message)
+
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #首頁
@@ -130,7 +154,7 @@ def handle_message(event):
         #     )
         #     line_bot_api.reply_message(event.reply_token, output_message)
 
-        if user_message == "台南旅遊":
+        elif user_message == "台南旅遊":
             reply_arr = []
             output_message1 = text_reply.text_reply_message("您好，請問想查詢什麼呢？")
             

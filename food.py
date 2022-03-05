@@ -557,7 +557,7 @@ def dessert_carousel_template():
                 #3
                 #正宗古早味冰粉圓
                 CarouselColumn(
-                    thumbnail_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/548441_432767113405121_1782768189_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=09cbfe&_nc_ohc=HQ_PNX4wmTIAX9PMuYq&_nc_ht=scontent.ftpe10-1.fna&oh=af63df3f1207e1b7b98189faa54c67c1&oe=61211028",
+                    thumbnail_image_url = "https://kellylife.tw/wp-content/uploads/20201212102435_39.jpg",
                     title = f"{dessert3}",
                     text = "清涼解渴的夏日古早好滋味\n✏️推薦料理：大杯冰粉圓",
                     actions = [
@@ -620,7 +620,7 @@ def dessert_carousel_template():
                 #6
                 #蜷尾家
                 CarouselColumn(
-                    thumbnail_image_url = "https://img.dingeat.com/uploads/20200614234025_85.jpg",
+                    thumbnail_image_url = "https://www.moshimoshi-nippon.jp/wp/wp-content/uploads/2018/09/73e7ca3d4f4b35aabd553f2b97c486fc.jpg",
                     title = f"{dessert6}",
                     text = "在夏日解熱的最佳甜點\n✏️推薦料理：蜜香紅茶霜淇淋",
                     actions = [

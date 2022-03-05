@@ -961,8 +961,8 @@ def handle_message(event):
             #甜點菜單
         elif user_message == f"{dessert1}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p11650/m40005/e6b2643a352a4d0d2144e1d87ea52cddb72e2f99.jpg",
-                preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p11650/m40005/e6b2643a352a4d0d2144e1d87ea52cddb72e2f99.jpg"
+                original_content_url = "https://img.bigfang.tw/2020/05/1590070576-165861befea6812f8fb03dfbbb422db2.jpg",
+                preview_image_url = "https://img.bigfang.tw/2020/05/1590070576-165861befea6812f8fb03dfbbb422db2.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
         
@@ -1229,8 +1229,8 @@ def handle_message(event):
 
         elif user_message == f"{chain_drink3}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://www.milkshoptea.com/upload/price/2104090830370000002.jpg",
-                preview_image_url = "https://www.milkshoptea.com/upload/price/2104090830370000002.jpg"
+                original_content_url = "https://www.milkshoptea.com/upload/price/2201040942360000002.jpg",
+                preview_image_url = "https://www.milkshoptea.com/upload/price/2201040942360000002.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -1243,8 +1243,8 @@ def handle_message(event):
 
         elif user_message == f"{chain_drink5}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://www.dayungs.com/wp-content/uploads/2021/07/%E5%AE%98%E7%B6%B2%E5%83%B9%E7%9B%AE%E8%A1%A8_0719-0815_%E5%8D%97.jpg",
-                preview_image_url = "https://www.dayungs.com/wp-content/uploads/2021/07/%E5%AE%98%E7%B6%B2%E5%83%B9%E7%9B%AE%E8%A1%A8_0719-0815_%E5%8D%97.jpg"
+                original_content_url = "https://www.dayungs.com/wp-content/uploads/2022/03/%E5%AE%98%E7%B6%B2%E5%83%B9%E7%9B%AE%E8%A1%A8_0301-0306_%E5%8D%97.jpg",
+                preview_image_url = "https://www.dayungs.com/wp-content/uploads/2022/03/%E5%AE%98%E7%B6%B2%E5%83%B9%E7%9B%AE%E8%A1%A8_0301-0306_%E5%8D%97.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -1271,8 +1271,8 @@ def handle_message(event):
 
         elif user_message == f"{chain_drink9}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "http://www.presotea.com.tw/webimages/1621218310781.jpg",
-                preview_image_url = "http://www.presotea.com.tw/webimages/1621218310781.jpg"
+                original_content_url = "http://www.presotea.com.tw/webimages/1642985924741.jpg",
+                preview_image_url = "http://www.presotea.com.tw/webimages/1642985924741.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 

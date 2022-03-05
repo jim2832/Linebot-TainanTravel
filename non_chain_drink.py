@@ -177,8 +177,8 @@ def drink4_func():
 
     output_message1 = text_reply.text_reply_message(f"{drink4}營業時間\n\n星期一：07:00–23:00\n星期二：07:00–23:00\n星期三：07:00–23:00\n星期四：07:00–23:00\n星期五：07:00–23:00\n星期六：07:00–23:00\n星期日：07:00–23:00")
     output_message2 = ImageSendMessage(
-        original_content_url = "https://cdn.walkerland.com.tw/images/upload/poi/p72729/m61256/10c17eee9f5b34a0c062724b76fb6531ab9ea26f.jpg",
-        preview_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p72729/m61256/10c17eee9f5b34a0c062724b76fb6531ab9ea26f.jpg"
+        original_content_url = "https://i.imgur.com/qKDy3j8.jpg",
+        preview_image_url = "https://i.imgur.com/qKDy3j8.jpg"
     )
     output_message3 = LocationSendMessage(
         title = f"{drink4}",
@@ -199,8 +199,8 @@ def drink5_func():
 
     output_message1 = text_reply.text_reply_message(f"{drink5}營業時間\n\n星期一：07:00–19:00\n星期二：07:00–19:00\n星期三：07:00–19:00\n星期四：07:00–19:00\n星期五：09:00–21:00\n星期六：09:00–21:00\n星期日：09:00–21:00")
     output_message2 = ImageSendMessage(
-        original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/160095769_3747199388661202_1238568005909003349_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=6fSpesEXwRkAX9BovE7&_nc_ht=scontent.ftpe10-1.fna&oh=12d6f1e782dfb2cd7edec381c7eb4716&oe=6123B398",
-        preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/160095769_3747199388661202_1238568005909003349_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=6fSpesEXwRkAX9BovE7&_nc_ht=scontent.ftpe10-1.fna&oh=12d6f1e782dfb2cd7edec381c7eb4716&oe=6123B398"
+        original_content_url = "https://whityeat.com/wp-content/uploads/20210505010318_73.jpg",
+        preview_image_url = "https://whityeat.com/wp-content/uploads/20210505010318_73.jpg"
     )
     output_message3 = LocationSendMessage(
         title = f"{drink5}",
@@ -243,17 +243,21 @@ def drink7_func():
 
     output_message1 = text_reply.text_reply_message(f"{drink7}營業時間\n\n星期一：11:00–20:00\n星期二：11:00–20:00\n星期三：11:00–20:00\n星期四：11:00–20:00\n星期五：11:00–20:00\n星期六：11:00–20:00\n星期日：12:00–20:00")
     output_message2 = ImageSendMessage(
-        original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t31.18172-8/13723949_537923076399586_3264104757293871409_o.png?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=j2KPwAZUh7UAX9HMDDg&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=ce31009fc3c636d95dc0b92f608c172b&oe=61236939",
-        preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t31.18172-8/13723949_537923076399586_3264104757293871409_o.png?_nc_cat=108&ccb=1-3&_nc_sid=730e14&_nc_ohc=j2KPwAZUh7UAX9HMDDg&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=ce31009fc3c636d95dc0b92f608c172b&oe=61236939"
+        original_content_url = "https://i.imgur.com/gWMzXyA.png",
+        preview_image_url = "https://i.imgur.com/gWMzXyA.png"
     )
-    output_message3 = LocationSendMessage(
+    output_message3 = ImageSendMessage(
+        original_content_url = "https://i.imgur.com/DAYQ9ip.png",
+        preview_image_url = "https://i.imgur.com/DAYQ9ip.png"
+    )
+    output_message4 = LocationSendMessage(
         title = f"{drink7}",
         address = "台南市北區長榮路四段68號",
         latitude = "23.004569499766045",
         longitude = "120.22272710800463"
     )
 
-    reply_arr.extend([output_message1,output_message2,output_message3])
+    reply_arr.extend([output_message1,output_message2,output_message3,output_message4])
 
     return reply_arr
 

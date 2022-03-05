@@ -111,7 +111,7 @@ def food_carousel_template1():
                 #3
                 #阿松割包
                 CarouselColumn(
-                    thumbnail_image_url = "https://s3-us-west-1.amazonaws.com/pic.2bite.com/event/5e98461c5b4d047cdc229217/cover/b02ce95107414327b274c32208dc4735.jpg",
+                    thumbnail_image_url = "https://i.imgur.com/EN8Dt0K.jpg",
                     title = f"{food3}",
                     text = "麵皮、滷肉和酸菜的絕妙組合\n✏️推薦料理：普通包、瘦肉包",
                     actions = [
@@ -216,7 +216,7 @@ def food_carousel_template1():
                 #8
                 #王氏魚皮
                 CarouselColumn(
-                    thumbnail_image_url = "https://cdn.walkerland.com.tw/images/upload/poi/p952/m46619/51c5125714ad81f6c457f4214d0906270c98d83b.jpg",
+                    thumbnail_image_url = "https://pengutravel.com/wp-content/uploads/2021/09/wang-fishskin-6.jpg",
                     title = f"{food8}",
                     text = "令人大快朵頤的海味專賣店\n✏️推薦料理：魚皮湯、魯魚肚",
                     actions = [

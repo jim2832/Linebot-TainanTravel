@@ -508,8 +508,8 @@ def handle_message(event):
 
         elif user_message == f"{food10}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/131766081_1751405925021066_2159747408668762709_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=a5PNNlgVa_0AX8AawrR&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=a06711c4688174efe464754ecb19d0e0&oe=60FC98FF",
-                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/131766081_1751405925021066_2159747408668762709_n.jpg?_nc_cat=106&ccb=1-3&_nc_sid=730e14&_nc_ohc=a5PNNlgVa_0AX8AawrR&tn=DbO66jLhb-cjliWk&_nc_ht=scontent.ftpe10-1.fna&oh=a06711c4688174efe464754ecb19d0e0&oe=60FC98FF"
+                original_content_url = "https://i.imgur.com/qDr8m30.jpg",
+                preview_image_url = "https://i.imgur.com/qDr8m30.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -550,15 +550,15 @@ def handle_message(event):
 
         elif user_message == f"{food16}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/133250809_3597804996939301_1854083568135046080_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=-pQMW5XjPLUAX_MPySk&_nc_ht=scontent.ftpe10-1.fna&oh=62be5f40928f5d3a2fa5a21890236084&oe=60FC7D44",
-                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/133250809_3597804996939301_1854083568135046080_n.jpg?_nc_cat=102&ccb=1-3&_nc_sid=c4c01c&_nc_ohc=-pQMW5XjPLUAX_MPySk&_nc_ht=scontent.ftpe10-1.fna&oh=62be5f40928f5d3a2fa5a21890236084&oe=60FC7D44"
+                original_content_url = "https://i.imgur.com/8AWan8H.jpg",
+                preview_image_url = "https://i.imgur.com/8AWan8H.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
         elif user_message == f"{food17}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/186528711_6049655938385449_4302705472193818662_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0gbsHfVco7UAX8DE_mJ&_nc_ht=scontent.ftpe10-1.fna&oh=b45fa57fa1f10cd5200d51a4a94559f3&oe=60FD6060",
-                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.6435-9/186528711_6049655938385449_4302705472193818662_n.jpg?_nc_cat=100&ccb=1-3&_nc_sid=8bfeb9&_nc_ohc=0gbsHfVco7UAX8DE_mJ&_nc_ht=scontent.ftpe10-1.fna&oh=b45fa57fa1f10cd5200d51a4a94559f3&oe=60FD6060"
+                original_content_url = "https://i.imgur.com/WKBcXqG.jpg",
+                preview_image_url = "https://i.imgur.com/WKBcXqG.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 
@@ -975,8 +975,8 @@ def handle_message(event):
 
         elif user_message == f"{dessert3}菜單":
             output_message = ImageSendMessage(
-                original_content_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/12347875_1223221574359667_4192191577517058670_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vBkwkgKxMF8AX_Eneot&_nc_ht=scontent.ftpe10-1.fna&oh=15e7fb5c63d1ec7c46e44da4c2dc43d7&oe=611F4C96",
-                preview_image_url = "https://scontent.ftpe10-1.fna.fbcdn.net/v/t1.18169-9/12347875_1223221574359667_4192191577517058670_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=vBkwkgKxMF8AX_Eneot&_nc_ht=scontent.ftpe10-1.fna&oh=15e7fb5c63d1ec7c46e44da4c2dc43d7&oe=611F4C96"
+                original_content_url = "https://i.imgur.com/iugSPZS.jpg",
+                preview_image_url = "https://i.imgur.com/iugSPZS.jpg"
             )
             line_bot_api.reply_message(event.reply_token, output_message)
 

@@ -8,9 +8,6 @@ from linebot.exceptions import (
 )
 from linebot.models import *
 
-from PIL import Image
-from io import StringIO
-
 import requests
 import random
 import json

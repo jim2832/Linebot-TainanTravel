@@ -30,11 +30,11 @@ LINE_PUSH_TARGET_ID = "U79e56c5d8383938f2ca93b88a1227112"
 # 將本地資料夾推上github
 # 1. 在github上新建一個倉庫，建立時有一個https地址，記錄此地址，後面用 
 # 2. 開啟git bash，轉到你所要上傳的資料夾目錄下，並輸入git init 
-# 3. 將專案新增到倉庫中去：git add .，如果新增某個檔案，可以使用git add xxx 
+# 3. 將專案新增到倉庫中去：git add .，如果新增某個檔案，可以使用git add xxx
 
 # 4. 將新增的檔案提交到倉庫：git commit -m "--註釋--" 
 
-# 5. 將倉庫關聯到github：git remote add origin https://xxxx，https為剛才github上建立倉庫的地址 
+# 5. 將倉庫關聯到github：git remote add origin https://xxxx，https為剛才github上建立倉庫的地址
 
 # 6. 把檔案推送到github倉庫：git push -u origin master，下次推送時，可以把-u去掉
 

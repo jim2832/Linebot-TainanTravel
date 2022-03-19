@@ -3,4 +3,4 @@
 ## The front page
 ---
 There are four options that can be clicked.
-![avatar](/Users/mac/Desktop/LineBot0705/images/front_page.png)
+![](/Users/mac/Desktop/LineBot0705/images/front_page.png)

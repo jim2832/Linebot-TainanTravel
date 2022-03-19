@@ -2,4 +2,4 @@ Tainan travel guide bot
 
 ## The front page
 There are four options that can be clicked.
-![image](/Users/mac/Desktop/LineBot0705/images/front_page.png)
+![image](https://i.imgur.com/rKityv7.jpg)

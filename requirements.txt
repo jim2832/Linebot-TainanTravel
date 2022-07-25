@@ -1,6 +1,0 @@
-Image
-line-bot-sdk
-flask
-requests
-datetime
-line-bot-sdk==1.8.0

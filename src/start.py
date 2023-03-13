@@ -182,8 +182,7 @@ def handle_message(event):
                     )
                 ]
             )
-            reply_arr.append(output_message1)
-            reply_arr.append(output_message2)
+            reply_arr.append(output_message1, output_message2)
             line_bot_api.reply_message(event.reply_token, reply_arr)
 
 #---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------

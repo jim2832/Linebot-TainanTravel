@@ -16,7 +16,8 @@ https://user-images.githubusercontent.com/78035176/159124173-337b3ec1-1afd-4277-
 
 
 ## food page
-![image](https://github.com/jim2832/Uploads/blob/main/20220319_221151.GIF)
+https://github.com/jim2832/Linebot-TainanTravel/assets/78035176/320fc4a0-8e57-4668-b3ab-46f956d4e1b4
+
 
 ## drink menu
 You can click the picture to get the full information.
